@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tony Stark</title>
+  <link href="https://www.marvel.com/static/images/favicon/favicon.ico" rel="SHORTCUT ICON">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<style>
+.box{
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:30px;
+    width: 50px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    top:50%
+}
+.box:hover .box-in{
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'回到顶部';
+    width: 40px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    visibility: visible;
+    display:inline-block;
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 2px;
+}
+blockquote {
+    display: block;
+    padding: 0px 16px 0px 16px;
+    margin: 0 0 12px;
+    border-left: 8px solid #dddfe4;
+    background: #eef0f4;
+    overflow: auto;
+    word-break: break-word!important;
+}
+table {
+	width:100%;
+	margin:15px 0
+}
+table th {
+	background-color:#CCE8EB;
+	color:#000000
+}
+table,table th, table td
+{
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border:1px solid #cad9ea;
+	border-collapse:collapse
+}
+table tr:nth-child(odd){
+	background-color:#fff;
+}
+table tr:nth-child(even){
+	background-color:#F5FAFA;
+}
+a {
+	text-decoration: none;
+}
+</style>
+<div id="box" class="box">
+    <div class="box-in"></div>
+</div> 
+<script>
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    //获取当前毫秒数
+    var startTime = +new Date();     
+    //获取当前页面的滚动高度
+    var b = document.body.scrollTop || document.documentElement.scrollTop;
+    var d = 200;
+    var c = b;
+    timer = requestAnimationFrame(function func(){
+        var t = d - Math.max(0,startTime - (+new Date()) + d);
+        document.documentElement.scrollTop = document.body.scrollTop = t * (-c) / d + b;
+        timer = requestAnimationFrame(func);
+        if(t == d){
+          cancelAnimationFrame(timer);
+        }
+    });
+}
+</script>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><br>
+<center><font face="华文行楷" color="darkcyan" size="6">托尼·斯塔克</font></center>
+<center><font face="MV Boli" color="purple" size="6">Tony Stark</font></center>
+<center><font face="MV Boli" color="#e06030" size="5">钢铁侠 Iron Man</font></center>
+<hr>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/dd6d9c08fbeab69528f597e0c34fee34.png#pic_center" alt="托尼·斯塔克"></center>
+<br>
+<blockquote>
+<p><font face="黑体" color="purple" size="4">简 介：</font>发明家托尼·斯塔克将他的天才运用到高科技解决问题上，成为铁甲复仇者钢铁侠。<br>
+<font face="Consolas" color="purple" size="4">OVERVIEW：</font><font face="Garamond">Inventor Tony Stark applies his genius for high-tech solutions to problems as Iron Man, the armored Avenger.<br>
+<font color="slateblue" face="宋体"><strong><code>真实姓名</code></strong>：</font><font face="MV Boli">Anthony Edward Stark</font><br>
+<font color="slateblue" face="宋体"><strong><code>角色物种</code></strong>：</font><font face="MV Boli">Human</font><br>
+<font color="slateblue" face="宋体"><strong><code>出生日期</code></strong>：</font><font face="MV Boli">1970-5-29</font><br>
+<font color="slateblue" face="宋体"><strong><code>死亡日期</code></strong>：</font><font face="MV Boli">2023-10</font><br>
+<font color="slateblue" face="宋体"><strong><code>参演影视</code></strong>：</font><font face="华文行楷">钢铁侠，无敌浩克(pre-credits scene)，钢铁侠2，雷神(mentioned)</font></font></p>
+</blockquote>
+<p><font face="helvetica" color="blue"><em>“My armor, it was never a distraction or a hobby, it was a cocoon. And now, I’m a changed man. You can take away my house, all my tricks and toys. But one thing you can’t take away… I am Iron Man.”</em></font><br>
+<font face="MV Boli" color="blue"><strong>—— Tony Stark</strong></font></p>
+<p><font face="宋体" color="gray"><strong>■ 相关链接:</strong></font></p>
+<ul>
+<li><a href="https://www.marvel.com/characters/iron-man-tony-stark"><strong>Iron Man (Tony Stark) | Characters | Marvel</strong></a></li>
+<li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man"><strong>Iron Man | Marvel Cinematic Universe Wiki | Fandom</strong></a></li>
+<li><a href="https://mcu.huijiwiki.com/wiki/%E9%92%A2%E9%93%81%E4%BE%A0"><strong>钢铁侠 - 漫威电影宇宙资料站 - 灰机wiki</strong></a></li>
+<li><a href="https://www.manweimi.cn/marvel-wiki/14598.html"><strong>钢铁侠（IRON MAN）  | 漫威百科 | 人物 | 漫威网 - 漫威迷</strong></a></li>
+</ul>
+<hr>
+<p></p><div class="toc"><h3>目录</h3><ul><li><a href="#font_color7a37abfont_37"><font color="#7a37ab">人物概览</font></a></li><li><a href="#font_color7a37abfont_52"><font color="#7a37ab">详细介绍</font></a></li><li><a href="#font_color7a37abfont_77"><font color="#7a37ab">个人传记</font></a></li></ul></div><p></p>
+<h1><a id="font_color7a37abfont_37"></a><font color="#7a37ab">人物概览</font></h1>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/ced4cdfdb9513615d523e5ad89fa3744.png#pic_center" alt="穿上钢铁套装（SUIT UP）"></center>
+<h3><font face="黑体" color="#008090"><b>穿上钢铁套装（SUIT UP）</b></font></h3>
+<p><code>In a cave in Afghanistan, Tony Stark and Ho Yinsen developed the first Iron Man suit, which Stark used to escape his captors.</code><br>
+在阿富汗的一个山洞里，Tony Stark 与 Ho Yinsen研制出了第一套钢铁侠套装，斯塔克用这套套装从抓捕他的人那里逃走。</p>
+<h3><font face="黑体" color="#008090"><b>拯救纽约（SAVING NEW YORK）</b></font></h3>
+<p><code>Fighting alongside the Avengers for the first time, Iron Man nearly sacrificed himself in order to save New York. </code><br>
+钢铁侠第一次与复仇者联盟并肩作战，为了拯救纽约，他几乎牺牲了自己。</p>
+<h1><a id="font_color7a37abfont_52"></a><font color="#7a37ab">详细介绍</font></h1>
+<p><code>Anthony Edward "Tony" Stark was a billionaire industrialist, a founding member of the Avengers, and the former CEO of Stark Industries. A brash but brilliant inventor, Stark was self-described as a genius, billionaire, playboy, and philanthropist. With his great wealth and exceptional technical knowledge, Stark was one of the world's most powerful men following the deaths of his parents and enjoyed the playboy lifestyle for many years until he was kidnapped by the Ten Rings in Afghanistan, while demonstrating a fleet of Jericho missiles. With his life on the line, Stark created an armored suit which he used to escape his captors. Upon returning home, he utilized several more armors to use against terrorists, as well as Obadiah Stane who turned against Stark. Following his fight against Stane, Stark publicly revealed himself as Iron Man.</code><br>
+安东尼·爱德华托尼·斯塔克是一位亿万富翁实业家，复仇者联盟的创始成员，斯塔克工业公司的前首席执行官。斯塔克是一位鲁莽但才华横溢的发明家，他自称是天才、亿万富翁、花花公子和慈善家。凭借巨大的财富和非凡的技术知识，斯塔克在父母去世后成为世界上最有权势的人之一，多年来一直享受着花花公子的生活方式，直到他在阿富汗被十枚戒指绑架，同时展示了一支杰里科导弹舰队。在生命垂危的情况下，斯塔克制作了一套盔甲套装，用来躲避追捕他的人。回国后，他又使用了几件防弹衣来对付恐怖分子，还有反对斯塔克的奥巴迪亚·斯坦。在与斯坦的斗争之后，斯塔克公开表示自己是铁人。</p>
+<p><code>Fresh off from defeating enemies all over the world, Stark found himself dying due to his own Arc Reactor poisoning his body, all while he was challenged by Ivan Vanko who attempted to destroy his legacy. After the Stark Expo incident, Stark reluctantly agreed to serve as a consultant for S.H.I.E.L.D. where he used his position to upgrade their technology while he began a relationship with Pepper Potts. With the world yet again being threatened, Stark joined the Avengers and helped defeat the Chitauri and Loki. Due to the battle, he suffered from post-traumatic stress disorder, leading him to create the Iron Legion to safeguard the world and help him retire.</code><br>
+斯塔克刚刚战胜了世界各地的敌人，就发现自己因自己的电弧反应堆中毒身亡，而伊凡·万科一直在挑战他，试图摧毁他的遗产。斯塔克世博会事件发生后，斯塔克不情愿地同意担任S.H.I.E.L.D.的顾问，在那里，他利用自己的职位升级了他们的技术，同时与佩珀·波茨建立了关系。随着世界再次受到威胁，斯塔克加入了复仇者，帮助击败了奇塔里人和洛基人。由于这场战斗，他患上了创伤后应激障碍，导致他创建了钢铁军团来保卫世界并帮助他退休。</p>
+<p><code>The 2012 "Mandarin" terrorist attacks forced Stark to come out of retirement to protect his country, inadvertently putting his loved ones at risk and leaving him defenseless when his home was destroyed. Stark continued his mission, finding Aldrich Killian as the mastermind of the attacks. Eventually, Stark defeated Killian, and was prompted to destroy all of his armors with the Clean Slate Protocol after almost losing Potts. However, when the Avengers were officially demobilized due to the War on HYDRA, Stark built more armors and resumed his role as Iron Man, aiding them in the capture of Baron Strucker and acquiring Loki's Scepter.</code><br>
+2012年的“华语”恐怖袭击迫使斯塔克退休，以保护他的国家，无意中使他所爱的人处于危险之中，当他的家被毁时，使他手无寸铁。斯塔克继续他的任务，发现奥尔德里希·基利安是袭击的主谋。最终，斯塔克击败了基利安，在差点失去波特之后，他被要求按照“清白协议”销毁所有盔甲。然而，当复仇者队因对HYDRA的战争而正式复员时，斯塔克建造了更多的盔甲，并重新扮演铁人的角色，帮助他们抓捕Strucker男爵并获得了Loki的权杖。</p>
+<p><code>Once the threat of HYDRA had been ended, at last, Stark, influenced by Scarlet Witch's visions, built Ultron with the help of Bruce Banner as a new peacekeeping A.I. to protect the world and allow the Avengers to retire. However, Ultron believed that humanity threatened the world and thus, according to his program, decided to extinguish humanity. Through the work of the Avengers, Ultron was defeated, however, not without massive civilian cost and many lives being lost during which Sokovia was elevated into the sky.</code><br>
+九头蛇怪的威胁结束后，斯塔克终于在猩红女巫的幻觉影响下，在布鲁斯·班纳的帮助下，建造了奥创公司，作为一个新的维和a.I.，以保护世界，并允许复仇者退休。然而，奥创认为人类威胁着世界，因此，根据他的计划，决定消灭人类。然而，在复仇者的努力下，奥创战败，造成了巨大的平民损失和许多生命损失，索科维亚被抬上了天空。</p>
+<p><code>After the Ultron Offensive, Stark retired from active duty, still haunted by his role in the chaos the A.I. created. The guilt of creating Ultron and causing so much destruction and loss of life eventually convinced Stark to support the Sokovia Accords. Stark was forced to lead a manhunt for his ally Captain America when the latter began protecting the fugitive Winter Soldier, igniting the Avengers Civil War. The end result left the Avengers in complete disarray, especially after Stark learned of the Winter Soldier's role in his parents' deaths. Afterwards, Stark returned to New York to mentor and guide Spider-Man into becoming a better hero than he ever was, also becoming engaged with Potts in the process.</code><br>
+奥创进攻后，斯塔克退出了现役，仍然为他在AIS制造的混乱中所扮演的角色所困扰。创建Ultron并造成如此多的破坏和生命损失的罪行最终说服斯塔克支持索科维亚协议。斯塔克被迫带头追捕他的盟友美国上尉，美国上尉开始保护逃亡的冬季士兵，引发了复仇者内战。最终的结果让复仇者陷入了一片混乱，尤其是在斯塔克得知冬季士兵在其父母死亡中所扮演的角色之后。之后，斯塔克回到纽约指导蜘蛛侠成为一个比以往更好的英雄，并在这个过程中与波茨交往。</p>
+<p><code>In 2018, when Thanos and the Black Order invaded Earth in their conquest to acquire the six Infinity Stones, Stark, Doctor Strange, and Spider-Man convened to battle Thanos on Titan with the help of the Guardians of the Galaxy. When Stark was held at Thanos' mercy, Doctor Strange surrendered the Time Stone for Stark's life. After the Snap, Stark and Nebula remained the sole survivors on Titan. Stark and Nebula used the Benatar to escape Titan, but were stranded in space as the ship was damaged. They were rescued by Captain Marvel, who brought them back to Earth.</code><br>
+2018年，当塔诺斯和黑骑士团为了获得六块无限巨石而入侵地球时，斯塔克、斯特兰奇博士和蜘蛛侠在银河系守护者的帮助下召集起来，在泰坦上与塔诺斯作战。当斯塔克被塔诺斯摆布时，斯特兰奇医生交出了斯塔克的生命之石。拍摄结束后，斯塔克和星云仍然是泰坦上唯一的幸存者。斯塔克和星云利用贝纳塔号逃离泰坦号，但由于飞船受损，他们被困在太空中。他们被马维尔船长救出，并将他们带回了地球。</p>
+<p><code>In the five years after the Snap, Stark chose to retire from being Iron Man, marrying Potts and having a daughter, Morgan. When Stark devised a method to safely travel through time and space, he rejoined the Avengers in their mission to acquire the six Infinity Stones from the past in order to resurrect those killed by the Snap, and traveled back in time to retrieve the Scepter and regain the Tesseract. During the Battle of Earth, Stark sacrificed himself to eliminate an alternate version of Thanos and his army, who traveled through time to collect their Infinity Stones, saving the universe from decimation and leaving behind a legacy as one of Earth's most revered superheroes.</code><br>
+在拍摄后的五年里，斯塔克选择从铁人的身份上退休，与波茨结婚，并育有一个女儿摩根。当斯塔克设计出一种安全穿越时空的方法时，他重新加入复仇者的任务，从过去获得六块无限大的石头，以复活那些被猛击致死的人，并及时回到过去取回权杖并夺回特塞拉特。在地球之战中，斯塔克牺牲了自己，消灭了塔诺斯和他的军队的另一个版本。塔诺斯和他的军队历尽千辛万苦收集了他们的无穷无尽的石头，拯救了宇宙免于毁灭，并留下了作为地球上最受尊敬的超级英雄之一的遗产。</p>
+<h1><a id="font_color7a37abfont_77"></a><font color="#7a37ab">个人传记</font></h1>
+ <table>
+<thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Early Life</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">早期生活</font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Troubled Childhood</font><br><font face="微软雅黑" color="#008000" size="2">麻烦的童年</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2:_Public_Identity" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2: Public Identity</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 2</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Captain_America:_Civil_War" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Captain America: Civil War</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 3</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/File:S.H.I.E.L.D._Tony_Stark_file.jpg" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">S.H.I.E.L.D. File</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Age_of_Ultron" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Avengers: Age of Ultron</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Guidebook_to_the_Marvel_Cinematic_Universe_-_Iron_Man" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Guidebook to the Marvel Cinematic Universe - Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Losing his Parents</font><br><font face="微软雅黑" color="#008000" size="2">失去父母</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Captain_America:_Civil_War" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Captain America: Civil War</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2:_Public_Identity" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2: Public Identity</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">CEO of Stark Industries</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">斯塔克工业公司首席执行官</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Rebuilding the Company</font><br><font face="微软雅黑" color="#008000" size="2">重建公司</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Creating Demons</font><br><font face="微软雅黑" color="#008000" size="2">制造恶魔</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Testing Weapons in Arizona</font><br><font face="微软雅黑" color="#008000" size="2">在亚利桑那州测试武器</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Fast_Friends" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man: Fast Friends</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Final Day of Freedom</font><br><font face="微软雅黑" color="#008000" size="2">自由的最后一天</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Presenting the Jericho</font><br><font face="微软雅黑" color="#008000" size="2">介绍耶利哥</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Becoming Iron Man</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">成为铁人</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Kidnapped by the Ten Rings</font><br><font face="微软雅黑" color="#008000" size="2">被十环绑架</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Building the First Armor</font><br><font face="微软雅黑" color="#008000" size="2">建造第一个装甲</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Escaping the Ten Rings</font><br><font face="微软雅黑" color="#008000" size="2">逃离十环</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">No More Weapons</font><br><font face="微软雅黑" color="#008000" size="2">没有更多武器</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Suit Upgrades</font><br><font face="微软雅黑" color="#008000" size="2">西装升级</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Outdoor Test Flight</font><br><font face="微软雅黑" color="#008000" size="2">室外试飞</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Security_Measures" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man: Security Measures</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Obadiah Stane's Betrayal</font><br><font face="微软雅黑" color="#008000" size="2">奥巴迪亚·斯坦的背叛</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Battle of Gulmira</font><br><font face="微软雅黑" color="#008000" size="2">古尔米拉战役</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Next Mission</font><br><font face="微软雅黑" color="#008000" size="2">下一次任务</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Duel of Los Angeles</font><br><font face="微软雅黑" color="#008000" size="2">洛杉矶决斗</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">I Am Iron Man</font><br><font face="微软雅黑" color="#008000" size="2">我是钢铁侠</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Fast_Friends" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man: Fast Friends</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Meeting Nick Fury</font><br><font face="微软雅黑" color="#008000" size="2">会见尼克·弗瑞</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Security_Measures" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man: Security Measures</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_I_Am_Iron_Man!" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man: I Am Iron Man!</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Armored Adventures</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">装甲冒险</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Finding World Peace</font><br><font face="微软雅黑" color="#008000" size="2">寻求世界和平</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2:_Security_Breach" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 2: Security Breach</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2:_Nick_Fury:_Director_of_S.H.I.E.L.D." target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2: Nick Fury: Director of S.H.I.E.L.D.</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2:_Public_Identity" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 2: Public Identity</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2:_Fist_of_Iron" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2: Fist of Iron</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Palladium Poisoning</font><br><font face="微软雅黑" color="#008000" size="2">钯中毒</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Starting the Stark Expo</font><br><font face="微软雅黑" color="#008000" size="2">启动斯塔克博览会</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_Royal_Purple_Custom_Comic" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man Royal Purple Custom Comic</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Meeting with Senator Stern</font><br><font face="微软雅黑" color="#008000" size="2">会见斯特恩参议员</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Making Pepper Potts CEO</font><br><font face="微软雅黑" color="#008000" size="2">让Pepper Potts成为首席执行官</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Monaco Grand Prix</font><br><font face="微软雅黑" color="#008000" size="2">摩纳哥大奖赛</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Duel of Monaco</font><br><font face="微软雅黑" color="#008000" size="2">摩纳哥决斗</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Meeting with Ivan Vanko</font><br><font face="微软雅黑" color="#008000" size="2">与Ivan Vanko会面</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Ivan Vanko's Attack Aftermath</font><br><font face="微软雅黑" color="#008000" size="2">Ivan Vanko的袭击后果</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Birthday Party</font><br><font face="微软雅黑" color="#008000" size="2">生日聚会</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 2</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Rediscovering the Element</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">重新发现元素</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Nick Fury's Help</font><br><font face="微软雅黑" color="#008000" size="2">Nick Fury的帮助</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Researching his Family</font><br><font face="微软雅黑" color="#008000" size="2">调查他的家庭</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">A New Element</font><br><font face="微软雅黑" color="#008000" size="2">新元素</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Battle at Stark Expo</font><br><font face="微软雅黑" color="#008000" size="2">斯塔克博览会之战</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a><br><a href="http://www.huffingtonpost.com.mx/entry/tom-holland-officially-confirms-spider-man-was-in-iron-man-2_us_59508ea4e4b0da2c731c7080" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Tom Holland Confirms Popular Fan Theory: Spider-Man Was In 'Iron Man 2'</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Showdown with Ivan Vanko</font><br><font face="微软雅黑" color="#008000" size="2">与Ivan Vanko摊牌</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Not a Suitable Candidate</font><br><font face="微软雅黑" color="#008000" size="2">不是合适的候选人</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Consultant for S.H.I.E.L.D.</font><br><font face="微软雅黑" color="#008000" size="2">S.H.I.E.L.D.顾问。</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Marvel_One-Shot:_The_Consultant" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Marvel One-Shot: The Consultant</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Incredible_Hulk" target="_blank"><font face="Source Code Pro" color="#008000" size="2">The Incredible Hulk</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Google%2B_Profile/WHiH_Newsfront" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Google+ Profile/WHiH World News</font></a></td>
+</tr></tbody></table>
+</div>
+</body>
+
+</html>
