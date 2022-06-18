@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obadiah Stane</title>
+  <link href="https://www.marvel.com/static/images/favicon/favicon.ico" rel="SHORTCUT ICON">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<style>
+.box{
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:30px;
+    width: 50px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    top:50%
+}
+.box:hover .box-in{
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'回到顶部';
+    width: 40px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    visibility: visible;
+    display:inline-block;
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 2px;
+}
+blockquote {
+    display: block;
+    padding: 0px 16px 0px 16px;
+    margin: 0 0 12px;
+    border-left: 8px solid #dddfe4;
+    background: #eef0f4;
+    overflow: auto;
+    word-break: break-word!important;
+}
+table {
+	width:100%;
+	margin:15px 0
+}
+table th {
+	background-color:#CCE8EB;
+	color:#000000
+}
+table,table th, table td
+{
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border:1px solid #cad9ea;
+	border-collapse:collapse
+}
+table tr:nth-child(odd){
+	background-color:#fff;
+}
+table tr:nth-child(even){
+	background-color:#F5FAFA;
+}
+a {
+	text-decoration: none;
+}
+</style>
+<div id="box" class="box">
+    <div class="box-in"></div>
+</div> 
+<script>
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    //获取当前毫秒数
+    var startTime = +new Date();     
+    //获取当前页面的滚动高度
+    var b = document.body.scrollTop || document.documentElement.scrollTop;
+    var d = 200;
+    var c = b;
+    timer = requestAnimationFrame(function func(){
+        var t = d - Math.max(0,startTime - (+new Date()) + d);
+        document.documentElement.scrollTop = document.body.scrollTop = t * (-c) / d + b;
+        timer = requestAnimationFrame(func);
+        if(t == d){
+          cancelAnimationFrame(timer);
+        }
+    });
+}
+</script>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><br>
+<center><font face="华文行楷" color="darkcyan" size="6">奥巴代亚·斯坦尼</font></center>
+<center><font face="MV Boli" color="purple" size="6">Obadiah Stane</font></center>
+<center><font face="MV Boli" color="#e06030" size="5">铁霸王（Iron Monger）</font></center>
+<hr>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/4d3caeb23c5696e8b46b423d010b7643.png#pic_center" alt="奥巴代亚·斯坦尼"></center>
+<br>
+<blockquote>
+<p><font face="黑体" color="purple" size="4">简 介：</font>Obadiah Stane 是托尼·斯塔克的商业伙伴，也是他父亲霍华德·斯塔克的好朋友。霍华德去世后，斯坦恩成为斯塔克工业公司的临时首席执行官，直到托尼不久后正式接任。史丹对年轻的史塔克的嫉妒导致他与十环联手组织了一次失败的暗杀企图，以便史丹可以再次成为首席执行官。他进一步用史塔克工业的武器武装十环，以促进他们在饱受战争蹂躏的古尔米拉的战役。当 Pepper Potts 揭露他与恐怖分子的关系时，Stane 创造了一件盔甲并取名为 Iron Monger 并试图杀死 Stark 本人，导致他自己死亡。<br>
+<font face="Consolas" color="purple" size="4">OVERVIEW：</font><font face="Garamond">Obadiah Stane&nbsp;was the business partner of&nbsp;Tony Stark&nbsp;and a good friend of his father,&nbsp;Howard Stark. After Howard’s death, Stane became interim CEO of&nbsp;Stark Industries&nbsp;until Tony took over officially shortly after. Stane’s jealousy of the younger Stark led him to join forces with the&nbsp;Ten Rings&nbsp;to organize a failed attempt to&nbsp;assassinate&nbsp;him so Stane could become CEO once again. He further armed the Ten Rings with Stark Industries weapons, to facilitate their campaign in the war-torn&nbsp;Gulmira. When his involvement with terrorists was exposed by&nbsp;Pepper Potts, Stane created an&nbsp;armor&nbsp;and adopted the name&nbsp;Iron Monger&nbsp;and attempted to kill Stark himself, leading to his own death.<br>
+<font color="slateblue" face="宋体"><strong><code>真实姓名</code></strong>：</font><font face="MV Boli">Obadiah Stane</font><br>
+<font color="slateblue" face="宋体"><strong><code>角色物种</code></strong>：</font><font face="MV Boli">Human</font><br>
+<font color="slateblue" face="宋体"><strong><code>死亡日期</code></strong>：</font><font face="MV Boli">2009-11-24</font><br>
+<font color="slateblue" face="宋体"><strong><code>参演影视</code></strong>：</font><font face="华文行楷">钢铁侠，钢铁侠2&nbsp;(picture)，钢铁侠3 (credits)，美国队长：冬日战士 (mentioned)，蜘蛛侠：英雄远征 (flashback)</font></font></p>
+</blockquote>
+<p><font face="helvetica" color="blue"><em>“Civilization has been preserved because the right people have had the right idea at the right time!&nbsp;This technology, it comes along once in a generation, and it’s a gift that has been put in our hands. And why is that? It’s because we have a vision, a vision for the future of&nbsp;this company, of&nbsp;this nation, of the&nbsp;world&nbsp;order!”</em></font><br>
+<font face="MV Boli" color="blue"><strong>—— Obadiah Stane</strong></font></p>
+<p><font face="宋体" color="gray"><strong>■ 相关链接:</strong></font></p>
+<ul>
+<li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Monger"><strong>Iron Monger | Marvel Cinematic Universe Wiki | Fandom</strong></a></li>
+<li><a href="https://mcu.huijiwiki.com/wiki/%E9%92%A2%E9%93%81%E8%B4%A9%E5%AD%90"><strong>钢铁贩子 - 漫威电影宇宙资料站 - 灰机wiki</strong></a></li>
+<li><a href="https://www.manweimi.cn/marvel-wiki/16774.html"><strong>铁霸王（IRON MONGER）  | 漫威百科 | 人物 | 漫威网 - 漫威迷</strong></a></li>
+</ul>
+<hr>
+<p></p><div class="toc"><h3>目录</h3><ul><li><a href="#font_color7a37abfont_34"><font color="#7a37ab">详细介绍</font></a></li><li><a href="#font_color7a37abfont_41"><font color="#7a37ab">个人传记</font></a></li></ul></div><p></p>
+<h1><a id="font_color7a37abfont_34"></a><font color="#7a37ab">详细介绍</font></h1>
+<p><code>Obadiah Stane was the business partner of Tony Stark and a good friend of his father, Howard Stark. After Howard's death, Stane became interim CEO of Stark Industries until Tony took over officially shortly after. Stane's jealousy of the younger Stark led him to join forces with the Ten Rings to organize a failed attempt to assassinate him so Stane could become CEO once again. He further armed the Ten Rings with Stark Industries weapons, to facilitate their campaign in the war-torn Gulmira. When his involvement with terrorists was exposed by Pepper Potts, Stane created an armor and adopted the name Iron Monger and attempted to kill Stark himself, leading to his own death.</code><br>
+奥巴迪亚·斯坦是托尼·斯塔克的商业伙伴，也是他父亲霍华德·斯塔克的好朋友。霍华德去世后，斯坦成为斯塔克工业公司的临时首席执行官，直到托尼不久正式上任。斯坦对小斯塔克的妒忌使他和《十枚戒指》联手组织了一次失败的暗杀行动，以便斯坦再次成为首席执行官。他进一步用斯塔克工业公司的武器武装了十环，以促进他们在饱受战争蹂躏的古尔米拉的战役。当他与恐怖分子的牵连被佩珀·波茨揭露时，斯坦制造了一件盔甲，并改名为铁商，试图自杀，导致斯塔克死亡。</p>
+<h1><a id="font_color7a37abfont_41"></a><font color="#7a37ab">个人传记</font></h1>
+ <table>
+<thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Early Life</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">早期生活</font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Work with Howard Stark</font><br><font face="微软雅黑" color="#008000" size="2">与Howard Stark合作</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2:_Public_Identity" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2: Public Identity</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Captain_America:_The_Winter_Soldier" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Captain America: The Winter Soldier</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Never_Meet_Your_Heroes" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Hawkeye: 1.01: Never Meet Your Heroes</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Kidnapping of Tony Stark</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">托尼·斯塔克被绑架</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Hiring the Ten Rings</font><br><font face="微软雅黑" color="#008000" size="2">租用十环</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Tony Stark's Return</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克的回归</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Manipulating Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">操纵托尼·斯塔克</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Confessing the Truth</font><br><font face="微软雅黑" color="#008000" size="2">承认真相</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Creating Iron Monger</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">打造铁商</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Attacking the Ten Rings</font><br><font face="微软雅黑" color="#008000" size="2">攻击十环</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Plans Discovered</font><br><font face="微软雅黑" color="#008000" size="2">发现的计划</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Duel of Los Angeles</font><br><font face="微软雅黑" color="#008000" size="2">洛杉矶决斗</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Defeat and Death</font><br><font face="微软雅黑" color="#008000" size="2">失败与死亡</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr></tbody></table>
+</div>
+</body>
+
+</html>
