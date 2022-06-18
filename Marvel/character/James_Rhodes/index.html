@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Rhodes</title>
+  <link href="https://www.marvel.com/static/images/favicon/favicon.ico" rel="SHORTCUT ICON">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<style>
+.box{
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:30px;
+    width: 50px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    top:50%
+}
+.box:hover .box-in{
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'回到顶部';
+    width: 40px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    visibility: visible;
+    display:inline-block;
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 2px;
+}
+blockquote {
+    display: block;
+    padding: 0px 16px 0px 16px;
+    margin: 0 0 12px;
+    border-left: 8px solid #dddfe4;
+    background: #eef0f4;
+    overflow: auto;
+    word-break: break-word!important;
+}
+table {
+	width:100%;
+	margin:15px 0
+}
+table th {
+	background-color:#CCE8EB;
+	color:#000000
+}
+table,table th, table td
+{
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border:1px solid #cad9ea;
+	border-collapse:collapse
+}
+table tr:nth-child(odd){
+	background-color:#fff;
+}
+table tr:nth-child(even){
+	background-color:#F5FAFA;
+}
+a {
+	text-decoration: none;
+}
+</style>
+<div id="box" class="box">
+    <div class="box-in"></div>
+</div> 
+<script>
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    //获取当前毫秒数
+    var startTime = +new Date();     
+    //获取当前页面的滚动高度
+    var b = document.body.scrollTop || document.documentElement.scrollTop;
+    var d = 200;
+    var c = b;
+    timer = requestAnimationFrame(function func(){
+        var t = d - Math.max(0,startTime - (+new Date()) + d);
+        document.documentElement.scrollTop = document.body.scrollTop = t * (-c) / d + b;
+        timer = requestAnimationFrame(func);
+        if(t == d){
+          cancelAnimationFrame(timer);
+        }
+    });
+}
+</script>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><br>
+<center><font face="华文行楷" color="darkcyan" size="6">詹姆斯·罗德斯</font></center>
+<center><font face="MV Boli" color="purple" size="6">James Rhodes</font></center>
+<center><font face="MV Boli" color="#e06030" size="5">战争机器 War Machine</font></center>
+<hr>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/9b2a2e83ad5e322ae54657d852251a82.png#pic_center" alt="詹姆斯·罗德斯"></center>
+<br>
+<blockquote>
+<p><font face="黑体" color="purple" size="4">简 介：</font>无论是驾驶飞机还是驾驶战争机器装甲，空军中校詹姆斯·罗迪·罗德斯都流露出忠诚和勇气。<br>
+<font face="Consolas" color="purple" size="4">OVERVIEW：</font><font face="Garamond">Air Force Lieutenant Colonel James “Rhodey” Rhodes exudes loyalty and courage, whether flying a plane or piloting the War Machine armor.<br>
+<font color="slateblue" face="宋体"><strong><code>真实姓名</code></strong>：</font><font face="MV Boli">James Rupert Rhodes</font><br>
+<font color="slateblue" face="宋体"><strong><code>角色物种</code></strong>：</font><font face="MV Boli">Human</font><br>
+<font color="slateblue" face="宋体"><strong><code>出生日期</code></strong>：</font><font face="MV Boli">1968-10-06</font><br>
+<font color="slateblue" face="宋体"><strong><code>参演影视</code></strong>：</font><font face="华文行楷">钢铁侠，钢铁侠2</font></font></p>
+</blockquote>
+<p><font face="helvetica" color="blue"><em>“138 combat missions. That’s how many I’ve flown, Tony. Every one of them could’ve been my last, but I flew 'em. Because the fight needed to be fought.”</em></font><br>
+<font face="MV Boli" color="blue"><strong>—— James Rhodes to&nbsp;Tony Stark</strong></font></p>
+<p><font face="宋体" color="gray"><strong>■ 相关链接:</strong></font></p>
+<ul>
+<li><a href="https://www.marvel.com/characters/war-machine-james-rhodes"><strong>War Machine (James Rhodes) | Characters | Marvel</strong></a></li>
+<li><a href="https://marvelcinematicuniverse.fandom.com/wiki/War_Machine"><strong>War Machine | Marvel Cinematic Universe Wiki | Fandom</strong></a></li>
+<li><a href="https://mcu.huijiwiki.com/wiki/%E6%88%98%E4%BA%89%E6%9C%BA%E5%99%A8"><strong>战争机器 - 漫威电影宇宙资料站 - 灰机wiki</strong></a></li>
+<li><a href="https://www.manweimi.cn/marvel-wiki/18931.html"><strong>战争机器（WAR MACHINE）  | 漫威百科 | 人物 | 漫威网 - 漫威迷</strong></a></li>
+</ul>
+<hr>
+<p></p><div class="toc"><h3>目录</h3><ul><li><a href="#font_color7a37abfont_35"><font color="#7a37ab">人物概览</font></a></li><li><a href="#font_color7a37abfont_59"><font color="#7a37ab">详细介绍</font></a></li><li><a href="#font_color7a37abfont_81"><font color="#7a37ab">个人传记</font></a></li></ul></div><p></p>
+<h1><a id="font_color7a37abfont_35"></a><font color="#7a37ab">人物概览</font></h1>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/965f1152c678b44455cf699a5709abcc.png#pic_center" alt="穿上钢铁侠盔甲（Dons Iron Man Armor）"></center>
+<h3><font face="黑体" color="#008090"><b>穿上钢铁侠盔甲（Dons Iron Man Armor）</b></font></h3>
+<p><code>James Rhodes dons the Iron Man Mark II armor in order to calm the threat posed by an inebriated, unstable Tony Stark. </code><br>
+James Rhodes 穿上钢铁侠 Mark II 战甲，以平息醉酒、情绪不稳的 Tony Stark 带来的威胁。</p>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/b80bdc992abf64a32af6a59f729e7521.png#pic_center" alt="首次亮相斯塔克博览会（Debut at the Stark Expo）"></center>
+<h3><font face="黑体" color="#008090"><b>首次亮相斯塔克博览会（Debut at the Stark Expo）</b></font></h3>
+<p><code>War Machine makes his debut at the Stark Expo, after Justin Hammer adds the weapons Rhodes requested. </code><br>
+Justin Hammer 添加了 Rhodes 要求的武器后，战争机器在斯塔克博览会上首次亮相。</p>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/fd048164bc8ef152ffa390a7fe8ad5c5.png#pic_center" alt="介绍钢铁爱国者（Introducing the Iron Patriot）"></center>
+<h3><font face="黑体" color="#008090"><b>介绍钢铁爱国者（Introducing the Iron Patriot）</b></font></h3>
+<p><code>President Ellis introduces Rhodes in his new red, white, and blue painted persona as the Iron Patriot.</code><br>
+Ellis 总统介绍 Rhodes 时，他的新形象是红、白、蓝三色的“钢铁爱国者”。</p>
+<h1><a id="font_color7a37abfont_59"></a><font color="#7a37ab">详细介绍</font></h1>
+<p><code>Colonel James Rupert "Rhodey" Rhodes is an officer with the United States Air Force and liaison between the military in the Department of Acquisitions and Stark Industries, where he became close friends with Tony Stark. When Stark had been kidnapped by the Ten Rings, Rhodes personally led a mission to rescue his best friend. However, upon their return, Rhodes saw Stark moving away from developing his weapons for the military and soon discovered that he was instead focusing on becoming a hero known as Iron Man. Despite all of his fears for his friend's safety, Rhodes still joined Iron Man in bringing down Obadiah Stane's schemes, while trying to keep Stark's secrets, only for Stark to reveal them to the media himself.</code><br>
+詹姆斯·鲁珀特·罗迪·罗德斯上校是美国空军军官，也是收购部和斯塔克工业部军方之间的联络人，在那里他与托尼·斯塔克成为了亲密的朋友。当斯塔克被“十环”绑架时，罗兹亲自带领一个任务去营救他最好的朋友。然而，在他们回来后，罗兹看到斯塔克不再为军队开发武器，很快发现他正专注于成为一个被称为铁人的英雄。尽管罗兹担心朋友的安全，但他仍然加入钢铁侠的行列，推翻了奥巴迪亚·斯坦的阴谋，同时试图保守斯塔克的秘密，但斯塔克自己却向媒体透露了这些秘密。</p>
+<p><code>With Iron Man's identity known, Rhodes found himself under pressure from the United States Congress and the military to take possession of the armor for himself, something that he was against. However, as Stark's reckless behavior got even worse, Rhodes had no choice but to take the Mark II before handing it over to the military, with Justin Hammer upgrading it with his new weapons to rebrand Rhodes as War Machine. However, just when War Machine was being presented to the world, Ivan Vanko returned and attacked the Stark Expo with an army of Hammer Drones, as War Machine teamed up with Iron Man to bring him down, resulting in Rhodes keeping the armor for himself, despite Stark's continued objections.</code><br>
+由于铁人的身份已为人所知，罗德斯发现自己受到了美国国会和军方的压力，要求自己拥有这件盔甲，这是他所反对的。然而，随着斯塔克的鲁莽行为愈演愈烈，罗兹别无选择，只能在将马克二世移交给军方之前将其拿走，贾斯汀·哈默用他的新武器将其升级为战争机器。然而，就在战争机器向全世界展示的时候，伊凡·万科（IvanVanko）回来了，用一大群锤子无人机袭击了斯塔克博览会，因为战争机器与铁人联手将其击落，导致罗德斯不顾斯塔克的持续反对，为自己保留了盔甲。</p>
+<p><code>In response to the Chitauri Invasion, Rhodes took on the identity of the Iron Patriot and worked directly for President Matthew Ellis. When a terrorist named the Mandarin was claiming responsibility for a string of domestic terrorist attacks, Rhodes was dispatched to hunt him down. However, Rhodes had soon discovered that the Mandarin was in fact a ruse created by Aldrich Killian by hiring actor Trevor Slattery to portray the role, as Killian managed to capture Rhodes and steal the Iron Patriot Armor, as Killian's henchman, Eric Savin, then used it to kidnap President Ellis as part of his ongoing Mandarin ruse. Rhodes managed to free himself and teamed up with Stark to defeat Killian's army of Extremis Soldiers and save President Ellis before Killian could publicly execute him, as Rhodes also uncovered Vice President Rodriguez's role in Killian's plan.</code><br>
+为了应对奇塔里人的入侵，罗兹接受了铁爱国者的身份，并直接为马修·埃利斯总统工作。当一个名叫华语的恐怖分子声称对一系列国内恐怖袭击负责时，罗德斯被派去追捕他。然而，罗兹很快发现，普通话实际上是奥德里奇·基利安（AldrichKillian）通过雇佣演员特雷弗·斯莱特利（TrevorSlattery）来扮演这个角色而设计的一个诡计，因为基利安成功地俘获了罗兹并偷走了铁质爱国者盔甲，基利安的心腹埃里克·萨文（EricSavin）随后用它绑架了总统埃利斯（Ellis），作为其持续普通话诡计的一部分。罗兹设法解救了自己，并与斯塔克联手击败了基利安的极端分子军队，在基利安公开处决总统埃利斯之前救出了总统埃利斯，罗兹还揭露了副总统罗德里格斯在基利安计划中的作用。</p>
+<p><code>Reverting back to the War Machine name, Rhodes continued serving his country and assisted the Avengers in the Battle of Sokovia, playing a key role in ensuring that as many Sokovians were evacuated before Ultron could cause mass extinction. Following the battle, Rhodes became an official member of the Avengers. However, Rhodes soon found himself in conflict with the team as the debate over the Sokovia Accords led to Captain America and Iron Man disagreeing and War Machine choosing to side with the government in support of the Accords. As the conflict worsened, War Machine clashed with Captain America's allies while they tried to protect the Winter Soldier and expose the plans of Helmut Zemo, only for War Machine to be disabled as he had been inadvertently shot out of the sky by Vision.</code><br>
+回到战争机器的名字，罗德斯继续为他的国家服务，并在索科维亚战役中协助复仇者，在确保尽可能多的索科维亚人在Ultron造成大规模灭绝之前撤离方面发挥了关键作用。战斗结束后，罗兹成为复仇者的正式成员。然而，罗德斯很快发现自己与球队发生了冲突，因为关于索科维亚协议的辩论导致美国队长和铁人不同意，战争机器选择站在政府一边支持协议。随着冲突的加剧，战争机器与美国上尉的盟友发生冲突，而他们试图保护这位冬季士兵，并揭露赫尔穆特·泽莫的计划，但战争机器却因其不慎被幻影射出天空而失效。</p>
+<p><code>Having been given leg braces by Tony Stark to help him walk again, Rhodes had became disillusioned by the government and decided to disobey Thaddeus Ross' orders and instead assisted Steve Rogers as they had learned of the impending invasion of the Mad Titan, Thanos and his Black Order. Once they traveled to Wakanda in order to protect the Mind Stone from Thanos, War Machine fought alongside his allies in their attempts to hold back the Black Order and their own army of Outriders. However, as Thanos arrived himself, War Machine and the others were unable to defeat him as Thanos took the Mind Stone and caused the Snap, as War Machine had then watched on helplessly while trillions of lives were erased.</code><br>
+托尼·斯塔克给罗德斯戴上了护腿套，以帮助他再次行走，罗德斯对政府的幻想破灭了，决定不服从塔迪斯·罗斯的命令，而是帮助史蒂夫·罗杰斯，因为他们知道疯狂的泰坦塔诺斯和他的黑骑士团即将入侵。一旦他们前往瓦坎达，以保护思想之石免受塔诺斯袭击，战争机器就与他的盟友并肩作战，试图阻止黑人秩序和他们自己的先驱者军队。然而，当塔诺斯亲自到达时，战争机器和其他人无法击败他，因为塔诺斯拿走了心灵之石并造成了断裂，因为战争机器当时无助地看着数万亿人的生命被抹去。</p>
+<p><code>Determined to undo Thanos' actions, War Machine joined the Avengers to the Garden, as they discovered that Thanos had destroyed the Infinity Stones, prompting Thor to behead the Mad Titan. However, by 2023, the Avengers learned to travel through time and initiated a Time Heist, where War Machine joined Nebula on a mission to obtain the Power Stone from Morag in 2014. Succeeding in the mission, the Avengers resurrected the victims of the Snap, before then being attacked by an alternate Thanos and his entire armies of the Chitauri and Outriders. War Machine then joined his fellow heroes in battling Thanos until Stark sacrificed his life to finally eliminate Thanos, as Rhodes stayed by his best friend's side during his final moments before attending his funeral.</code><br>
+战争机器决心撤销塔诺斯的行动，加入了复仇者的花园，因为他们发现塔诺斯摧毁了无限巨石，促使托尔斩首了疯狂的泰坦。然而，到2023年，复仇者学会了穿越时间，并发起了一次时间抢劫，2014年，战争机器加入星云，执行从莫拉格获得能量石的任务。复仇者成功完成了任务，复活了Snap的受害者，然后又遭到了一名塔诺斯和他的整个奇塔里人和骑手部队的袭击。然后，战争机器与他的英雄们一起与塔诺斯作战，直到斯塔克牺牲了自己的生命，最终消灭了塔诺斯，而罗德斯在参加葬礼前的最后时刻一直陪伴在他最好的朋友身边。</p>
+<h1><a id="font_color7a37abfont_81"></a><font color="#7a37ab">个人传记</font></h1>
+ <table>
+<thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Early Life</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">早期生活</font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Work at Stark Industries</font><br><font face="微软雅黑" color="#008000" size="2">在斯塔克工业公司工作</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Fast_Friends" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man: Fast Friends</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Dispute with Tony Stark</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">与托尼·斯塔克的争议</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Presenting Tony Stark's Award</font><br><font face="微软雅黑" color="#008000" size="2">颁发托尼·斯塔克奖</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Private Plane Ride</font><br><font face="微软雅黑" color="#008000" size="2">乘坐私人飞机</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/List_of_Deleted_Scenes#Iron_Man" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man - List of Deleted Scenes</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Tony Stark's Kidnapping</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">托尼·斯塔克被绑架</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Weapons Presentation</font><br><font face="微软雅黑" color="#008000" size="2">武器演示文稿</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/List_of_Deleted_Scenes#Iron_Man" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man - List of Deleted Scenes</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Rescuing Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">拯救托尼·斯塔克</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/List_of_Deleted_Scenes#Iron_Man" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man - List of Deleted Scenes</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Tony Stark's New Direction</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克的新方向</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Visited by Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克来访</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Creation of Iron Man</font><br><font face="微软雅黑" color="#008000" size="2">钢铁侠的创作</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Obadiah Stane's Betrayal</font><br><font face="微软雅黑" color="#008000" size="2">奥巴迪亚·斯坦的背叛</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man's Speech</font><br><font face="微软雅黑" color="#008000" size="2">钢铁侠的演讲</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Fast_Friends" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man: Fast Friends</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Questioning Iron Man</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">质疑铁人</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Meeting with Congress</font><br><font face="微软雅黑" color="#008000" size="2">与国会会面</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2:_Public_Identity" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2: Public Identity</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Plane Ride Home</font><br><font face="微软雅黑" color="#008000" size="2">乘飞机回家</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/List_of_Deleted_Scenes#Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2 - List of Deleted Scenes</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Helping Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">帮助托尼·斯塔克</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/List_of_Deleted_Scenes#Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 2 - List of Deleted Scenes</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Tony Stark's Birthday Party</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克的生日派对</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">War Machine</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">战争机器</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Return to the Military</font><br><font face="微软雅黑" color="#008000" size="2">重返军队</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/List_of_Deleted_Scenes#Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 2 - List of Deleted Scenes</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Becoming War Machine</font><br><font face="微软雅黑" color="#008000" size="2">成为战争机器</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Battle at Stark Expo</font><br><font face="微软雅黑" color="#008000" size="2">斯塔克博览会之战</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Showdown with Whiplash</font><br><font face="微软雅黑" color="#008000" size="2">挥鞭决战</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Honored by Stern</font><br><font face="微软雅黑" color="#008000" size="2">斯特恩授予</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Iron Patriot</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">钢铁爱国者</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Hunting the Ten Rings</font><br><font face="微软雅黑" color="#008000" size="2">狩猎十环</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3_Prelude" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3 Prelude</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Lunch with Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">与托尼·斯塔克共进午餐</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Search for the Mandarin</font><br><font face="微软雅黑" color="#008000" size="2">搜索普通话</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Captured by A.I.M.</font><br><font face="微软雅黑" color="#008000" size="2">由A.I.M.捕获。</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Tortured by Aldrich Killian</font><br><font face="微软雅黑" color="#008000" size="2">被奥德里奇·基利安折磨</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Finding the Mandarin</font><br><font face="微软雅黑" color="#008000" size="2">寻找普通话</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Stopping Aldrich Killian</font><br><font face="微软雅黑" color="#008000" size="2">阻止Aldrich Killian</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Battle on the Norco</font><br><font face="微软雅黑" color="#008000" size="2">诺科河战役</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Conflict Aftermath</font><br><font face="微软雅黑" color="#008000" size="2">冲突后果</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Age_of_Ultron" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Avengers: Age of Ultron</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Ultron Offensive</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">Ultron攻势</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Party at Avengers Tower</font><br><font face="微软雅黑" color="#008000" size="2">复仇者大厦派对</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Age_of_Ultron" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Avengers: Age of Ultron</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Attack on Avengers Tower</font><br><font face="微软雅黑" color="#008000" size="2">攻击复仇者之塔</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Age_of_Ultron" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Avengers: Age of Ultron</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Avengers Argument</font><br><font face="微软雅黑" color="#008000" size="2">复仇者论点</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Age_of_Ultron" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Avengers: Age of Ultron</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/List_of_Deleted_Scenes#Avengers:_Age_of_Ultron" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Avengers: Age of Ultron - List of Deleted Scenes</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Battle of Sokovia</font><br><font face="微软雅黑" color="#008000" size="2">索科维亚战役</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Age_of_Ultron" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Avengers: Age of Ultron</font></a></td>
+</tr></tbody></table>
+</div>
+</body>
+
+</html>
