@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raza</title>
+  <link href="https://www.marvel.com/static/images/favicon/favicon.ico" rel="SHORTCUT ICON">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<style>
+.box{
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:30px;
+    width: 50px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    top:50%
+}
+.box:hover .box-in{
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'回到顶部';
+    width: 40px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    visibility: visible;
+    display:inline-block;
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 2px;
+}
+blockquote {
+    display: block;
+    padding: 0px 16px 0px 16px;
+    margin: 0 0 12px;
+    border-left: 8px solid #dddfe4;
+    background: #eef0f4;
+    overflow: auto;
+    word-break: break-word!important;
+}
+table {
+	width:100%;
+	margin:15px 0
+}
+table th {
+	background-color:#CCE8EB;
+	color:#000000
+}
+table,table th, table td
+{
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border:1px solid #cad9ea;
+	border-collapse:collapse
+}
+table tr:nth-child(odd){
+	background-color:#fff;
+}
+table tr:nth-child(even){
+	background-color:#F5FAFA;
+}
+a {
+	text-decoration: none;
+}
+</style>
+<div id="box" class="box">
+    <div class="box-in"></div>
+</div> 
+<script>
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    //获取当前毫秒数
+    var startTime = +new Date();     
+    //获取当前页面的滚动高度
+    var b = document.body.scrollTop || document.documentElement.scrollTop;
+    var d = 200;
+    var c = b;
+    timer = requestAnimationFrame(function func(){
+        var t = d - Math.max(0,startTime - (+new Date()) + d);
+        document.documentElement.scrollTop = document.body.scrollTop = t * (-c) / d + b;
+        timer = requestAnimationFrame(func);
+        if(t == d){
+          cancelAnimationFrame(timer);
+        }
+    });
+}
+</script>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><br>
+<center><font face="华文行楷" color="darkcyan" size="6">拉扎</font></center>
+<center><font face="MV Boli" color="purple" size="6">Raza</font></center>
+<hr>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/a79b93b6aab2dc54b005c5603491c2fd.png#pic_center" alt="拉扎"></center>
+<br>
+<blockquote>
+<p><font face="黑体" color="purple" size="4">简 介：</font>Raza Hamidmi Al-Wazar 是驻扎在阿富汗的十环恐怖分子小组的指挥官。早在1990年代，他就利用国家的不稳定性扩大十环活动，直接回应许文武。 2009 年，Raza 与 Obadiah Stane 达成协议，绑架托尼·斯塔克以换取他的武器，包括杰里科导弹。然而，斯塔克能够摆脱囚禁并逃离拉扎的部队。拉扎继续使用斯塔克工业公司的武器在全国范围内取得领土利益，包括收购古尔米拉。在与斯坦恩达成交换斯塔克的 Mark I 盔甲的新协议中，拉扎和他的士兵因未能杀死斯塔克而被背叛并被处决。<br>
+<font face="Consolas" color="purple" size="4">OVERVIEW：</font><font face="Garamond">Raza Hamidmi Al-Wazar&nbsp;was a commander of a Ten Rings terrorist cell stationed in&nbsp;Afghanistan. Since as early as the&nbsp;1990s, he capitalized on the instability of the country to expand Ten Rings activity, answering directly to&nbsp;Xu Wenwu. In&nbsp;2009, Raza made deals with&nbsp;Obadiah Stane&nbsp;to kidnap&nbsp;Tony Stark&nbsp;in exchange for his weapons, including the&nbsp;Jericho&nbsp;missile. Stark, however, was able to break free from captivity and escape Raza’s forces. Raza continued to use&nbsp;Stark Industries&nbsp;weapons to make territorial gains throughout the country, including the takeover of&nbsp;Gulmira. In a new deal with Stane to exchange Stark’s&nbsp;Mark I&nbsp;armor, Raza and his soldiers were instead betrayed and executed for their failure to kill Stark.<br>
+<font color="slateblue" face="宋体"><strong><code>真实姓名</code></strong>：</font><font face="MV Boli">Raza Hamidmi Al-Wazar</font><br>
+<font color="slateblue" face="宋体"><strong><code>角色物种</code></strong>：</font><font face="MV Boli">Human</font><br>
+<font color="slateblue" face="宋体"><strong><code>死亡日期</code></strong>：</font><font face="MV Boli">2009-11</font><br>
+<font color="slateblue" face="宋体"><strong><code>参演影视</code></strong>：</font><font face="华文行楷">钢铁侠，尚气与十环传奇&nbsp;(mentioned;&nbsp;deleted scene)，王者万岁 (photograph)</font></font></p>
+</blockquote>
+<p><font face="helvetica" color="blue"><em>“The bow and arrow once was the pinnacle of weapons technology. It allowed the great&nbsp;Genghis Khan&nbsp;to rule from the Pacific to the&nbsp;Ukraine. An empire twice the size of&nbsp;Alexander the Great, and four times the size of the Roman Empire. But today, whoever holds the latest&nbsp;Stark weapons, rules these lands… and soon, it will be my turn.”</em></font><br>
+<font face="MV Boli" color="blue"><strong>—— Raza</strong></font></p>
+<p><font face="宋体" color="gray"><strong>■ 相关链接:</strong></font></p>
+<ul>
+<li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Raza"><strong>Raza | Marvel Cinematic Universe Wiki | Fandom</strong></a></li>
+<li><a href="https://www.marvel.com/characters/raza"><strong>Raza Powers, Enemies, History | Marvel</strong></a></li>
+</ul>
+<hr>
+<p></p><div class="toc"><h3>目录</h3><ul><li><a href="#font_color7a37abfont_31"><font color="#7a37ab">详细介绍</font></a></li><li><a href="#font_color7a37abfont_80"><font color="#7a37ab">个人传记</font></a></li></ul></div><p></p>
+<h1><a id="font_color7a37abfont_31"></a><font color="#7a37ab">详细介绍</font></h1>
+<p><code>Raza was put in a leadership position of the Ten Rings, where he was put in charge of their unit in Afghanistan. Raza's work with capitalizing of the instability of Afghanistan would get back to the Ten Rings' leader, Xu Wenwu, who noted that he was impressed with his work. In order to obtain weapons, Raza would make a deal with Obadiah Stane to purchase weapons from Stark Industries, allowing them to take over much of Afghanistan.</code><br>
+拉扎被任命为十环队的领导，负责他们在阿富汗的部队。拉扎利用阿富汗不稳定局势所做的工作将回到“十环”领导人徐文武那里，他表示自己对自己的工作印象深刻。为了获得武器，拉扎将与奥巴迪亚·斯坦达成协议，从斯塔克工业公司购买武器，允许他们接管阿富汗大部分地区。</p>
+<p><code>Raza was a member of the terrorist group, the Ten Rings. Raza was initially contracted to kill Tony Stark during a new military weapons demonstration within Afghanistan by Obadiah Stane, a rival in Stark Industries who had wanted control over the company. Raza's branch of the Ten Rings then attacked and destroyed a United States Air Force convoy transporting Stark through the desert, but did not kill Stark immediately.</code><br>
+拉扎是恐怖组织“十环”的成员。拉扎最初与托尼·斯塔克签约，在阿富汗境内的一次新的军事武器演示中杀死托尼·斯塔克。斯塔克工业的竞争对手奥巴迪亚·斯坦曾希望控制该公司。拉扎的“十环”分支随后袭击并摧毁了运送斯塔克穿越沙漠的美国空军护卫队，但没有立即杀死斯塔克。</p>
+<p><code>Upon discovering the importance of their target, Raza decided to detain Stark in an effort to make him construct a Jericho missile from stolen Stark Industries weapons that had been sold to the Middle East. Still furious at Stane for not informing them of the importance of their target, Raza sent a video to Stane explaining that they had Stark and would keep him alive until Stane agreed to pay them more cash in exchange for them executing Stark for him.</code><br>
+在发现目标的重要性后，拉扎决定拘留斯塔克，试图让他用偷来的斯塔克工业武器制造一枚杰里科导弹，这些武器曾被出售给中东。Raza对Stane没有告知他们目标的重要性仍然感到愤怒，他向Stane发送了一段视频，解释说他们有Stark，并将让他活着，直到Stane同意支付更多现金，以换取他们为他处决Stark。</p>
+<p><code>Seeing that the build of the missile was taking longer than he liked, Raza decided to pay a visit to Stark in person. Stepping into his cell where he was working, Raza told Stark to relax as he examined the Arc Reactor Stark had built to protect his heart. Raza went on to compare Stark's weapons to the weapons Genghis Khan had used to take over much of the world, explaining how he intended to use his weapons to take over Asia and then the world.</code><br>
+看到导弹的制造时间比他喜欢的要长，拉扎决定亲自拜访斯塔克。走进他工作的牢房，拉扎告诉斯塔克在检查斯塔克为保护心脏而建造的电弧反应堆时要放松。拉扎接着将斯塔克的武器与成吉思汗用来接管世界大部分地区的武器进行了比较，解释了他打算如何使用他的武器来接管亚洲乃至世界。</p>
+<p><code>Raza then turned to Ho Yinsen, who had been assisting Stark, and demanded an update on their process. Unhappy with Yinsen's answer, Raza ordered his men to hold him down while he heated up a piece of coal, intending to use it to horrifically burn Yinsen's face. Despite Yinsen insisting they were building a Jericho, Raza did not believe him until Stark stepped forward and demanded that he allow Yinsen to live, claiming he was a good assistant.</code><br>
+拉扎随后求助于一直在协助斯塔克的何银森，并要求更新他们的流程。拉扎对尹森的回答感到不满，命令手下按住他，让他加热一块煤，打算用它可怕地烧掉尹森的脸。尽管尹森坚持说他们在建耶利哥，但拉扎并不相信他，直到斯塔克站出来要求他允许尹森活着，声称他是个好助手。</p>
+<p><code>Believing he had made his point, Raza dropped the burning coal by Yinsen's face before turning back to Stark and demanding that he had until the next day to complete the missile. Raza then left with Abu Bakaar and the other Ten Rings soldiers to allow Stark and Yinsen to return to work. Raza kept a close eye on the security cameras throughout, however, checking to ensure what they were building was indeed the missile he desired for his upcoming war.</code><br>
+拉扎相信自己已经表明了自己的观点，将燃烧的煤炭扔到了尹森的脸上，然后转向斯塔克，要求他在第二天之前完成导弹。拉扎随后带着阿布·巴卡尔和其他十环战士离开，让斯塔克和尹森回去工作。然而，拉扎始终密切关注着安全摄像头，检查以确保他们正在建造的确实是他为即将到来的战争所期望的导弹。</p>
+<p><code>Instead of constructing the missile for Raza, Tony Stark built a suit of weaponized armor. Seeing that Stark was hiding from the view of the cameras, Raza sent some of his men to investigate, only to witness them being killed by a bomb Stark had rigged to the door. Knowing that a battle was able to begin, Raza sent more men to confront and kill Stark.</code><br>
+托尼·斯塔克没有为拉扎制造导弹，而是制造了一套武器化装甲。看到斯塔克躲在摄像机前，拉扎派了一些手下去调查，结果发现他们被斯塔克在门上安装的炸弹炸死。拉扎知道一场战斗即将开始，便派更多的人去对抗并杀死斯塔克。</p>
+<p><code>To help Stark's escape, Ho Yinsen took one of the soldier's guns and chased away the incoming attackers; however, this resulted in him running straight into Raza and other Ten Rings soldiers who mortally wounded him. In Stark's ensuing escape, Raza attempted to shoot him with a rocket, only to miss and have his face badly burnt when Stark fired back at him before he blew up the terrorists' camp and destroyed the piles of Stark Industries weapons.</code><br>
+为了帮助斯塔克逃走，何银森拿起士兵的一支枪，赶走了来犯；然而，这导致他直接撞上了拉扎和其他十环士兵，他们致命地伤害了他。在斯塔克随后的逃跑中，拉扎试图用火箭射杀他，但没有射中，斯塔克在炸毁恐怖分子营地并摧毁斯塔克工业公司成堆的武器之前向他还击，导致他面部严重烧伤。</p>
+<p><code>Seeking to understand how Tony Stark had built a weapon that had managed to destroy his entire base and kill several of his own Ten Rings soldiers, Raza had his men scout through the desert in order to locate the Iron Man Armor which had been damaged and left buried under the sand. When one of Raza's men uncovered Stark's helmet, Raza ordered him to deliver it to him. Staring at the helmet, Raza considered not only how he would recreate the technology, but how he would get revenge against Stark for killing his men and damaging his face.</code><br>
+为了了解托尼·斯塔克是如何制造出一种武器，摧毁了他的整个基地，杀死了他自己的几名十环战士，拉扎让他的手下在沙漠中侦察，以找到被损坏并埋在沙子下的铁人盔甲。当拉扎的一个手下揭开斯塔克的头盔时，拉扎命令他把头盔交给他。拉扎盯着头盔，不仅考虑了他将如何重新创造这项技术，还考虑了他将如何报复斯塔克，因为他杀害了斯塔克的手下并损坏了斯塔克的脸。</p>
+<p><code>Raza and his men took all the pieces of the Iron Man suit back to one of their Ten Rings bases where he had Ahmed and Omar attempt to rebuild it piece by piece. However, due to the amount of damage the suit had sustained during Stark's escape from their captivity, and the terrorist's lack of understanding of the science to create the power source to operate the suit, Raza was unable to rebuild it completely. Frustrated, Raza could only stare into the face of the Iron Man and continue plotting his own cruel revenge.</code><br>
+拉扎和他的手下把铁人套装的所有碎片带回了他们的十环基地之一，在那里，艾哈迈德和奥马尔试图一件一件地重建它。然而，由于在斯塔克逃离囚禁期间，这套西装遭受了巨大的破坏，而且恐怖分子对制造这套西装的电源的科学缺乏了解，拉扎无法完全重建它。由于沮丧，拉扎只能盯着铁人的脸，继续策划自己的残酷复仇。</p>
+<p><code>Raza and his men continued to ravage the region and expand their power using weapons purchased from Stark Industries through its current leader Obadiah Stane. When fighting in Gulmira, the small Afghan region that was home to Ho Yinsen, Raza found himself being filmed by FBX, leading to his face being presented across the United States of America as reports on the Ten Rings' actions were told for the world to watch in horror.</code><br>
+拉扎和他的手下继续蹂躏该地区，并利用从斯塔克工业公司（StarkIndustries）通过现任领导人奥巴迪亚·斯坦（ObadiahStane）购买的武器扩张势力。拉扎在阿富汗小地区古尔米拉（Gulmira）作战时发现自己被FBX拍摄，导致他的脸在美国各地出现，因为有关“十环”行动的报道被告知让全世界惊恐地观看。</p>
+<p><code>Having collected what he needed, Raza left Gulmira in an armored van, leaving Abu Bakaar in charge of executing the villagers. However, Iron Man arrived in his newly constructed Mark III Suit and began to systematically hunt down Ten Rings members, engaging in a fierce battle against them. As Raza was driving away from Gulmira, he witnessed the explosion of his Jericho missiles being destroyed by Iron Man while Bakaar was left under the mercy of the villagers.</code><br>
+拉扎收集了所需物品后，用装甲车离开了古尔米拉，留下阿布·巴卡尔负责处决村民。然而，铁人穿着他新设计的Mark III套装来到这里，开始有系统地追捕十环成员，与他们展开了一场激烈的战斗。当拉扎开车离开古尔米拉时，他目睹了他的杰里科导弹被铁人摧毁的爆炸，而巴卡尔则被留在村民的仁慈之下。</p>
+<p><code>With all of the pieces of the Mark I suit which Tony Stark had used to escape the cave and had then abandoned in the desert having been recovered, Raza decided it was time to contact Obadiah Stane hoping to strike some sort of deal so he could rebuild his branch of the Ten Rings and continue his war against Stark and the Western world.</code><br>
+托尼·斯塔克（Tony Stark）用来逃离洞穴，然后遗弃在沙漠中的马克一号（Mark I）诉讼的所有碎片都已找到，拉扎决定是时候与奥巴迪亚·斯坦（Obadiah Stane）联系，希望达成某种协议，以便他能够重建自己的十环分支，继续与斯塔克和西方世界的战争。</p>
+<p><code>When Raza met with Stane to negotiate over Stark's abandoned armor in exchange for an army of armored soldiers, he explained to Stane how Stark had escaped and presented Stark's rebuilt armor. Raza promised to hand over all of Stark's designs to Stane for his own work in designing the Iron Monger Armor, and requested that in exchange Stane provide the Ten Rings with their own army of Iron Armored soldiers to fight in their future wars.</code><br>
+当拉扎与斯坦会面，就斯塔克的废弃装甲进行谈判，以换取一支装甲部队时，他向斯坦解释了斯塔克是如何逃脱的，并展示了斯塔克重建的装甲。拉扎承诺将斯塔克的所有设计交给斯坦，让他自己设计“铁贩子”盔甲，并要求斯坦作为交换，为他们自己的铁甲士兵军队提供十枚戒指，以便在未来的战争中作战。</p>
+<p><code>However, Stane had no intention of striking any more deals with the terrorist and instead paralyzed Raza with a Sonic Taser. As Raza suffered agony from the taser, Stane mocked his people for their lack of understanding of technology before having him and the militants killed and taking the armor back to the Stark Industries Headquarters in Los Angeles to continue his own mission to kill Stark himself by using the technology provided by Raza and his men.</code><br>
+然而，斯坦无意再与恐怖分子达成任何协议，而是用声波泰瑟枪将拉扎麻痹。当拉扎遭受泰瑟枪的折磨时，斯坦嘲笑他的人民对技术缺乏了解，然后让他和武装分子被杀，并将盔甲带回洛杉矶斯塔克工业总部，继续他自己的任务，使用拉扎和他的手下提供的技术杀死斯塔克自己。</p>
+<h1><a id="font_color7a37abfont_80"></a><font color="#7a37ab">个人传记</font></h1>
+ <table>
+<thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Ten Rings</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">十个戒指</font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Impressing Xu Wenwu</font><br><font face="微软雅黑" color="#008000" size="2">印象徐文武</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Afghanistan" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Afghanistan</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Shang-Chi_and_the_Legend_of_the_Ten_Rings" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Shang-Chi and the Legend of the Ten Rings</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Kidnapping Tony Stark</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">绑架托尼·斯塔克</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Rebuilding the Jericho Missile</font><br><font face="微软雅黑" color="#008000" size="2">重建杰里科导弹</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Tony Stark's Escape</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克的逃跑</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Finding the Iron Man Armor</font><br><font face="微软雅黑" color="#008000" size="2">寻找铁人盔甲</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Occupation of Gulmira</font><br><font face="微软雅黑" color="#008000" size="2">Gulmira的占领</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Obadiah Stane's Betrayal</font><br><font face="微软雅黑" color="#008000" size="2">奥巴迪亚·斯坦的背叛</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr></tbody></table>
+</div>
+</body>
+
+</html>
