@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phil Coulson</title>
+  <link href="https://www.marvel.com/static/images/favicon/favicon.ico" rel="SHORTCUT ICON">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<style>
+.box{
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:30px;
+    width: 50px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    top:50%
+}
+.box:hover .box-in{
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'回到顶部';
+    width: 40px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    visibility: visible;
+    display:inline-block;
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 2px;
+}
+blockquote {
+    display: block;
+    padding: 0px 16px 0px 16px;
+    margin: 0 0 12px;
+    border-left: 8px solid #dddfe4;
+    background: #eef0f4;
+    overflow: auto;
+    word-break: break-word!important;
+}
+table {
+	width:100%;
+	margin:15px 0
+}
+table th {
+	background-color:#CCE8EB;
+	color:#000000
+}
+table,table th, table td
+{
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border:1px solid #cad9ea;
+	border-collapse:collapse
+}
+table tr:nth-child(odd){
+	background-color:#fff;
+}
+table tr:nth-child(even){
+	background-color:#F5FAFA;
+}
+a {
+	text-decoration: none;
+}
+</style>
+<div id="box" class="box">
+    <div class="box-in"></div>
+</div> 
+<script>
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    //获取当前毫秒数
+    var startTime = +new Date();     
+    //获取当前页面的滚动高度
+    var b = document.body.scrollTop || document.documentElement.scrollTop;
+    var d = 200;
+    var c = b;
+    timer = requestAnimationFrame(function func(){
+        var t = d - Math.max(0,startTime - (+new Date()) + d);
+        document.documentElement.scrollTop = document.body.scrollTop = t * (-c) / d + b;
+        timer = requestAnimationFrame(func);
+        if(t == d){
+          cancelAnimationFrame(timer);
+        }
+    });
+}
+</script>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><br>
+<center><font face="华文行楷" color="darkcyan" size="6">菲尔·科尔森</font></center>
+<center><font face="MV Boli" color="purple" size="6">Phil Coulson</font></center>
+<hr>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/90e8dec8e5352da4eb942144d10d155b.png#pic_center" alt="菲尔·科尔森"></center>
+<br>
+<blockquote>
+<p><font face="黑体" color="purple" size="4">简 介：</font>菲尔·库尔森成为了神盾局的典型代表。在该组织的主管尼克·弗瑞（Nick Fury）的赞助下，特工成为了几个未来复仇者的朋友，并且不太可能成为团队走到一起的灵感。<br>
+<font face="Consolas" color="purple" size="4">OVERVIEW：</font><font face="Garamond">Phil Coulson became the quintessential S.H.I.E.L.D. agent under the patronage of the organization’s Director, Nick Fury—in the process becoming a friend to several future Avengers, and an unlikely inspiration for the team to come together.<br>
+<font color="slateblue" face="宋体"><strong><code>真实姓名</code></strong>：</font><font face="MV Boli">Phillip J. Coulson</font><br>
+<font color="slateblue" face="宋体"><strong><code>角色物种</code></strong>：</font><font face="MV Boli">Human&nbsp;(Cyborg)</font><br>
+<font color="slateblue" face="宋体"><strong><code>出生日期</code></strong>：</font><font face="MV Boli">1964-07-08</font><br>
+<font color="slateblue" face="宋体"><strong><code>死亡日期</code></strong>：</font><font face="MV Boli">2012-05-04&nbsp;(later&nbsp;resurrected)、2018 年年中</font><br>
+<font color="slateblue" face="宋体"><strong><code>参演影视</code></strong>：</font><font face="华文行楷">钢铁侠，钢铁侠2，雷神，复仇者联盟，复仇者联盟2：奥创纪元 (indirectly mentioned)，惊奇队长，神盾顾问，寻找雷神锤子路上发生的趣事，47号物品 (mentioned)，神盾局特工 (115 episodes)，洛基 (footage &amp; mentioned)</font></font></p>
+</blockquote>
+<p><font face="helvetica" color="blue"><em>“I swore an oath. We all did. To serve when everything else fails, to be&nbsp;humanity’s last line of defense, to be the&nbsp;shield.”</em></font><br>
+<font face="MV Boli" color="blue"><strong>—— Phil Coulson</strong></font></p>
+<p><font face="宋体" color="gray"><strong>■ 相关链接:</strong></font></p>
+<ul>
+<li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Phil_Coulson"><strong>Phil Coulson | Marvel Cinematic Universe Wiki | Fandom</strong></a></li>
+<li><a href="https://mcu.huijiwiki.com/wiki/%E8%8F%B2%E5%B0%94%C2%B7%E7%A7%91%E5%B0%94%E9%80%8A"><strong>菲尔·科尔逊 - 漫威电影宇宙资料站 - 灰机wiki</strong></a></li>
+<li><a href="https://www.manweimi.cn/marvel-wiki/6717.html"><strong>菲尔·科尔森特工（COULSON,AGENT PHIL）  | 漫威百科 | 人物 | 漫威网 - 漫威迷</strong></a></li>
+<li><a href="https://www.marvel.com/characters/phil-coulson"><strong>Phil Coulson | Characters | Marvel</strong></a></li>
+<li><a href="https://baike.baidu.com/item/%E8%8F%B2%E5%B0%94%C2%B7%E7%A7%91%E5%B0%94%E6%A3%AE/9704728"><strong>菲尔·科尔森_百度百科</strong></a></li>
+<li><a href="https://baike.sogou.com/v76154232.htm"><strong>菲尔·科尔森 - 搜狗百科</strong></a></li>
+<li><a href="https://www.baike.com/wikiid/6085624953380724323"><strong>菲尔·科尔森 - 快懂百科</strong></a></li>
+</ul>
+<hr>
+<p></p><div class="toc"><h3>目录</h3><ul><li><a href="#font_color7a37abfont_38"><font color="#7a37ab">详细介绍</font></a></li><li><a href="#font_color7a37abfont_63"><font color="#7a37ab">个人传记</font></a></li></ul></div><p></p>
+<h1><a id="font_color7a37abfont_38"></a><font color="#7a37ab">详细介绍</font></h1>
+<p><code>Phillip J. "Phil" Coulson was a highly decorated agent and former Director of S.H.I.E.L.D.. Coulson was Nick Fury's right-hand man for many important missions and his liaison to the Avengers. He served as the primary operative in the Avengers Initiative following a Skrull Invasion of Earth in 1995 that led to the surfacing of Captain Marvel. Coulson later ran ground interference, surveillance and tactical operations in Puente Antiguo, New Mexico as part of S.H.I.E.L.D.'s investigation surrounding an incident with Thor and the Destroyer. He was also the primary S.H.I.E.L.D. operative in the investigation into Stark Industries.</code><br>
+Phillip J.“Phil”Coulson是一名身价颇高的经纪人，曾任S.H.I.E.L.D.董事。。库尔森是尼克·弗瑞在许多重要任务中的得力助手，也是他与复仇者的联络人。1995年斯克鲁尔入侵地球导致漫威船长浮出水面后，他担任复仇者行动的主要特工。库尔森后来在新墨西哥州的普恩特安提戈开展了地面干扰、监视和战术行动，作为S.H.I.E.L.D.调查托尔和驱逐舰事件的一部分。他也是调查斯塔克工业的主要S.H.I.E.L.D.特工。</p>
+<p><code>During the Attack on the Helicarrier, Coulson was killed by Loki. His death gave the Avengers the push they needed to band together and stop the Chitauri invasion. On Fury's orders, Coulson was brought to the Guest House, a secret facility where he was brought back to life using treatments developed by Project T.A.H.I.T.I., which Coulson had formerly presided over. To preserve his sanity, it was necessary to erase all his memories of his own death and resurrection.</code><br>
+在袭击直升机的过程中，库尔森被洛基杀死。他的死给了复仇者们团结起来阻止奇塔里人入侵所需的推动力。在弗瑞的命令下，库尔森被带到了招待所，这是一个秘密设施，在那里他使用库尔森以前主持的T.a.H.I.T.I.项目开发的治疗方法恢复了生命。为了保持他的理智，有必要抹去他对自己死亡和复活的所有记忆。</p>
+<p><code>Coulson returned to S.H.I.E.L.D. to lead a new team to investigate the cases S.H.I.E.L.D. had not yet classified. While on this team, Coulson discovered that he had been killed and brought back to life. During the HYDRA Uprising, despite the dissolution of S.H.I.E.L.D. and the betrayal of Grant Ward, he led his team against the forces of HYDRA. He then led the charge in the final battle against John Garrett, in which Garrett was ultimately defeated. After the battle, Nick Fury appointed him the new Director of S.H.I.E.L.D., ordering him to rebuild the organization from the ground up.</code><br>
+库尔森回到S.H.I.E.L.D.领导一个新团队调查S.H.I.E.L.D.尚未分类的案件。在这支队伍中，库尔森发现自己被杀并复活了。在九头蛇怪起义期间，尽管S.H.I.E.L.D.解散，格兰特·沃德（Grant Ward）背叛，但他领导他的团队对抗九头蛇怪部队。然后，他在与约翰·加勒特的最后一场战斗中带头冲锋，加勒特最终被击败。战斗结束后，尼克·弗瑞任命他为S.H.I.E.L.D.的新主管，命令他从头开始重建组织。</p>
+<p><code>As director, Coulson led the new S.H.I.E.L.D. in many battles against HYDRA, crippling that terrorist organization. He made some contacts with the United States Air Force via Glenn Talbot. However, he became a fugitive when another faction of S.H.I.E.L.D., led by Robert Gonzales, attacked and occupied his base. Joining forces with a few loyal friends, Coulson fought to reclaim S.H.I.E.L.D. He eventually made a deal with Gonzales, and they worked together against HYDRA, finally reunifying the two factions into one organization with Coulson as its rightful director. A new threat soon arose, the Inhumans led by Jiaying. In the ensuing conflict, both S.H.I.E.L.D. and the Inhumans suffered casualties. Coulson paid a high price for victory, having his left hand cut off. He was resilient. He started a new project that would ensure the safety of humanity.</code><br>
+作为主任，库尔森领导新的S.H.I.E.L.D.与HYDRA进行了多次战斗，削弱了这个恐怖组织。他通过格伦·塔尔博特与美国空军进行了一些接触。然而，当罗伯特·冈萨雷斯领导的另一个S.H.I.E.L.D派系袭击并占领他的基地时，他成了逃犯。库尔森与几个忠实的朋友联手，争取收回S.H.I.E.L.D。他最终与冈萨雷斯达成协议，他们一起对抗HYDRA，最终将两个派系统一为一个组织，库尔森担任其合法主管。一个新的威胁很快出现了，那就是贾英领导的非人道主义者。在随后的冲突中，S.H.I.E.L.D.和非人道主义者都遭受了伤亡。库尔森为胜利付出了高昂的代价，左手被切断了。他很有韧性。他启动了一个新项目，以确保人类的安全。</p>
+<p><code>The mission of recruiting Inhumans for his team became difficult, as the Advanced Threat Containment Unit, led by Rosalind Price, was also going after the new Inhumans. Coulson developed a relationship with Price while facing threats from Ward's new version of HYDRA, from Lash and from the Inhumans. After Ward killed Price, Coulson followed him to the planet Maveth and killed Ward to avenge all the people he had murdered. Believing that Gideon Malick was the last remaining leader of HYDRA, Coulson discovered that the Hive had returned to Earth from Maveth, using Ward's body as host. With Malick's death, Coulson felt responsible for the new threat. He fought to prevent Hive from accomplishing his plan to change all humans to Inhumans and make them part of Hive. After Lincoln Campbell sacrificed himself to kill Hive and save humanity, the directorship of S.H.I.E.L.D. passed to Jeffrey Mace, while Coulson and Alphonso Mackenzie went in pursuit of the former agent turned vigilante, Daisy Johnson.</code><br>
+由于罗莎琳德·普莱斯领导的高级威胁遏制部队也在追捕新的非人道主义者，为他的团队招募非人道主义者的任务变得很困难。库尔森在面临沃德新版HYDRA、拉什和非人道主义者的威胁时，与普莱斯建立了关系。沃德杀了普莱斯后，库尔森跟着他来到了马弗斯星球，杀死了沃德，为他杀害的所有人报仇。库尔森相信吉迪恩·马利克是九头蛇怪仅存的领袖，他发现这个蜂巢已经从马弗斯返回地球，将沃德的尸体作为宿主。马立克死后，库尔森觉得自己应对新的威胁负责。他努力阻止蜂巢完成他的计划，将所有人类变成非人类，并使他们成为蜂巢的一部分。在林肯·坎贝尔为了杀死蜂巢和拯救人类而牺牲了自己之后，S.H.I.E.L.D.的董事职位移交给了杰弗里·梅斯，而库尔森和阿尔方索·麦肯齐则在追捕前特工变成的义务警员黛西·约翰逊。</p>
+<p><code>With the revelation of Lucy Bauer's ambition to find the Darkhold, Coulson created an alliance with Johnson and Ghost Rider to find the book before Bauer did. He was caught in an explosion with Ghost Rider and Leo Fitz, caused by Eli Morrow, and was temporarily trapped in another dimension. He returned with the help of Holden Radcliffe and his Life-Model Decoy assistant, Aida. Coulson then led the last fight against Morrow. Following the revelation that Mace was not actually an Inhuman, Coulson assumed the position of de facto Director while Mace remained de jure Director. Under Coulson's directorship, S.H.I.E.L.D. continued fighting the anti-Inhuman hate group known as the Watchdogs, led by Anton Ivanov, who targeted Coulson. Holden Radcliffe kidnapped Coulson, replaced him with an LMD, and plugged him into the Framework, where Coulson lived as a history teacher. With the help of Daisy Johnson and Jemma Simmons, Coulson escaped the Framework, only to face off against Aida's threat in the real world.</code><br>
+随着露西·鲍尔（LucyBauer）想要找到《黑暗骑士》（Darkhold）的野心被揭露，库尔森与约翰逊（Johnson）和《幽灵骑士》（Ghost Rider）结成联盟，在鲍尔之前找到了这本书。他与幽灵骑士和利奥·菲茨一起被伊莱·莫罗引发的爆炸所捕获，并暂时被困在另一个维度。他在霍尔顿·拉德克利夫和他的真人模特诱饵助手艾达的帮助下回来了。库尔森随后领导了与莫罗的最后一场战斗。在发现梅斯实际上不是一个非人之后，库尔森担任了事实上的董事，而梅斯仍然是法律上的董事。在库尔森的领导下，s.H.I.E.L.D.继续打击以库尔森为目标的安东·伊万诺夫（AntonIvanov）领导的反人道仇恨组织“看门狗”。霍尔顿·拉德克利夫绑架了库尔森，用LMD代替了他，并把他塞进了库尔森作为历史老师生活的框架中。在黛西·约翰逊（DaisyJohnson）和杰玛·西蒙斯（JemmaSimmons）的帮助下，库尔森逃离了这个框架，但却在现实世界中面对艾达的威胁。</p>
+<p><code>Coulson killed Aida by temporarily bonding with the Spirit of Vengeance and afterward was sent to the year 2091, along with other S.H.I.E.L.D. agents. The team discovered that Earth had been destroyed, and the surviving humans were enslaved by the Kree. He and the other agents eventually returned to the present day, although Coulson revealed that he was dying from his old injury, due to his deal with the Spirit of Vengeance. In order to learn more about the destruction of Earth, Coulson was imprisoned by Hale, who not only revealed that HYDRA still existed under her leadership, but also that there was an impending alien invasion. Following his escape from Hale, S.H.I.E.L.D. entered into a conflict with the Confederacy. As Coulson was trying to negotiate with the Confederacy, Glenn Talbot attempted to become a savior but instead became bent on becoming more powerful. Coulson, despite knowing that this meant sacrificing himself, aided in defeating Talbot in the Battle of Chicago and stopped him from amassing the planet's Gravitonium, successfully averting the destruction of Earth. Accepting his impending death, Coulson retired from S.H.I.E.L.D. and lived out his remaining days in Tahiti with Melinda May, eventually succumbing to his illness.</code><br>
+库尔森通过与复仇精神的暂时联系杀死了艾达，之后与其他S.H.I.E.L.D.特工一起被送往2091年。研究小组发现，地球已经被摧毁，幸存的人类被克雷人奴役。他和其他探员最终回到了今天，尽管库尔森透露，由于他与复仇精神的交易，他正死于旧伤。为了了解更多关于地球毁灭的信息，库尔森被黑尔监禁，黑尔不仅透露了九头蛇怪在她的领导下仍然存在，而且还透露了即将发生的外星人入侵。S.H.I.E.L.D.逃离黑尔后，与邦联发生冲突。当库尔森试图与邦联谈判时，格伦·塔尔博特试图成为救世主，但却一心想变得更强大。库尔森尽管知道这意味着牺牲自己，但在芝加哥战役中帮助击败了塔尔博特，阻止了他积聚地球的引力，成功地避免了地球的毁灭。库尔森接受了即将到来的死亡，从S.H.I.E.L.D.退休，与梅林达·梅在塔希提度过了余生，最终病倒。</p>
+<h1><a id="font_color7a37abfont_63"></a><font color="#7a37ab">个人传记</font></h1>
+ <table>
+<thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Early Life</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">早期生活</font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Recruited by Nick Fury</font><br><font face="微软雅黑" color="#008000" size="2">Nick Fury招募</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/One_of_Us" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 2.13: One of Us</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/A_Fractured_House" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 2.06: A Fractured House</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Team" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 3.17: The Team</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Emancipation" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 3.20: Emancipation</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/S.O.S._Part_Two" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 2.22: S.O.S. Part Two</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Love_in_the_Time_of_HYDRA" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 2.14: Love in the Time of HYDRA</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Magical_Place" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 1.11: The Magical Place</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Many_Heads,_One_Tale" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 3.08: Many Heads, One Tale</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Man_Behind_the_Shield" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 4.14: The Man Behind the Shield</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_New_Deal" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 7.01: The New Deal</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Alien_Commies_from_the_Future!" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 7.03: Alien Commies from the Future!</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Out_of_the_Past" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 7.04: Out of the Past</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Turn,_Turn,_Turn" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 1.17: Turn, Turn, Turn</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Agent of S.H.I.E.L.D.</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">S.H.I.E.L.D.代理人。</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">First Actions</font><br><font face="微软雅黑" color="#008000" size="2">第一次行动</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Face_My_Enemy" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 2.04: Face My Enemy</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Pilot" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 1.01: Pilot</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Patriot" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 4.10: The Patriot</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Bridge" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 1.10: The Bridge</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Skrull Invasion</font><br><font face="微软雅黑" color="#008000" size="2">斯克鲁尔入侵</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Captain_Marvel_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Captain Marvel</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Chase of Vers</font><br><font face="微软雅黑" color="#008000" size="2">追踪Vers</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Captain_Marvel_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Captain Marvel</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Debrief with Nick Fury</font><br><font face="微软雅黑" color="#008000" size="2">与Nick Fury进行汇报</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Captain_Marvel_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Captain Marvel</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">The Russian 0-8-4</font><br><font face="微软雅黑" color="#008000" size="2">俄罗斯队0-8-4</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Man_Behind_the_Shield" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 4.14: The Man Behind the Shield</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Making Connections</font><br><font face="微软雅黑" color="#008000" size="2">建立联系</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/0-8-4_(episode)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 1.02: 0-8-4</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Eye-Spy" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 1.04: Eye-Spy</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Rescue in Bahrain</font><br><font face="微软雅黑" color="#008000" size="2">巴林救援</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Melinda" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 2.17: Melinda</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Repairs" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 1.09: Repairs</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Avengers Initiative</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">复仇者行动</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Avengers Initiative</font><br><font face="微软雅黑" color="#008000" size="2">复仇者行动</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Incredible_Hulk:_The_Fury_Files" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Incredible Hulk: The Fury Files</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Kidnapping of Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克被绑架</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Security_Measures" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man: Security Measures</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Chasing Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">追击托尼·斯塔克</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Security_Measures" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man: Security Measures</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Meeting Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">会见托尼·斯塔克</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Security_Measures" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man: Security Measures</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Fast_Friends" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man: Fast Friends</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">"I Am Iron Man"</font><br><font face="微软雅黑" color="#008000" size="2">“我是铁人”</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Security_Measures" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man: Security Measures</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">New Tasks</font><br><font face="微软雅黑" color="#008000" size="2">新任务</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2:_Phil_Coulson:_Agent_of_S.H.I.E.L.D." target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2: Phil Coulson: Agent of S.H.I.E.L.D.</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2:_Public_Identity" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 2: Public Identity</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Project T.A.H.I.T.I.</font><br><font face="微软雅黑" color="#008000" size="2">项目T.A.H.I.T.I。</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Nothing_Personal" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 1.20: Nothing Personal</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/T.A.H.I.T.I." target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 1.14: T.A.H.I.T.I.</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Writing_on_the_Wall" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 2.07: The Writing on the Wall</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">A Busy Week</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">忙碌的一周</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Greenland</font><br><font face="微软雅黑" color="#008000" size="2">格陵兰岛</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers_Prelude:_Fury%27s_Big_Week" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers Prelude: Fury's Big Week</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Watching Over Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">照看托尼·斯塔克</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers_Prelude:_Fury%27s_Big_Week" target="_blank"><font face="Source Code Pro" color="#008000" size="2">The Avengers Prelude: Fury's Big Week</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Finding Mjølnir</font><br><font face="微软雅黑" color="#008000" size="2">寻找Mjølnir</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Marvel_One-Shot:_A_Funny_Thing_Happened_on_the_Way_to_Thor%27s_Hammer" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 2</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/0-8-4_(episode)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 1.02: 0-8-4</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Thor_(film)" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Thor</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Well" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 1.08: The Well</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Meeting "Donald Blake"</font><br><font face="微软雅黑" color="#008000" size="2">会见“Donald Blake”</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Thor_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Thor</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Attacked by the Destroyer</font><br><font face="微软雅黑" color="#008000" size="2">被驱逐舰袭击</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Thor_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Thor</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers_Prelude:_Fury%27s_Big_Week" target="_blank"><font face="Source Code Pro" color="#008000" size="2">The Avengers Prelude: Fury's Big Week</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">New Missions</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">新任务</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">The Big Problem</font><br><font face="微软雅黑" color="#008000" size="2">最大的问题</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Marvel_One-Shot:_The_Consultant" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Marvel One-Shot: The Consultant</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Russia</font><br><font face="微软雅黑" color="#008000" size="2">俄罗斯联邦</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers_Prelude:_Black_Widow_Strikes" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers Prelude: Black Widow Strikes</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Finding Captain America</font><br><font face="微软雅黑" color="#008000" size="2">寻找美国队长</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers_Prelude:_Fury%27s_Big_Week" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers Prelude: Fury's Big Week</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Chitauri Invasion</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">Chitauri入侵</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Loki's Attack</font><br><font face="微软雅黑" color="#008000" size="2">洛基的攻击</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Thor:_The_Dark_World_Prelude" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Thor: The Dark World Prelude</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Contacting the Black Widow</font><br><font face="微软雅黑" color="#008000" size="2">联系黑寡妇</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Visiting Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">探访托尼·斯塔克</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Meeting Captain America</font><br><font face="微软雅黑" color="#008000" size="2">会见美国队长</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Death</font><br><font face="微软雅黑" color="#008000" size="2">死</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Resurrection</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">复活</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">The Procedure</font><br><font face="微软雅黑" color="#008000" size="2">程序</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/T.A.H.I.T.I." target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 1.14: T.A.H.I.T.I.</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Magical_Place" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 1.11: The Magical Place</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Writing_on_the_Wall" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 2.07: The Writing on the Wall</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Nothing_Personal" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Agents of S.H.I.E.L.D.: 1.20: Nothing Personal</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Recovery</font><br><font face="微软雅黑" color="#008000" size="2">恢复</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/FZZT" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Agents of S.H.I.E.L.D.: 1.06: FZZT</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Wakanda_Files:_A_Technological_Exploration_of_the_Avengers_and_Beyond" target="_blank"><font face="Source Code Pro" color="#008000" size="2">The Wakanda Files: A Technological Exploration of the Avengers and Beyond</font></a></td>
+</tr></tbody></table>
+</div>
+</body>
+
+</html>
