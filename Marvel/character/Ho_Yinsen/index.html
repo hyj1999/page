@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ho Yinsen</title>
+  <link href="https://www.marvel.com/static/images/favicon/favicon.ico" rel="SHORTCUT ICON">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<style>
+.box{
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:30px;
+    width: 50px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    top:50%
+}
+.box:hover .box-in{
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'回到顶部';
+    width: 40px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    visibility: visible;
+    display:inline-block;
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 2px;
+}
+blockquote {
+    display: block;
+    padding: 0px 16px 0px 16px;
+    margin: 0 0 12px;
+    border-left: 8px solid #dddfe4;
+    background: #eef0f4;
+    overflow: auto;
+    word-break: break-word!important;
+}
+table {
+	width:100%;
+	margin:15px 0
+}
+table th {
+	background-color:#CCE8EB;
+	color:#000000
+}
+table,table th, table td
+{
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border:1px solid #cad9ea;
+	border-collapse:collapse
+}
+table tr:nth-child(odd){
+	background-color:#fff;
+}
+table tr:nth-child(even){
+	background-color:#F5FAFA;
+}
+a {
+	text-decoration: none;
+}
+</style>
+<div id="box" class="box">
+    <div class="box-in"></div>
+</div> 
+<script>
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    //获取当前毫秒数
+    var startTime = +new Date();     
+    //获取当前页面的滚动高度
+    var b = document.body.scrollTop || document.documentElement.scrollTop;
+    var d = 200;
+    var c = b;
+    timer = requestAnimationFrame(function func(){
+        var t = d - Math.max(0,startTime - (+new Date()) + d);
+        document.documentElement.scrollTop = document.body.scrollTop = t * (-c) / d + b;
+        timer = requestAnimationFrame(func);
+        if(t == d){
+          cancelAnimationFrame(timer);
+        }
+    });
+}
+</script>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><br>
+<center><font face="华文行楷" color="darkcyan" size="6">何·银森</font></center>
+<center><font face="MV Boli" color="purple" size="6">Ho Yinsen</font></center>
+<hr>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/1c1d9e13c166d7576184d37452d635ac.png#pic_center" alt="何·银森"></center>
+<br>
+<blockquote>
+<p><font face="黑体" color="purple" size="4">简 介：</font>何·银森医生是著名的科学家和外科医生，来自阿富汗古尔米拉村。在他的家人在当地恐怖活动激增中丧生后，因森在阿富汗山区被十环绑架并俘虏。当托尼·斯塔克也被绑架时，因森因爆炸受伤而被指控照顾斯塔克的医疗需求。在被囚禁几个月后，银森通过开发一套专门的盔甲帮助斯塔克逃离洞穴，但在此过程中自愿为恐怖分子牺牲自己，并告诉斯塔克在伤势过重之前不要浪费生命。<br>
+<font face="Consolas" color="purple" size="4">OVERVIEW：</font><font face="Garamond">Doctor&nbsp;Ho Yinsen&nbsp;was a renowned scientist and surgeon, hailing from the village of&nbsp;Gulmira,&nbsp;Afghanistan. After his family was killed during a surge in local terrorist activity, Yinsen was abducted and held captive by the&nbsp;Ten Rings&nbsp;in the Afghan mountains. When&nbsp;Tony Stark&nbsp;was also&nbsp;kidnapped, Yinsen was charged with attending to Stark’s medical needs after he was brought in injured from an explosive. After several months in captivity, Yinsen helped Stark escape the cave by developing a&nbsp;specialized suit of armor, but willingly sacrificed himself in the process to the terrorists, telling Stark not to waste his life before he died of his injuries.<br>
+<font color="slateblue" face="宋体"><strong><code>真实姓名</code></strong>：</font><font face="MV Boli">Ho Yinsen</font><br>
+<font color="slateblue" face="宋体"><strong><code>角色物种</code></strong>：</font><font face="MV Boli">Human</font><br>
+<font color="slateblue" face="宋体"><strong><code>死亡日期</code></strong>：</font><font face="MV Boli">2009-05</font><br>
+<font color="slateblue" face="宋体"><strong><code>参演影视</code></strong>：</font><font face="华文行楷">钢铁侠，钢铁侠3</font></font></p>
+</blockquote>
+<p><font face="helvetica" color="blue"><em>“What you just saw… That is your legacy, Stark. Your life’s work in the hands of&nbsp;those murderers. Is that how you want to go out? Is this the last act of defiance of the great Tony Stark? Or are you going to do something about it?”</em></font><br>
+<font face="MV Boli" color="blue"><strong>—— Ho Yinsen to&nbsp;Tony Stark</strong></font></p>
+<p><font face="宋体" color="gray"><strong>■ 相关链接:</strong></font></p>
+<ul>
+<li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Ho_Yinsen"><strong>Ho Yinsen | Marvel Cinematic Universe Wiki | Fandom</strong></a></li>
+<li><a href="https://mcu.huijiwiki.com/wiki/%E4%BD%95%E8%B4%A4%E5%B1%B1"><strong>何贤山 - 漫威电影宇宙资料站 - 灰机wiki</strong></a></li>
+<li><a href="https://www.baike.com/wikiid/6088862186552059562"><strong>Ho Yinsen - 快懂百科</strong></a></li>
+<li><a href="https://baike.baidu.com/item/%E4%BE%AF%E6%AE%B7%E6%A3%AE"><strong>侯殷森_百度百科</strong></a></li>
+</ul>
+<hr>
+<p></p><div class="toc"><h3>目录</h3><ul><li><a href="#font_color7a37abfont_33"><font color="#7a37ab">详细介绍</font></a></li><li><a href="#font_color7a37abfont_58"><font color="#7a37ab">个人传记</font></a></li></ul></div><p></p>
+<h1><a id="font_color7a37abfont_33"></a><font color="#7a37ab">详细介绍</font></h1>
+<p><code>Ho Yinsen was an Afghan man from the small village of Gulmira. Eventually, he became a scientist after graduating from University of Cambridge and started to work in Europe. Yinsen met Tony Stark on New Year's Eve in 1999 at Bern 2000 in Bern, Switzerland, after Stark delivered a lecture, while very drunk, on integrated circuits. Yinsen tried to introduce him and Maya Hansen to Wu, but Stark drunkenly brushed him off to focus his attention on Hansen, joking that he had finally met a man named Ho. Though somewhat disappointed, Yinsen resigned himself to hopefully meeting Stark properly at another time.</code><br>
+何银森是一名来自古尔米拉小村庄的阿富汗男子。最终，他从剑桥大学毕业后成为一名科学家，并开始在欧洲工作。1999年新年前夜，银森在瑞士伯尔尼的伯尔尼2000会见了托尼·斯塔克，当时斯塔克喝醉了，发表了一篇关于集成电路的演讲。尹森试图把他和玛雅·汉森介绍给吴，但他喝醉了，把他的注意力集中在汉森身上，开玩笑说他终于遇到了一个叫何的人。尽管有点失望，尹森还是放弃了，希望能在另一个时间与斯塔克会面。</p>
+<p><code>Ten years later, Yinsen was captured by the Ten Rings, a terrorist group in Afghanistan. When the Ten Rings brought in Tony Stark, injured from an missile used in their ambush, they charged Yinsen with keeping him alive. A skilled and resourceful field surgeon, Yinsen removed much of the shrapnel from Stark's body and helped keep him alive long enough to build an electromagnet piece in his chest to keep the remaining shrapnel from entering his heart.</code><br>
+十年后，银森被阿富汗恐怖组织“十环”抓获。当十枚戒指把托尼·斯塔克带进来时，他们指控尹森让他活着，因为他在伏击中被导弹击中受伤。尹森是一位技术娴熟、足智多谋的野战外科医生，他从斯塔克身上取出了大部分弹片，并帮助他活了足够长的时间，以便在他的胸部制造一块电磁铁，防止剩余的弹片进入他的心脏。</p>
+<p><code>Under captivity, Tony Stark and Yinsen were ordered by the Ten Rings to build a Jericho missile, or they would be killed. However, Stark refused and was tortured. Yinsen managed to motivate him and both men acknowledged that they would be murdered either way and instead focused on an escape plan. Stark revealed to Yinsen that he would use the parts that the Ten Rings gave them and build a weaponized suit of armor, which he would use to take out the terrorists and return Yinsen to his family.</code><br>
+在被俘期间，托尼·斯塔克和尹森被“十环”组织命令制造一枚杰里科导弹，否则他们将被杀。然而，斯塔克拒绝了，并遭到了酷刑。尹森设法激励了他，两人都承认无论哪种方式他们都会被谋杀，而是专注于逃跑计划。斯塔克向尹森透露，他将使用十枚戒指给他们的零件，制作一套武器化的盔甲，用来干掉恐怖分子并将尹森送回家人。</p>
+<p><code>Yinsen helped Tony Stark keep the Mark I Armor he was making a secret from Raza and assisted in its creation. When Stark asked about Yinsen's family, Yinsen merely noted that he would see them when he left the Ten Rings Base. Yinsen also pointed out that Stark's legacy was his weapons being used by the Ten Rings and suggests that he should rectify this.</code><br>
+尹森帮助托尼·斯塔克保存了马克一号盔甲，他当时正在向拉扎保密，并协助其创作。当斯塔克问到尹森的家人时，尹森只说他会在离开十环基地时见到他们。尹森还指出，斯塔克的遗产是他的武器被《十环》使用，并建议他应该纠正这一点。</p>
+<p><code>During the escape the terrorists were alerted to their plan, seeing there was no way they could power up the suit while defending themselves simultaneously, Yinsen sacrificed himself by taking a gun and attacking the terrorists, thereby giving Stark time to power up the suit. He was mortally wounded when he ran around a corner only to be shot by dozens of terrorists. When Stark found Yinsen, bleeding out from his wounds, he reassured Stark that his demise had always been the plan as his family was dead and that he wished to be reunited with them. Stark thanked Yinsen for saving him. With his dying breath, Yinsen asked Stark not to waste the rest of his life. Stark was quietly enraged by Yinsen's death, and dispatched the remaining Ten Rings members with emphatic fury.</code><br>
+在逃跑过程中，恐怖分子被告知了他们的计划，因为他们无法在自卫的同时启动诉讼，尹森牺牲了自己，拿起枪袭击恐怖分子，从而给了他们充足的时间启动诉讼。他在拐弯时受了致命伤，结果被数十名恐怖分子射杀。当斯塔克发现因森在伤口流血时，他向斯塔克保证，他的家人已经去世，他希望与家人团聚，因此他一直都在计划自己的死亡。斯塔克感谢尹森救了他。奄奄一息的尹森要求斯塔克不要浪费余生。斯塔克被尹森的死悄悄地激怒了，愤怒地将剩下的十环成员遣送出去。</p>
+<p><code>Thanks to Yinsen's sacrifice, Tony Stark was able to escape and once back in the United States, he discontinued Stark Industries' mass weapon production line despite this causing his company's stock market value to plummet, much to Obadiah Stane's chagrin. After discovering that Stane was the one responsible for his kidnapping and defeating Stane, Stark dedicated himself to becoming a crimefighter, taking on the identity of Iron Man, for which he designed similar armors to the one he and Yinsen designed on Afghanistan.</code><br>
+由于尹森的牺牲，托尼·斯塔克得以逃脱，回到美国后，他中断了斯塔克工业公司的大规模武器生产线，尽管这导致其公司的股票市值暴跌，这让奥巴迪亚·斯坦非常懊恼。在发现斯坦是绑架并击败斯坦的罪魁祸首后，斯塔克致力于成为一名犯罪斗士，以钢铁侠的身份出现，为此他设计了与他和尹森在阿富汗设计的类似的盔甲。</p>
+<p><code>Despite meeting Yinsen for a short time, Stark never forgot his advice and dedicated the rest of his life to become less egotistical and become more selfless and heroic. As the years passed by, Stark came to start a family of his own just like Yinsen once did. This eventually culminated in Stark sacrificing himself to stop Thanos from destroying the universe in 2023, finally giving up his life like Yinsen did for him in the past.</code><br>
+尽管与尹森会面时间很短，但斯塔克从未忘记他的建议，并将余生奉献给他，让他不再那么自负，变得更加无私和英勇。随着岁月的流逝，斯塔克开始像尹森一样建立自己的家庭。这最终导致斯塔克在2023年牺牲自己阻止塔诺斯毁灭宇宙，最终像银森过去为他所做的那样放弃了自己的生命。</p>
+<h1><a id="font_color7a37abfont_58"></a><font color="#7a37ab">个人传记</font></h1>
+ <table>
+<thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Early Life</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">早期生活</font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Meeting Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">会见托尼·斯塔克</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 3</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Ten Rings' Hostage</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">十环人质</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Saving Tony Stark's Life</font><br><font face="微软雅黑" color="#008000" size="2">拯救托尼·斯塔克的生命</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Partners in Captivity</font><br><font face="微软雅黑" color="#008000" size="2">被囚禁的伙伴</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Escape and Death</font><br><font face="微软雅黑" color="#008000" size="2">逃跑和死亡</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Legacy</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">遗产</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Remembered by Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克纪念</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Endgame" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Avengers: Endgame</font></a></td>
+</tr></tbody></table>
+</div>
+</body>
+
+</html>
