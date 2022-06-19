@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abu Bakaar</title>
+  <link href="https://www.marvel.com/static/images/favicon/favicon.ico" rel="SHORTCUT ICON">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<style>
+.box{
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:30px;
+    width: 50px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    top:50%
+}
+.box:hover .box-in{
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'回到顶部';
+    width: 40px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    visibility: visible;
+    display:inline-block;
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 2px;
+}
+blockquote {
+    display: block;
+    padding: 0px 16px 0px 16px;
+    margin: 0 0 12px;
+    border-left: 8px solid #dddfe4;
+    background: #eef0f4;
+    overflow: auto;
+    word-break: break-word!important;
+}
+table {
+	width:100%;
+	margin:15px 0
+}
+table th {
+	background-color:#CCE8EB;
+	color:#000000
+}
+table,table th, table td
+{
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border:1px solid #cad9ea;
+	border-collapse:collapse
+}
+table tr:nth-child(odd){
+	background-color:#fff;
+}
+table tr:nth-child(even){
+	background-color:#F5FAFA;
+}
+a {
+	text-decoration: none;
+}
+</style>
+<div id="box" class="box">
+    <div class="box-in"></div>
+</div> 
+<script>
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    //获取当前毫秒数
+    var startTime = +new Date();     
+    //获取当前页面的滚动高度
+    var b = document.body.scrollTop || document.documentElement.scrollTop;
+    var d = 200;
+    var c = b;
+    timer = requestAnimationFrame(function func(){
+        var t = d - Math.max(0,startTime - (+new Date()) + d);
+        document.documentElement.scrollTop = document.body.scrollTop = t * (-c) / d + b;
+        timer = requestAnimationFrame(func);
+        if(t == d){
+          cancelAnimationFrame(timer);
+        }
+    });
+}
+</script>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><br>
+<center><font face="华文行楷" color="darkcyan" size="6">阿布·巴卡尔</font></center>
+<center><font face="MV Boli" color="purple" size="6">Abu Bakaar</font></center>
+<hr>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/e8bb8e0d2f7e5156fc61615ee04f799a.png#pic_center" alt="阿布·巴卡尔"></center>
+<br>
+<blockquote>
+<p><font face="黑体" color="purple" size="4">简 介：</font>阿布·巴卡尔是十环的成员，他与拉扎一起组织绑架托尼·斯塔克，以迫使斯塔克重新制造杰里科导弹。斯塔克逃跑后不久，巴卡尔在古尔米拉的一次突袭中遇到了钢铁侠，在此期间巴卡尔任由村民摆布。<br>
+<font face="Consolas" color="purple" size="4">OVERVIEW：</font><font face="Garamond">Abu Bakaar&nbsp;was a member of the&nbsp;Ten Rings&nbsp;who worked with&nbsp;Raza&nbsp;to organize the&nbsp;Kidnapping of Tony Stark&nbsp;in order to force Stark to recreate the&nbsp;Jericho&nbsp;missile. Shortly after Stark escaped, Bakaar was confronted by&nbsp;Iron Man&nbsp;during a&nbsp;raid&nbsp;in&nbsp;Gulmira, during which Bakaar was left to the mercy of the villagers.<br>
+<font color="slateblue" face="宋体"><strong><code>真实姓名</code></strong>：</font><font face="MV Boli">Abu Bakaar</font><br>
+<font color="slateblue" face="宋体"><strong><code>角色物种</code></strong>：</font><font face="MV Boli">Human</font><br>
+<font color="slateblue" face="宋体"><strong><code>参演影视</code></strong>：</font><font face="华文行楷">钢铁侠</font></font></p>
+</blockquote>
+<p><font face="helvetica" color="blue"><em>“He’s all yours.”</em></font><br>
+<font face="MV Boli" color="blue"><strong>—— Iron Man</strong></font></p>
+<p><font face="宋体" color="gray"><strong>■ 相关链接:</strong></font></p>
+<ul>
+<li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Abu_Bakaar"><strong>Abu Bakaar | Marvel Cinematic Universe Wiki | Fandom</strong></a></li>
+</ul>
+<hr>
+<p></p><div class="toc"><h3>目录</h3><ul><li><a href="#font_color7a37abfont_29"><font color="#7a37ab">详细介绍</font></a></li><li><a href="#font_color7a37abfont_48"><font color="#7a37ab">个人传记</font></a></li></ul></div><p></p>
+<h1><a id="font_color7a37abfont_29"></a><font color="#7a37ab">详细介绍</font></h1>
+<p><code>Abu Bakaar was a member of the terrorist group called the Ten Rings who detained Tony Stark in an effort to make him build new weapons for them. Bakaar was the main contact for Stark while Ho Yinsen worked as his translator; Bakaar ordered Stark to build them a version of the Jericho missile. When Stark refused, Bakaar had him tortured until he agreed to help them. Eventually, Raza took over Bakaar's role as Stark's contact.</code><br>
+阿布·巴卡尔是恐怖组织“十环”的成员，该组织拘留托尼·斯塔克，试图让他为他们制造新武器。巴卡尔是斯塔克的主要联系人，何银森是他的翻译；巴卡尔命令斯塔克为他们制造一种杰里科导弹。当斯塔克拒绝时，巴卡尔折磨他，直到他同意帮助他们。最终，拉扎接管了巴卡尔作为斯塔克联系人的角色。</p>
+<p><code>Bakaar was among the militants working for the Ten Rings in Gulmira, the small Afghan region that was home to Ho Yinsen. Bakaar led a group of the insurgents that were killing and trucking people out of the region when Iron Man arrived in his newly constructed Mark III Suit. Iron Man killed many of the Ten Ring members there, but left Bakaar alive, turning him over instead to the mercies of the residents of Gulmira.</code><br>
+巴卡尔是在古尔米拉（Gulmira）为“十环”组织工作的激进分子之一，古尔米拉是阿富汗的一个小地区，也是何银森的家乡。当铁人身穿新建造的马克三世（MarkIII）西装抵达时，巴卡尔（Bakaar）领导的一群叛乱分子正在杀害并用卡车将人们运出该地区。铁人杀死了那里的十名魔戒成员中的许多人，但却让巴卡尔活着，把他交给了古尔米拉居民的仁慈之手。</p>
+<p><code>Abu Bakaar was brutal, sadistic, and apathetic in his goals, and lacked any empathy for innocent people, attempting to kill a father because he embraced his son in Gulmira. He was greatly loyal to Raza and followed any order given to him, going as far to have Tony Stark tortured. In addition, he was manipulative, trying to persuade Stark to make the missile, and guaranteeing him freedom once he was done. When Stark attacked the Ten Rings in Gulmira, he hid away and was calling in reinforcements, showing himself to be cowardly.</code><br>
+阿布·巴卡尔（AbuBakaar）残忍、虐待狂，对自己的目标漠不关心，对无辜的人没有任何同情心，他试图杀害一位父亲，因为他在古尔米拉拥抱了自己的儿子。他对拉扎非常忠诚，遵守任何命令，甚至对托尼·斯塔克施以酷刑。此外，他还善于操纵，试图说服斯塔克制造导弹，并保证他一旦制造完成就获得自由。当斯塔克袭击古尔米拉的十环时，他躲了起来，并要求增援，表现出自己的懦弱。</p>
+<p><code>In a deleted scene from Iron Man, Bakaar was executed by Raza, after he joined Tony Stark and Ho Yinsen for a board game. This cut footage contradicts the events of the final film.</code><br>
+在《钢铁侠》删除的一个场景中，巴卡尔在加入托尼·斯塔克和何银森的棋盘游戏后被拉扎处决。这段剪辑片段与最后一部电影的情节相矛盾。</p>
+<p><code>Archive footage of Abu Bakaar from Iron Man was used in the trailers of Shang-Chi and the Legend of the Ten Rings.</code><br>
+《钢铁侠》中阿布·巴卡尔的档案录像被用于《尚志》和《十环传说》的预告片中。</p>
+<h1><a id="font_color7a37abfont_48"></a><font color="#7a37ab">个人传记</font></h1>
+ <table>
+<thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Kidnapping of Tony Stark</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">托尼·斯塔克被绑架</font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Recreating the Jericho Missile</font><br><font face="微软雅黑" color="#008000" size="2">重建杰里科导弹</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Confronted by Iron Man</font><br><font face="微软雅黑" color="#008000" size="2">面对铁人</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr></tbody></table>
+</div>
+</body>
+
+</html>
