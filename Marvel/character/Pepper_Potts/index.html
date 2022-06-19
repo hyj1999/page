@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pepper Potts</title>
+  <link href="https://www.marvel.com/static/images/favicon/favicon.ico" rel="SHORTCUT ICON">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<style>
+.box{
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:30px;
+    width: 50px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    top:50%
+}
+.box:hover .box-in{
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'回到顶部';
+    width: 40px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    visibility: visible;
+    display:inline-block;
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 2px;
+}
+blockquote {
+    display: block;
+    padding: 0px 16px 0px 16px;
+    margin: 0 0 12px;
+    border-left: 8px solid #dddfe4;
+    background: #eef0f4;
+    overflow: auto;
+    word-break: break-word!important;
+}
+table {
+	width:100%;
+	margin:15px 0
+}
+table th {
+	background-color:#CCE8EB;
+	color:#000000
+}
+table,table th, table td
+{
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border:1px solid #cad9ea;
+	border-collapse:collapse
+}
+table tr:nth-child(odd){
+	background-color:#fff;
+}
+table tr:nth-child(even){
+	background-color:#F5FAFA;
+}
+a {
+	text-decoration: none;
+}
+</style>
+<div id="box" class="box">
+    <div class="box-in"></div>
+</div> 
+<script>
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    //获取当前毫秒数
+    var startTime = +new Date();     
+    //获取当前页面的滚动高度
+    var b = document.body.scrollTop || document.documentElement.scrollTop;
+    var d = 200;
+    var c = b;
+    timer = requestAnimationFrame(function func(){
+        var t = d - Math.max(0,startTime - (+new Date()) + d);
+        document.documentElement.scrollTop = document.body.scrollTop = t * (-c) / d + b;
+        timer = requestAnimationFrame(func);
+        if(t == d){
+          cancelAnimationFrame(timer);
+        }
+    });
+}
+</script>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><br>
+<center><font face="华文行楷" color="darkcyan" size="6">佩珀·波兹</font></center>
+<center><font face="MV Boli" color="purple" size="6">Pepper Potts</font></center>
+<center><font face="MV Boli" color="#e06030" size="5">小辣椒</font></center>
+<hr>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/7da153090d2ff99eb594483798ea437e.png#pic_center" alt="佩珀·波兹"></center>
+<br>
+<blockquote>
+<p><font face="黑体" color="purple" size="4">简 介：</font>Virginia “Pepper” Potts 负责经营 Stark Industries 的日常业务，而 Tony Stark 则分心社交或从事其他工作。<br>
+<font face="Consolas" color="purple" size="4">OVERVIEW：</font><font face="Garamond">Virginia “Pepper” Potts handles the day-to-day business of running Stark Industries while Tony Stark is distracted socializing or pursuing other endeavors.<br>
+<font color="slateblue" face="宋体"><strong><code>真实姓名</code></strong>：</font><font face="MV Boli">Virginia “Pepper” Potts</font><br>
+<font color="slateblue" face="宋体"><strong><code>角色物种</code></strong>：</font><font face="MV Boli">Human</font><br>
+<font color="slateblue" face="宋体"><strong><code>出生日期</code></strong>：</font><font face="MV Boli">xxxx-02-xx</font><br>
+<font color="slateblue" face="宋体"><strong><code>参演影视</code></strong>：</font><font face="华文行楷">钢铁侠，钢铁侠2&nbsp;，复仇者联盟，钢铁侠3，复仇者联盟2：奥创纪元 (mentioned)</font></font></p>
+</blockquote>
+<p><font face="helvetica" color="blue"><em>“I am trying to do the job that you were meant to do.”</em></font><br>
+<font face="MV Boli" color="blue"><strong>—— Pepper Potts to&nbsp;Tony Stark</strong></font></p>
+<p><font face="宋体" color="gray"><strong>■ 相关链接:</strong></font></p>
+<ul>
+<li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Pepper_Potts"><strong>Pepper Potts | Marvel Cinematic Universe Wiki | Fandom</strong></a></li>
+<li><a href="https://mcu.huijiwiki.com/wiki/%E2%80%9C%E5%B0%8F%E8%BE%A3%E6%A4%92%E2%80%9D%C2%B7%E6%B3%A2%E8%8C%A8"><strong>“小辣椒”·波茨 - 漫威电影宇宙资料站 - 灰机wiki</strong></a></li>
+<li><a href="https://www.manweimi.cn/marvel-wiki/12046.html"><strong>小辣椒 (PEPPer Potts)  | 漫威百科 | 人物 | 漫威网 - 漫威迷</strong></a></li>
+<li><a href="https://www.marvel.com/characters/pepper-potts"><strong>Pepper Potts (Virginia “Pepper” Potts) Powers &amp; History | Marvel</strong></a></li>
+<li><a href="https://baike.baidu.com/item/%E5%B0%8F%E8%BE%A3%E6%A4%92/6996995"><strong>小辣椒（美国漫威漫画旗下的超级英雄）_百度百科</strong></a></li>
+<li><a href="https://www.baike.com/wikiid/3089084155988469216"><strong>小辣椒·波兹 - 快懂百科</strong></a></li>
+</ul>
+<hr>
+<p></p><div class="toc"><h3>目录</h3><ul><li><a href="#font_color7a37abfont_37"><font color="#7a37ab">详细介绍</font></a></li><li><a href="#font_color7a37abfont_56"><font color="#7a37ab">个人传记</font></a></li></ul></div><p></p>
+<h1><a id="font_color7a37abfont_37"></a><font color="#7a37ab">详细介绍</font></h1>
+<p><code>Virginia "Pepper" Potts is the CEO of Stark Industries. Originally working as Tony Stark's personal assistant, she would take care of his schedule and perform any task he wished. During this time, Potts became good friends with Stark and soon, they had begun developing romantic feelings for each other. However, neither was able to act on these feelings, as they each feared that the other would not accept them.</code><br>
+弗吉尼亚“胡椒”波茨是斯塔克工业公司的首席执行官。她最初是托尼·斯塔克的私人助理，她会照顾他的日程安排，并执行他想要的任何任务。在这段时间里，波茨与斯塔克成为了好朋友，很快，他们就开始彼此发展浪漫感情。然而，两人都无法对这些感受采取行动，因为他们都担心对方不会接受这些感受。</p>
+<p><code>When Stark returned from captivity in Afghanistan, Potts was trusted enough by him to see his Iron Man suits and his workshop. She helped Stark defeat Obadiah Stane, who tried to kill Stark, by overloading the Arc Reactor, killing Stane. After Stane's death, Stark made Potts his new business partner, taking Stane's place. Believing his death was imminent, Stark stepped down as CEO and appointed her as his replacement. After Stark defeated Whiplash at the Stark Expo, both Potts and Stark finally admitted their attraction to each other and began a romantic relationship.</code><br>
+当斯塔克从阿富汗被俘归来时，波茨得到了足够的信任，可以看到他的铁人服和他的工作室。她帮助斯塔克打败了试图杀死斯塔克的奥巴迪亚·斯坦，因为她让电弧反应堆超载，杀死了斯坦。斯坦死后，斯塔克任命波茨为新的商业伙伴，接替斯坦的位置。斯塔克认为自己的死亡迫在眉睫，辞去了首席执行官的职务，任命她为他的继任者。斯塔克在斯塔克博览会上击败了斯威普之后，波茨和斯塔克终于承认了彼此的吸引力，并开始了浪漫关系。</p>
+<p><code>During the crisis surrounding the Mandarin's terrorist attacks, Potts was kidnapped by Aldrich Killian and injected with Extremis. She was freed by Stark during the Battle on the Norco and went on to kill Killian herself. Stark cured her of the effects of Extremis, who temporarily gave up being Iron Man just for her.</code><br>
+在围绕普通话恐怖袭击的危机中，波茨被奥尔德里希·基利安绑架，并注射了极值。在诺科号上的战斗中，她被史塔克解救，并自杀身亡。斯塔克治好了她患上的极端症，她暂时放弃了只为她而当铁人的角色。</p>
+<p><code>As the War on HYDRA began, the Avengers needed to be remobilized. Without S.H.I.E.L.D. active to run the team, Stark and Potts took over, allowing Captain America to retain field and team leadership while he designed everything else, including creating new armors and rejoining the team himself as an active duty combatant. Sometime after the Ultron Offensive, he and Potts broke off their relationship, which affected Stark and left him wondering why he could not make it work while his father could.</code><br>
+随着对HYDRA的战争开始，复仇者需要被遣散。由于没有S.H.I.E.L.D.的积极管理，斯塔克和波茨接管了球队，这使得美国队长在设计其他一切的同时，保留了场上和球队的领导地位，包括创造新的装甲，并以现役战士的身份重新加入球队。在奥创进攻后的某个时候，他和波茨断绝了关系，这影响了斯塔克，让他纳闷为什么他不能在父亲能做到的情况下做到这一点。</p>
+<p><code>However, shortly after the Avengers Civil War ended, Stark and Potts resumed their relationship, where Stark eventually proposed to her. The two married following the Snap and had a daughter, Morgan Stark. The three of them resided on the Stark Eco-Compound until Stark departed for the Time Heist. Later, Potts joined the Avengers in the Battle of Earth as Rescue, wearing the Mark XLIX armor, when Thanos' forces invaded. After Stark died by her side, Potts was present at his funeral, where she set adrift Stark's first Arc Reactor onto a wreath into their residential lakeside.</code><br>
+然而，复仇者内战结束后不久，斯塔克和波茨恢复了关系，斯塔克最终向她求婚。两人在拍摄后结婚，并育有一个女儿，摩根·斯塔克。他们三人居住在斯塔克生态区，直到斯塔克离开去实施抢劫。后来，当塔诺斯的军队入侵时，波茨身穿马克XLIX盔甲，加入了地球之战中的复仇者。斯塔克在她身边去世后，波茨出席了他的葬礼，在那里她将漂浮在斯塔克的第一个电弧反应堆放在他们居住的湖边的花环上。</p>
+<h1><a id="font_color7a37abfont_56"></a><font color="#7a37ab">个人传记</font></h1>
+ <table>
+<thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Early Career</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">早期职业生涯</font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Meeting Aldrich Killian</font><br><font face="微软雅黑" color="#008000" size="2">会见Aldrich Killian</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(book)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man (book)</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 3</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Stark Industries</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">史塔克企业</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Working with Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">与托尼·斯塔克合作</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(book)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man (book)</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_Manual" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man Manual</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man:_Fast_Friends" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man: Fast Friends</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Kidnapping of Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克被绑架</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Tony Stark's Return</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克的回归</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Helping Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">帮助托尼·斯塔克</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Dancing with the Boss</font><br><font face="微软雅黑" color="#008000" size="2">与老板共舞</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Learning the Truth</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">了解真相</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Confronting Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">对抗托尼·斯塔克</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Investigating the Traitor</font><br><font face="微软雅黑" color="#008000" size="2">调查叛徒</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Duel of Los Angeles</font><br><font face="微软雅黑" color="#008000" size="2">洛杉矶决斗</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Tony Stark's Announcement</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克的声明</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Senate Hearing</font><br><font face="微软雅黑" color="#008000" size="2">参议院听证会</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Stark Industries CEO</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">斯塔克工业首席执行官</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Promoted by Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克晋升</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Hiring Natalie Rushman</font><br><font face="微软雅黑" color="#008000" size="2">雇用Natalie Rushman</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Duel of Monaco</font><br><font face="微软雅黑" color="#008000" size="2">摩纳哥决斗</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Disastrous Birthday Party</font><br><font face="微软雅黑" color="#008000" size="2">灾难性的生日聚会</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/List_of_Deleted_Scenes#Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2 - List of Deleted Scenes</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Peace Offering</font><br><font face="微软雅黑" color="#008000" size="2">和平献祭</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Battle at Stark Expo</font><br><font face="微软雅黑" color="#008000" size="2">斯塔克博览会之战</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Chitauri Invasion</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">Chitauri入侵</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Interrupted by Phil Coulson</font><br><font face="微软雅黑" color="#008000" size="2">被菲尔·库尔森打断</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Battle of New York</font><br><font face="微软雅黑" color="#008000" size="2">纽约战役</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers</font></a></td>
+</tr></tbody></table>
+</div>
+</body>
+
+</html>
