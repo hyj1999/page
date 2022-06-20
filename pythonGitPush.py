@@ -12,9 +12,13 @@ def main(c):
     except:
         print("nothing to commit, working tree clean")
         print('(use "git push" to publish your local commits)')
-    print("提交中...")
-    git.push()
+    try:
+        print("提交中...")
+        git.push()
+        input("提交完成！")
+    except:
+        print("提交失败！")
 
 if __name__ == '__main__':
     main("update")
-    input("提交完成！")
+    input("按任意键退出...")
