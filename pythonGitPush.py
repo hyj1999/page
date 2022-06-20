@@ -11,8 +11,9 @@ def main(c):
     try:
         git.commit('-m', c)
     except:
-        print("")
-    git.push("origin", "master")
+        print("nothing to commit, working tree clean")
+        print('(use "git push" to publish your local commits)')
+    git.push()
 
 if __name__ == '__main__':
     main("update")
