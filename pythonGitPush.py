@@ -13,6 +13,7 @@ def main(c):
     except:
         print("nothing to commit, working tree clean")
         print('(use "git push" to publish your local commits)')
+    print("提交中...")
     git.push()
 
 if __name__ == '__main__':
