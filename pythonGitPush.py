@@ -8,6 +8,10 @@ def main(c):
     git = repo.git
     git.add('.')
     git.commit('-m', c)
+    try:
+        git.commit('-m', c)
+    except:
+        print("")
     git.push("origin", "master")
 
 if __name__ == '__main__':
