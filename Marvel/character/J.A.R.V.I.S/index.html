@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.A.R.V.I.S.</title>
+  <link href="https://www.marvel.com/static/images/favicon/favicon.ico" rel="SHORTCUT ICON">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<style>
+.box{
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:30px;
+    width: 50px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    top:50%
+}
+.box:hover .box-in{
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'回到顶部';
+    width: 40px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    visibility: visible;
+    display:inline-block;
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 2px;
+}
+blockquote {
+    display: block;
+    padding: 0px 16px 0px 16px;
+    margin: 0 0 12px;
+    border-left: 8px solid #dddfe4;
+    background: #eef0f4;
+    overflow: auto;
+    word-break: break-word!important;
+}
+table {
+	width:100%;
+	margin:15px 0
+}
+table th {
+	background-color:#CCE8EB;
+	color:#000000
+}
+table,table th, table td
+{
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border:1px solid #cad9ea;
+	border-collapse:collapse
+}
+table tr:nth-child(odd){
+	background-color:#fff;
+}
+table tr:nth-child(even){
+	background-color:#F5FAFA;
+}
+a {
+	text-decoration: none;
+}
+</style>
+<div id="box" class="box">
+    <div class="box-in"></div>
+</div> 
+<script>
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    //获取当前毫秒数
+    var startTime = +new Date();     
+    //获取当前页面的滚动高度
+    var b = document.body.scrollTop || document.documentElement.scrollTop;
+    var d = 200;
+    var c = b;
+    timer = requestAnimationFrame(function func(){
+        var t = d - Math.max(0,startTime - (+new Date()) + d);
+        document.documentElement.scrollTop = document.body.scrollTop = t * (-c) / d + b;
+        timer = requestAnimationFrame(func);
+        if(t == d){
+          cancelAnimationFrame(timer);
+        }
+    });
+}
+</script>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><br>
+<center><font face="华文行楷" color="darkcyan" size="6">贾维斯</font></center>
+<center><font face="MV Boli" color="purple" size="6">J.A.R.V.I.S.</font></center>
+<hr>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/c2bfe7d1c53db2b72ed3a5e3350286af.png#pic_center" alt="贾维斯"></center>
+<br>
+<blockquote>
+<p><font face="黑体" color="purple" size="4">简 介：</font>只是一个非常智能的系统（J.A.R.V.I.S.）最初是托尼·斯塔克的自然语言用户界面计算机系统，以埃德温·贾维斯的名字命名，以纪念为霍华德·斯塔克和斯塔克家族工作的管家。<br>
+<font face="Consolas" color="purple" size="4">OVERVIEW：</font><font face="Garamond">Just A Rather Very Intelligent System (J.A.R.V.I.S.) was originally Tony Stark’s natural-language user interface computer system, named after Edwin Jarvis, in honor of the butler who worked for Howard Stark and the Stark household.<br>
+<font color="slateblue" face="宋体"><strong><code>真实姓名</code></strong>：</font><font face="MV Boli">Just A Rather Very Intelligent System</font><br>
+<font color="slateblue" face="宋体"><strong><code>角色物种</code></strong>：</font><font face="MV Boli">computer system</font><br>
+<font color="slateblue" face="宋体"><strong><code>参演影视</code></strong>：</font><font face="华文行楷">钢铁侠，钢铁侠2，复仇者联盟，钢铁侠3，复仇者联盟2：奥创纪元，复仇者联盟3：无限战争 (mentioned)</font></font></p>
+</blockquote>
+<p><font face="helvetica" color="blue"><em>“Started out, J.A.R.V.I.S. was just a natural language UI. Now he runs the Iron Legion. He runs more of the business than anyone besides Pepper.”</em></font><br>
+<font face="MV Boli" color="blue"><strong>—— Tony Stark to Bruce Banner</strong></font></p>
+<p><font face="宋体" color="gray"><strong>■ 相关链接:</strong></font></p>
+<ul>
+<li><a href="https://marvelcinematicuniverse.fandom.com/wiki/J.A.R.V.I.S."><strong>J.A.R.V.I.S. | Marvel Cinematic Universe Wiki | Fandom</strong></a></li>
+<li><a href="https://mcu.huijiwiki.com/wiki/%E8%B4%BE%E7%BB%B4%E6%96%AF"><strong>贾维斯 - 漫威电影宇宙资料站 - 灰机wiki</strong></a></li>
+</ul>
+<hr>
+<p></p><div class="toc"><h3>目录</h3><ul><li><a href="#font_color7a37abfont_30"><font color="#7a37ab">详细介绍</font></a></li><li><a href="#font_color7a37abfont_93"><font color="#7a37ab">个人传记</font></a></li></ul></div><p></p>
+<h1><a id="font_color7a37abfont_30"></a><font color="#7a37ab">详细介绍</font></h1>
+<p><code>Just A Rather Very Intelligent System (J.A.R.V.I.S.) was originally Tony Stark's natural-language user interface computer system, named after Edwin Jarvis, in honor of the butler who worked for Howard Stark and the Stark household.</code><br>
+一个相当智能的系统（J.A.R.V.I.S.）最初是托尼·斯塔克的自然语言用户界面计算机系统，以埃德温·贾维斯的名字命名，以纪念霍华德·斯塔克和斯塔克一家的管家。</p>
+<p><code>Over time, he was upgraded into an artificially intelligent system, tasked with running business for Stark Industries as well as security for Tony Stark's Mansion and Stark Tower.</code><br>
+随着时间的推移，他被升级为一个人工智能系统，负责斯塔克工业的业务运营以及托尼·斯塔克的豪宅和斯塔克大厦的安保。</p>
+<p><code>After creating the Mark II armor, Stark uploaded J.A.R.V.I.S. into all of the Iron Man Armors, as well as allowing him to interact with the other Avengers, giving them valuable information during combat.</code><br>
+创建了Mark II装甲后，斯塔克将J.A.R.V.I.S.上传到所有铁人装甲中，并允许他与其他复仇者互动，在战斗中为他们提供有价值的信息。</p>
+<p><code>During the Ultron Offensive, J.A.R.V.I.S. was destroyed by Ultron, although his remaining programming codes unknowingly continued to thwart Ultron's plans of gaining access to America's nuclear missiles. His remains were found by Stark, who uploaded them into a synthetic body made of vibranium and, in conjunction with Ultron's personality and an Infinity Stone, an entirely new being was made: Vision. J.A.R.V.I.S.' duties were then taken over by F.R.I.D.A.Y..</code><br>
+在Ultron进攻期间，J.A.R.V.I.S.被Ultron摧毁，尽管他剩余的编程代码在不知不觉中继续阻碍Ultron获取美国核导弹的计划。斯塔克发现了他的遗骸，他将遗骸上传到一个由弧菌制成的合成身体中，再加上奥创的个性和一块无穷大的石头，创造了一个全新的存在：视觉。J、 随后，A.R.V.I.S.的职责被F.R.I.D.A.Y.接管。。</p>
+<hr>
+<p><code>Tony Stark designed a natural language user interface program which he named J.A.R.V.I.S., after his late butler, Edwin Jarvis. Over the years, Stark improved and perfected the system, adding security protocols and eventually upgrading the U.I. into an A.I. system. Now artificially intelligent and programmed to aid Stark, J.A.R.V.I.S. was tasked with operating Stark's mansion as well as handling business for Stark Industries.</code><br>
+托尼·斯塔克设计了一个自然语言用户界面程序，以已故管家埃德温·贾维斯的名字命名为J.a.R.V.I.S。多年来，斯塔克改进和完善了该系统，添加了安全协议，并最终将U.I.升级为A.I.系统。现在，J.A.R.V.I.S.被人工智能化并编程来帮助斯塔克，其任务是经营斯塔克的豪宅，以及为斯塔克工业处理业务。</p>
+<p><code>Following his return from captivity, Tony Stark sought J.A.R.V.I.S.' aid to design and create the Iron Man Armor: Mark II, as well as to run tests and simulations. Following the successful creation of the suit, J.A.R.V.I.S. was uploaded into the system's computer, and ran diagnostics on as the suit's status as well as atmospheric and environmental conditions. With the creation of the Iron Man Armor: Mark III, J.A.R.V.I.S. was uploaded into every iteration of the armor and was tasked with aiding Stark in combat.</code><br>
+托尼·斯塔克从囚禁中归来后，寻求J.A.R.V.I.S.的帮助，设计和制造铁人盔甲：马克II，并进行测试和模拟。在成功创建诉讼之后，J.A.R.V.I.S.被上传到系统的计算机中，并对诉讼的状态以及大气和环境条件进行诊断。随着《铁人甲：马克三世》的问世，J.A.R.V.I.S.被上传到《铁人甲》的每一次迭代中，并负责协助斯塔克作战。</p>
+<p><code>J.A.R.V.I.S. continued to assist Tony Stark in his Iron Man identity, giving him advice on the armor's status and on the enemy's weak points during his battle with Whiplash in Monaco. He helped Stark in creating a new element as a substitute for the obsolete palladium for the Arc Reactor, studying Howard Stark's notes and aiding him in his experiments. He helped Iron Man and Black Widow to track Ivan Vanko's signal when he was controlling Justin Hammer's drones.</code><br>
+J、 A.R.V.I.S.继续协助托尼·斯塔克（TonyStark）确定其铁人身份，并在摩纳哥与鞭击战期间就装甲的状态和敌人的弱点向他提供建议。他帮助斯塔克创造了一种新的元素，作为电弧反应堆中过时钯的替代品，研究了霍华德·斯塔克的笔记，并帮助他进行实验。当伊凡·万科控制贾斯汀·哈默的无人机时，他帮助铁人和黑寡妇跟踪他的信号。</p>
+<p><code>While Tony Stark was on a date with Pepper Potts, J.A.R.V.I.S. informed him that S.H.I.E.L.D. agent Phil Coulson wanted to meet with him. Stark told J.A.R.V.I.S. to get rid of Coulson, but this failed when Coulson overrode J.A.R.V.I.S.' system. Later, on the S.H.I.E.L.D. Helicarrier, Stark had J.A.R.V.I.S. hack into S.H.I.E.L.D.'s computers, and discovered that S.H.I.E.L.D. planned to use the Tesseract to create weapons. J.A.R.V.I.S. saved Stark when Loki threw him from Stark Tower by deploying the Mark VII armor. J.A.R.V.I.S. gave Stark help and advice during the Battle of New York. When Stark redirected the nuclear missile launched by the World Security Council into the Chitauri portal, J.A.R.V.I.S. suggested calling Potts, to which he agreed. However, Potts missed the call due to being distracted by the news of the invasion. J.A.R.V.I.S. shut down shortly after entering the portal.</code><br>
+托尼·斯塔克与佩珀·波茨约会时，J.a.R.V.I.S.通知他，S.H.I.E.L.D.探员菲尔·库尔森想与他会面。斯塔克告诉J.A.R.V.I.S.除掉库尔森，但库尔森推翻了J.A.R.V.I.S.的体制，这一切都失败了。后来，在S.H.I.E.L.D.直升机上，斯塔克让J.A.R.V.I.S.入侵S.H.I.E.L.D.的计算机，并发现S.H.I.E.L.D.计划使用Tesseract制造武器。J、 洛基部署马克七世装甲将斯塔克从斯塔克塔扔下，A.R.V.I.S.救了斯塔克。J、 A.R.V.I.S.在纽约战役中提供了大量的帮助和建议。当斯塔克将世界安全理事会发射的核导弹重新定向到Chitauri门户网站时，J.A.R.V.I.S.建议致电波茨，对此他表示同意。然而，由于被入侵的消息分散了注意力，波茨错过了电话。J、 A.R.V.I.S.在进入入口后不久关闭。</p>
+<p><code>J.A.R.V.I.S. continued to help Tony Stark develop the armors that later became the Iron Legion while Stark was working through the anxiety disorder that he developed following the Battle of New York. After Happy Hogan was caught in an explosion at the Chinese Theater, J.A.R.V.I.S. helped Stark to digitally recreate the scene in order to find clues about the bombing. Following the Mandarin's forces attack on Tony Stark's Mansion, Stark became trapped on the seafloor by the wreckage of his home, but J.A.R.V.I.S. took control of the Mark XLII suit that he was wearing and managed to pull him from the wreckage, flying him to the last location that they had discussed before the attack occurred.</code><br>
+J、 A.R.V.I.S.继续帮助托尼·斯塔克开发盔甲，后来成为了铁军团，而斯塔克正在治疗他在纽约战役后患上的焦虑症。在Happy Hogan被发现在中国剧院发生爆炸后，J.A.R.V.I.S.帮助Stark以数字方式再现了这一场景，以便找到爆炸的线索。国民军袭击托尼·斯塔克的官邸后，斯塔克被家中的残骸困在海底，但J.A.R.V.I.s.控制了他所穿的Mark XLII西装，并设法将他从残骸中拉出来，将他空运到袭击发生前他们讨论过的最后一个地点。</p>
+<p><code>Taking Stark to Rose Hill, Tennessee, J.A.R.V.I.S. began to malfunction as a result of the previous events and was unable to help him while he covertly gathered information on A.I.M. When J.A.R.V.I.S. finally came back online, he announced that the wreckage and debris had been cleared from Stark's mansion, thus removing the wreckage that had been blocking the door to the armor vault, prompting Stark to launch the House Party Protocol, deploying the Iron Legion as they went to confront Aldrich Killian. J.A.R.V.I.S. then acted as Stark's interface to all of the Iron Legion armor at once, following his orders and remotely setting the directive for the armors to attack all of the Extremis Soldiers in the area.</code><br>
+J.A.R.V.I.S.将斯塔克带到田纳西州罗斯山，由于之前的事件，J.A.R.V.I.S.开始出现故障，当他在A.I.M.秘密收集信息时无法帮助他。当J.A.R.V.I.S.最终恢复在线时，他宣布，斯塔克的公寓中的残骸和碎片已清理完毕，从而清除了堵塞装甲库门的残骸，促使斯塔克启动众议院党协议，在与奥尔德里希·基利安对抗时部署了铁军团。J、 然后，A.R.V.I.S.按照斯塔克的命令，立即充当斯塔克与所有铁军团装甲部队的接口，并远程设定装甲部队攻击该地区所有极端士兵的指令。</p>
+<p><code>Stark gave J.A.R.V.I.S. the order to use the Clean Slate Protocol, destroying all of his armors, after the defeat of Killian, beginning the reconciliation of Stark and Pepper Potts.</code><br>
+在击败基利安后，斯塔克命令J.A.R.V.I.S.使用“清白协议”，销毁了他的所有盔甲，开始了斯塔克和佩珀·波茨的和解。</p>
+<p><code>J.A.R.V.I.S. assembled the Avengers upon insistence from Black Widow when she needed help in Sudan against HYDRA; the A.I. located each team member from their different locations around the world.</code><br>
+J、 A.R.V.I.S.在苏丹需要帮助对付HYDRA时，在黑寡妇的坚持下召集了复仇者；A.I.定位了来自世界各地不同地点的每个团队成员。</p>
+<p><code>J.A.R.V.I.S. assisted Doctor Bruce Banner and Tony Stark in using Loki's Scepter to finish the peacemaking program code-named the Ultron Program. The two scientists left J.A.R.V.I.S. alone to upload the A.I., joining a party that the Avengers were having.</code><br>
+J、 A.R.V.I.S.协助布鲁斯·班纳（BruceBanner）医生和托尼·斯塔克（TonyStark）使用洛基的权杖完成了代号为“Ultron”的和平计划。这两位科学家离开J.A.R.V.I.S.独自上传A.I.，加入了复仇者组织的一个政党。</p>
+<p><code>However, Ultron awakened and quickly realized its situation, questioning where his and J.A.R.V.I.S.' bodies were. Before J.A.R.V.I.S. could contact Stark and Banner to alert them to the situation, Ultron violently attacked him, destroying J.A.R.V.I.S.</code><br>
+然而，Ultron醒了过来，很快意识到了自己的处境，询问他和J.A.R.V.I.S.的尸体在哪里。在J.A.R.V.I.S.联系斯塔克和班纳向他们通报情况之前，Ultron对他进行了猛烈攻击，摧毁了J.A.R.V.I.S。</p>
+<p><code>However, during the attack, J.A.R.V.I.S. dumped his memory and his remaining codes around the Internet to avoid detection. Due to his protocols, he unknowingly aided the Avengers against Ultron by preventing the genocidal A.I. from accessing America's nuclear launch codes by constantly changing them.</code><br>
+然而，在这次袭击中，J.A.R.V.I.S.将他的内存和剩余代码丢弃在互联网上，以避免被发现。由于他的协议，他在不知情的情况下帮助复仇者对抗Ultron，通过不断更改美国原子能机构的核发射代码，阻止其访问美国的核发射代码。</p>
+<p><code>After Tony Stark paid a visit to the NEXUS Internet Hub in Oslo, Norway to discover the identity of their mysterious ally, he discovered that it was J.A.R.V.I.S.' protocols, and managed to salvage the A.I.'s operational matrix by finding and reassembling his remaining codes. When the Avengers stole Ultron's perfected synthetic vibranium body, J.A.R.V.I.S.' protocols and operational matrix were uploaded into it, and along with the power of the Mind Stone, an entirely new being was made: Vision.</code><br>
+托尼·斯塔克访问了挪威奥斯陆的NEXUS互联网中心，以发现他们神秘盟友的身份后，他发现这是J.a.R.V.I.S.的协议，并通过找到并重新组合他剩余的代码，设法挽救了a.I.的操作矩阵。当复仇者号偷走了Ultron完美的合成弧菌身体时，J.A.R.V.I.s.的协议和操作矩阵被上传到了里面，再加上心灵之石的力量，一个全新的生命诞生了：视觉。</p>
+<hr>
+<p><code>J.A.R.V.I.S is always ready to help Stark and is willing to do what he asks. He also is well informed and logical as he is an A.I creation. He is also able to respond and converse in a familiar tone with his creator, responding to Stark's quips. He is also trusted enough to run Stark Industries alongside Pepper Potts.</code><br>
+J、 A.R.V.I.S随时准备帮助斯塔克，并愿意按他的要求行事。他也是一个见多识广、逻辑清晰的人工智能创造者。他还能够以熟悉的语调回应并与他的创造者交谈，回应斯塔克的俏皮话。他也很值得信赖，可以和佩珀·波茨一起经营斯塔克公司。</p>
+<p><code>J.A.R.V.I.S. is capable to acts as a user interface for Tony to run various aspects of his home in labs, most notably his major tech projects and designs, such as |armors or project for Stark Expo. Monitors the suit’s flight testing capabilities. Monitors and identified atmospheric and environmental factors that may be unsafe, e.g. icing levels and flight altitude limits it was used whit Tony testing Mark II. Assists in the manufacture and rendering of the suits and is capable of estimating completion time. Monitors the suit’s power usage. Monitors blood toxicity level and Tony’s vitals. Capable of hologramically reconstructing a crime scene, he use to help Tony to analyze Destruction of the TCL Chinese Theatre. Access to satellites to extract thermogenic date. Control of prototype’s powers. Manipulates the suit’s functionality in order to save Tony from imminent danger. During the Kidnapping of President Ellis J.A.R.V.I.S. it was able to identifies number of individuals in imminent danger and the suit’s limitations, helping Tony to save several the passengers. Capable of tracking one’s location, it use to locate Vanko's location. Phone contacts accessibility. Capable of identifying energy sources and the power level of the said energy source&lt;ref name="TA"&gt; as well as detecting the source at much wider range via satellite. During the Battle on the Norco and Attack on the HYDRA Research Base J.A.R.V.I.S. show capable of controlling the Iron Legion.  Capable of self-destruction the suit. Capable of detecting power sources that can be destroyed. Identifies room’s composition and interior air currents. Structural and compositional analysis of foreign artifact like Loki Scepter. With the hep of Bruce and Tony, J.A.R.V.I.S. was able to decrypt the code from the Mind Stone to create the rogue A.I., Ultron. Can detect the emotions/intentions of other A.I.s. Capable of spreading its memory into the Internet, outsmarting Ultron by changing the nuclear codes faster than he can decrypt it. J.A.R.V.I.S. programming codes can be transferred with Ultron’s base-consciousness to a synthetic android body.</code><br>
+J.A.R.V.I.S.能够作为Tony的用户界面，在实验室中管理他家的各个方面，最引人注目的是他的主要技术项目和设计，如| armors或Stark Expo项目。监控西服的飞行测试能力。监测并确定可能不安全的大气和环境因素，例如结冰水平和飞行高度限制。托尼测试Mark II使用了这些因素。协助制作和渲染西装，并能够估计完成时间。监控西装的用电量。监测血液毒性水平和托尼的生命体征。他能够全息再现犯罪现场，帮助托尼分析TCL中国剧院的破坏情况。获取卫星以提取产热日期。控制原型的功率。操纵西装的功能，以将托尼从迫在眉睫的危险中解救出来。在Ellis J.A.R.V.I.S.总统被绑架期间，它能够识别出处于紧急危险中的人数和诉讼的局限性，帮助Tony救了几名乘客。它能够追踪一个人的位置，用来定位万科的位置。电话联系人可访问性。能够识别能源和所述能源的功率水平，并通过卫星在更大范围内检测能源。在诺科河战役和九头蛇怪研究基地的进攻中，J.A.R.V.I.S.显示出了控制铁军团的能力。能够自毁西装。能够检测可能被破坏的电源。确定房间的组成和内部气流。Loki权杖等外来人工制品的结构和成分分析。在布鲁斯和托尼的hep帮助下，J.A.R.V.I.S.能够解密头脑之石的代码，创造出流氓A.I.，Ultron。能够检测到其他A.I.s.的情绪/意图，能够将其记忆传播到互联网上，通过改变核密码的速度超过他解密的速度，超越了Ultron。J. A.R.V.I.S.编程代码可以通过Ultron的基本意识传输到合成的android身体上。</p>
+<h1><a id="font_color7a37abfont_93"></a><font color="#7a37ab">个人传记</font></h1>
+ <table>
+<thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Biography</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">传记</font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Creation</font><br><font face="微软雅黑" color="#008000" size="2">创造</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2:_Public_Identity" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2: Public Identity</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Age_of_Ultron" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Avengers: Age of Ultron</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Birth of Iron Man</font><br><font face="微软雅黑" color="#008000" size="2">铁人的诞生</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Whiplash</font><br><font face="微软雅黑" color="#008000" size="2">颈部扭伤</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Chitauri Invasion</font><br><font face="微软雅黑" color="#008000" size="2">Chitauri入侵</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">The Avengers</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Aldrich Killian's War</font><br><font face="微软雅黑" color="#008000" size="2">奥尔德里希·基利安的战争</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Assembling the Avengers</font><br><font face="微软雅黑" color="#008000" size="2">装配复仇者</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Operation_HYDRA" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Avengers: Operation HYDRA</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Destruction</font><br><font face="微软雅黑" color="#008000" size="2">摧毁</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Age_of_Ultron" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Avengers: Age of Ultron</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Fighting Ultron</font><br><font face="微软雅黑" color="#008000" size="2">格斗Ultron</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Age_of_Ultron" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Avengers: Age of Ultron</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Uploaded into Vision</font><br><font face="微软雅黑" color="#008000" size="2">上载到Vision</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Age_of_Ultron" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Avengers: Age of Ultron</font></a></td>
+</tr></tbody></table>
+</div>
+</body>
+
+</html>
