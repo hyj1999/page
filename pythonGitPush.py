@@ -7,7 +7,6 @@ def main(c):
     repo = Repo(path)
     git = repo.git
     git.add('.')
-    git.commit('-m', c)
     try:
         git.commit('-m', c)
     except:
