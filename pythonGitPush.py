@@ -15,7 +15,7 @@ def main(c):
     try:
         print("提交中...")
         git.push()
-        input("提交完成！")
+        print("提交完成！")
     except:
         print("提交失败！")
 
