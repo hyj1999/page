@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Hogan</title>
+  <link href="https://www.marvel.com/static/images/favicon/favicon.ico" rel="SHORTCUT ICON">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<style>
+.box{
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    height:30px;
+    width: 50px;    
+    text-align:center;
+    padding-top:20px;    
+    background-color: lightblue;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.box:hover:before{
+    top:50%
+}
+.box:hover .box-in{
+    visibility: hidden;
+}
+.box:before{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content:'回到顶部';
+    width: 40px;
+    color:peru;
+    font-weight:bold;
+
+}    
+.box-in{
+    visibility: visible;
+    display:inline-block;
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    border-color: white transparent transparent white;
+    transform:rotate(45deg);
+}
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 2px;
+}
+blockquote {
+    display: block;
+    padding: 0px 16px 0px 16px;
+    margin: 0 0 12px;
+    border-left: 8px solid #dddfe4;
+    background: #eef0f4;
+    overflow: auto;
+    word-break: break-word!important;
+}
+table {
+	width:100%;
+	margin:15px 0
+}
+table th {
+	background-color:#CCE8EB;
+	color:#000000
+}
+table,table th, table td
+{
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border:1px solid #cad9ea;
+	border-collapse:collapse
+}
+table tr:nth-child(odd){
+	background-color:#fff;
+}
+table tr:nth-child(even){
+	background-color:#F5FAFA;
+}
+a {
+	text-decoration: none;
+}
+</style>
+<div id="box" class="box">
+    <div class="box-in"></div>
+</div> 
+<script>
+var timer  = null;
+box.onclick = function(){
+    cancelAnimationFrame(timer);
+    //获取当前毫秒数
+    var startTime = +new Date();     
+    //获取当前页面的滚动高度
+    var b = document.body.scrollTop || document.documentElement.scrollTop;
+    var d = 200;
+    var c = b;
+    timer = requestAnimationFrame(function func(){
+        var t = d - Math.max(0,startTime - (+new Date()) + d);
+        document.documentElement.scrollTop = document.body.scrollTop = t * (-c) / d + b;
+        timer = requestAnimationFrame(func);
+        if(t == d){
+          cancelAnimationFrame(timer);
+        }
+    });
+}
+</script>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><br>
+<center><font face="华文行楷" color="darkcyan" size="6">快乐·霍根</font></center>
+<center><font face="MV Boli" color="purple" size="6">Happy Hogan</font></center>
+<hr>
+<center><img src="https://cdn.biubiu001.com/p/ping/question/img/d702a27334784e9a6d5e3b6de1ec9666.png#pic_center" alt="快乐·霍根"></center>
+<br>
+<blockquote>
+<p><font face="黑体" color="purple" size="4">简 介：</font>Harold Joseph “Happy” Hogan 是 Stark Industries 的安全主管，也是 Tony Stark 最亲密的朋友之一。作为一名前拳击手，他被斯塔克聘为私人司机和保镖，在阿富汗被绑架后继续为他服务，并协助他击倒了伊万·万科。霍根在奥尔德里奇·基利安的战争中几乎丧生，这促使斯塔克向满大人报仇，他认为这是霍根受伤的幕后黑手。康复后，霍根继续忠实地担任斯塔克的朋友和雇员。<br>
+<font face="Consolas" color="purple" size="4">OVERVIEW：</font><font face="Garamond">Harold Joseph “Happy” Hogan&nbsp;is the Head of Security of&nbsp;Stark Industries, and one of&nbsp;Tony Stark’s closest friends. A former boxer, he was employed by Stark as a personal chauffeur and bodyguard, continuing to be in his service after his&nbsp;kidnapping&nbsp;in&nbsp;Afghanistan, and assisted him in taking down&nbsp;Ivan Vanko. Hogan was&nbsp;almost killed&nbsp;during&nbsp;Aldrich Killian’s War, which motivated Stark to get revenge on the&nbsp;Mandarin, who he believed was behind Hogan’s injuries. After his recovery, Hogan continued to faithfully serve as Stark’s friend and employee.<br>
+<font color="slateblue" face="宋体"><strong><code>真实姓名</code></strong>：</font><font face="MV Boli">Harold Joseph Hogan</font><br>
+<font color="slateblue" face="宋体"><strong><code>角色物种</code></strong>：</font><font face="MV Boli">Human</font><br>
+<font color="slateblue" face="宋体"><strong><code>参演影视</code></strong>：</font><font face="华文行楷">钢铁侠，钢铁侠2，钢铁侠3，蜘蛛侠：英雄归来，复仇者联盟3：无限战争 (deleted scene)，复仇者联盟4：终局之战，蜘蛛侠：英雄远征，蜘蛛侠：英雄无归</font></font></p>
+</blockquote>
+<p><font face="helvetica" color="blue"><em>“You’re not&nbsp;Iron Man. You’re never gonna be Iron Man. Nobody could live up to Tony. Not even Tony. Tony was my best friend. And he was a mess. He second-guessed everything he did; he was all over the place. The one thing that he did that he didn’t second-guess was picking you. I don’t think Tony would have done&nbsp;what he did… if he didn’t know that you were gonna be here after he was gone.”</em></font><br>
+<font face="MV Boli" color="blue"><strong>—— Happy Hogan to&nbsp;Peter Parker</strong></font></p>
+<p><font face="宋体" color="gray"><strong>■ 相关链接:</strong></font></p>
+<ul>
+<li><a href="https://marvelcinematicuniverse.fandom.com/wiki/Happy_Hogan"><strong>Happy Hogan | Marvel Cinematic Universe Wiki | Fandom</strong></a></li>
+<li><a href="https://www.marvel.com/characters/happy-hogan"><strong>Happy Hogan Powers, Enemies, History | Marvel</strong></a></li>
+<li><a href="https://mcu.huijiwiki.com/wiki/%E5%BC%80%E5%BF%83%E9%9C%8D%E6%A0%B9"><strong>开心霍根 - 漫威电影宇宙资料站 - 灰机wiki</strong></a></li>
+<li><a href="https://www.manweimi.cn/marvel-wiki/12074.html"><strong>快乐霍根（HAPPY HOGAN）  | 漫威百科 | 人物 | 漫威网 - 漫威迷</strong></a></li>
+</ul>
+<hr>
+<p></p><div class="toc"><h3>目录</h3><ul><li><a href="#font_color7a37abfont_32"><font color="#7a37ab">详细介绍</font></a></li><li><a href="#font_color7a37abfont_237"><font color="#7a37ab">个人传记</font></a></li></ul></div><p></p>
+<h1><a id="font_color7a37abfont_32"></a><font color="#7a37ab">详细介绍</font></h1>
+<p><code>Harold Joseph "Happy" Hogan is the Head of Security of Stark Industries, and one of Tony Stark's closest friends. A former boxer, he was employed by Stark as a personal chauffeur and bodyguard, continuing to be in his service after his kidnapping in Afghanistan, and assisted him in taking down Ivan Vanko. Hogan was almost killed during Aldrich Killian's War, which motivated Stark to get revenge on the Mandarin, who he believed was behind Hogan's injuries. After his recovery, Hogan continued to faithfully serve as Stark's friend and employee.</code><br>
+哈罗德·约瑟夫·霍根（HaroldJosephHappy）是斯塔克工业公司的安全主管，也是托尼·斯塔克最亲密的朋友之一。他曾是一名拳击手，受雇于斯塔克担任私人司机和保镖，在阿富汗被绑架后继续为他服务，并协助他干掉伊凡·万科。霍根在奥尔德里希·基利安的战争中差点被杀，这促使斯塔克向这位普通话复仇，他认为普通话是霍根受伤的幕后黑手。康复后，霍根继续忠实地担任斯塔克的朋友和雇员。</p>
+<p><code>Hogan oversaw Stark's mentorship over Peter Parker as Spider-Man, aiding the young hero on his trip to Germany and acting as their liaison when Parker continued his superhero activities. Initially irritated by the boy and avoiding his duties with him, Hogan grew to respect Parker when he delivered Vulture to justice, as he targeted a cargo plane under Hogan's supervision that was carrying equipment for the Avengers Compound.</code><br>
+霍根监督斯塔克对彼得·帕克（PeterParker）的指导，帮助这位年轻的英雄前往德国，并在帕克继续他的超级英雄活动时充当他们的联络人。起初，霍根对这名男孩感到恼怒，并逃避与他一起的责任，当他将秃鹫绳之以法时，霍根开始尊重帕克，因为他瞄准了霍根监管下的一架货机，这架货机当时正在为复仇者大院运送设备。</p>
+<p><code>In 2023, Hogan was present at Stark's funeral, after he died during the Battle of Earth. Hogan began working with May Parker the following year, and helped Peter Parker fight the Elementals in Europe. When Parker became victim to public hostility after he was framed for murdering Mysterio, Hogan allowed him and May to use his condominium to escape the unwanted publicity. Later, Hogan would be ridden with grief after May's death to the attack done by Green Goblin, and have his memories of Parker erased by Doctor Strange's spell.</code><br>
+2023年，霍根在史塔克死于地球大战后出席了他的葬礼。第二年，霍根开始与梅·帕克合作，并帮助彼得·帕克在欧洲对抗元素队。帕克因谋杀神秘人而被陷害后，成为公众敌意的受害者，霍根允许他和梅使用自己的公寓来逃避不必要的公众关注。后来，在梅死于绿妖精的袭击后，霍根悲痛万分，他对帕克的记忆被斯特兰奇医生的咒语抹去了。</p>
+<p><code>Harold Hogan was a former boxer who received the nickname of "Happy" as he rarely smiled. Following the end of his boxing career, he was hired by Tony Stark to be his personal chauffeur and bodyguard.</code><br>
+哈罗德·霍根曾是一名拳击手，因很少微笑而获得“快乐”的绰号。拳击生涯结束后，托尼·斯塔克聘请他担任私人司机和保镖。</p>
+<p><code>On New Year's Eve in 1999, Hogan accompanied Stark to Bern, Switzerland on his first and only date with Maya Hansen. Hogan stayed with Stark as he made his way through the party after the Bern 2000, being introduced to Ho Yinsen and Doctor Wu. When they made it to the elevator, Hogan tried and failed to keep an eccentric scientist named Aldrich Killian away from Stark and Hansen as he attempted to gain Stark's investment for A.I.M..</code><br>
+1999年除夕，霍根陪同斯塔克前往瑞士伯尔尼，这是他与玛雅·汉森的第一次也是唯一一次约会。在伯尔尼2000年奥运会后，霍根与斯塔克一起参加了派对，并被介绍给何银森和吴医生。当他们到达电梯时，霍根试图让一位名叫奥尔德里希·基利安的古怪科学家远离斯塔克和汉森，因为他试图获得斯塔克对A.I.M.的投资。。</p>
+<p><code>Hogan escorted Stark and Hansen back to her hotel room, where they discussed her experiments with a virus which would allow the human body to instantly regenerate damaged tissue, even severed limbs. Hogan was skeptical and fiddled with an experimental plant, breaking off a stem. As he prepared to leave, the plant exploded, causing Hogan to instinctively react by jumping on Stark to protect him. When the situation was explained, Hogan wished Stark and Hansen a Happy New Year before leaving them alone for the night.</code><br>
+霍根护送斯塔克和汉森回到她的酒店房间，在那里他们讨论了她用一种病毒进行的实验，这种病毒可以让人体立即再生受损的组织，甚至是断肢。霍根持怀疑态度，摆弄着一株实验植物，折断了一根茎。当他准备离开时，植物爆炸了，霍根本能地跳到斯塔克身上保护他。当情况得到解释后，霍根祝斯塔克和汉森新年快乐，然后让他们一个人过夜。</p>
+<p><code>In 2009, Hogan accompanied Stark to Caesars Palace in Las Vegas for an awards ceremony, although Stark decided not to attend and instead spent his time gambling and flirting with the girls in the club. They were interrupted by Stark's friend James Rhodes who handed Stark his award and berated him for missing the ceremony. As they exited the casino, they were stopped by Christine Everhart who interviewed Stark about his company. Stark charmed Everhart and Hogan drove them both back to his mansion.</code><br>
+2009年，霍根陪同斯塔克前往拉斯维加斯凯撒宫参加颁奖典礼，尽管斯塔克决定不参加，而是把时间花在赌博和与俱乐部的女孩调情上。斯塔克的朋友詹姆斯·罗德斯打断了他们的演讲，罗德斯将奖项交给斯塔克，并斥责他错过了颁奖典礼。当他们离开赌场时，克里斯汀·埃弗哈特拦住了他们，她采访了斯塔克关于他的公司的情况。斯塔克迷住了埃弗哈特，霍根开车送他们回到了自己的宅邸。</p>
+<p><code>The next morning, Hogan followed Stark to the Stark Industries Aviation Division in a Rolls Royce Phantom VII, but had trouble keeping up with him as Stark drove the faster Audi R8. Stark flew to Afghanistan where he was kidnapped by the terrorist organization Ten Rings, after demonstrating the Jericho missile to the United States Armed Forces. After a three-month search, Stark was found walking across the desert by James Rhodes, having escaped from the Ten Rings himself.</code><br>
+第二天早上，霍根开着劳斯莱斯幻影VII跟随斯塔克来到斯塔克工业航空部门，但由于斯塔克驾驶速度更快的奥迪R8，霍根很难跟上他。斯塔克在向美国武装部队展示杰里科导弹后，飞往阿富汗，在那里被恐怖组织“十环”绑架。经过三个月的搜寻，詹姆斯·罗德斯发现斯塔克正在穿越沙漠，他自己从十环中逃了出来。</p>
+<p><code>Upon Stark's return to the United States of America, Hogan drove Pepper Potts to the airport to meet Stark and then drove them back to Stark Industries to meet Obadiah Stane, after stopping to get cheeseburgers for Stark per his request. Hogan was present when Stark gave a press conference about his experience, where he also announced he would be shutting down the weapons manufacturing section of Stark Industries.</code><br>
+斯塔克返回美国后，霍根按照斯塔克的要求停下来为他买奶酪汉堡，然后开车送佩珀·波茨去机场接斯塔克，然后开车送他们回斯塔克工业公司接奥巴迪亚·斯坦。霍根出席了斯塔克举行的关于自己经历的新闻发布会，并宣布将关闭斯塔克工业公司的武器制造部门。</p>
+<p><code>With Tony Stark having admitted to being the superhero Iron Man, Hogan's job became more difficult as Stark gained mass popularity, and developed a vast fan following. After a Stark Expo presentation, Hogan escorted Stark through the sea of people looking to gain his attention whilst introducing figures of interest. When the pair finally made it outside, they found a beautiful U.S. Marshal waiting for them. She informed Stark that he had been issued a subpoena to appear in Washington, D.C. before a U.S. Congressional committee headed by Senator Stern. Hogan took the subpoena and drove them to D.C..</code><br>
+随着托尼·斯塔克（TonyStark）承认自己是超级英雄铁人，霍根的工作变得更加困难，因为斯塔克获得了大众的欢迎，并培养了大量粉丝。在斯塔克的世博会演讲结束后，霍根陪同斯塔克穿过人海，希望引起他的注意，同时介绍一些有趣的人物。当这对夫妇最终走出去时，他们发现一位美丽的美国元帅在等着他们。她告诉斯塔克，他已收到传票，要求他在华盛顿特区出席由参议员斯特恩领导的美国国会委员会会议。霍根接到传票，开车送他们去了华盛顿特区。。</p>
+<p><code>Hogan continued to work closely with Tony Stark and the two developed a close friendship. They often boxed together to keep fit, although Stark would often cheat during their fights, using mixed martial arts (MMA) techniques to elbow Hogan in the face or kick him in the chest, much to his annoyance.</code><br>
+霍根继续与托尼·斯塔克密切合作，两人建立了密切的友谊。虽然斯塔克经常在打架时作弊，使用混合武术（MMA）技术肘击霍根的脸或踢他的胸部，这让他很恼火，但他们经常一起拳击以保持健康。</p>
+<p><code>One day while training, they were interrupted by Natalie Rushman, a legal representative from Stark Industries as Pepper Potts had been promoted to CEO. Stark asked Hogan to show Rushman how to box; he agreed and teased her about the unlikelihood of her having any real training. However, Hogan quickly learned that Rushman was more than she seemed when she effortlessly blocked a punch and threw him painfully to the floor in a scissoring technique, to which Stark mocked Hogan.</code><br>
+一天，当佩珀·波茨被提升为首席执行官时，斯塔克工业公司的法律代表娜塔莉·拉什曼打断了他们的培训。斯塔克让霍根教拉什曼如何拳击；他同意了，并嘲笑她不太可能接受任何真正的训练。然而，霍根很快就明白了，当她毫不费力地挡住一记重拳，用剪刀将拉什曼痛苦地扔到地板上时，拉什曼比她看起来更厉害，斯塔克嘲笑了霍根。</p>
+<p><code>During the Circuit de Monaco, Hogan accompanied Tony Stark, Pepper Potts and Natalie Rushman, keeping the Mark V suitcase armor handcuffed to his wrist. When Stark entered the race himself, taking over his own formula one racing car, he was soon attacked by terrorist Ivan Vanko, using a recreated Arc Reactor-powered suit with electric whips. Hogan risked his life in trying to get the Suitcase Armor to Stark, driving into the race one-handed while Potts unlocked its handcuff.</code><br>
+在摩纳哥巡回赛期间，霍根陪同托尼·斯塔克、佩珀·波茨和娜塔莉·拉什曼，将Mark V手提箱护甲铐在手腕上。当斯塔克亲自参加比赛，接手自己的一级方程式赛车时，他很快就遭到了恐怖分子伊万·万科的袭击，当时他穿着一套由电弧反应器驱动的带电鞭子的套装。霍根冒着生命危险，试图将手提箱护甲交给斯塔克，在波茨解开手铐的情况下单手驾驶进入比赛。</p>
+<p><code>Hogan drove down the wrong way of the track and slammed Vanko against the fencing. Stark yelled at Hogan for nearly hitting him in the crash and tried to enter the car. However, Vanko recovered and attacked the car with his whips, ripping it apart and nearly hitting Hogan and Potts. They managed to give Stark the armor and he was able to use it to defeat Vanko after a brief but brutal fight. Hogan and Potts then watched as Vanko was taken away by the police, taunting Stark that he had lost.</code><br>
+霍根把车开错了方向，把万科撞到了栅栏上。斯塔克因为霍根在车祸中差点撞到他而对他大喊大叫，并试图进入车内。然而，万科恢复过来，用鞭子猛击汽车，将其撕裂，差点撞到霍根和波茨。他们设法将盔甲交给斯塔克，在一场短暂但残酷的战斗后，斯塔克得以使用盔甲击败万科。霍根和波茨随后看着万科被警方带走，嘲笑斯塔克说他输了。</p>
+<p><code>Tony Stark hosted a birthday party in his Mansion, proceeding to get drunk and wear one of his Iron Man suits to impress his guests. This action angered James Rhodes, who had been defending Stark to the government, so he put on another suit and confronted Stark. The two friends began fighting throughout the Mansion and when the destruction neared Pepper Potts, Hogan quickly ran inside to pull her to safety. The duel ended with great damage to the mansion and Rhodes leaving with the Iron Man suit.</code><br>
+托尼·斯塔克（TonyStark）在自己的豪宅里举办了一个生日派对，随后喝醉了，穿上了一套铁人西装，以给客人留下深刻印象。这一行为激怒了詹姆斯·罗德斯，他一直在向政府为斯塔克辩护，因此他提起另一场诉讼，与斯塔克对质。这两个朋友开始在整个豪宅内打架，当破坏接近佩珀·波茨时，霍根迅速跑进去把她拉到安全的地方。决斗以对豪宅的巨大破坏而结束，罗兹带着铁人服离开。</p>
+<p><code>Back at Stark Industries the next day, Hogan went to collect Potts for her upcoming meeting and found her talking with Stark. He asked if Potts needed anything else and Stark tried to answer, believing the question was directed at him, when he realized that Hogan was working for Potts now. Stark tried to make an awkward joke, but an upset Hogan advised him to stop talking. He and Potts then left the office while Stark spoke to Natalie Rushman.</code><br>
+第二天回到斯塔克工业公司，霍根去为即将举行的会议收集波特，发现她正在与斯塔克交谈。当他意识到霍根现在为波茨工作时，他问波茨是否还需要什么，斯塔克试图回答，他相信这个问题是针对他的。斯塔克试图开一个尴尬的玩笑，但心烦意乱的霍根建议他不要说话。斯塔克与娜塔莉·拉什曼交谈时，他和波茨离开了办公室。</p>
+<p><code>Hogan became Pepper Potts' bodyguard when she was named CEO of Stark Industries, and accompanied her to the Stark Expo. During the Battle at Stark Expo, he was unable to reach Potts and soon approached by Natasha Romanoff, who demanded to get to the Hammer Industries Headquarters in order to stop Ivan Vanko's attack on the Expo. Hogan was wary, but agreed to drive her there. On the way as Romanoff discussed strategy, he could not help but try to look as she changed clothes in the back of the car.</code><br>
+霍根被任命为斯塔克工业公司首席执行官后，成为佩珀·波茨的保镖，并陪同她参加斯塔克博览会。在斯塔克世博会的战斗中，他无法联系到波茨，娜塔莎·罗曼诺夫很快与他接触，她要求前往哈默工业总部，以阻止伊凡·万科对世博会的袭击。霍根很谨慎，但同意开车送她去那里。在Romanoff讨论策略的路上，他忍不住看着她在车后换衣服。</p>
+<p><code>When they arrived at the facility, Hogan insisted on helping Romanoff with her mission, as he started to fight the first bodyguard they encountered. After a long scuffle, Hogan resorted to using the dirty boxing tactics he had learned from Tony Stark to knock the guard unconscious. Pleased with his efforts, Hogan called out to Romanoff, only to see she had defeated every other guard in the building. He then stood by Romanoff as she hacked into the Hammer Industries computer and returned control of the War Machine Armor to James Rhodes so they could join forces and fight back against Vanko.</code><br>
+当他们到达设施时，霍根坚持要帮助罗曼诺夫完成任务，因为他开始与他们遇到的第一个保镖作战。经过长时间的混战，霍根采取了从托尼·斯塔克那里学到的肮脏拳击战术，将后卫打昏。霍根对罗曼诺夫的努力感到满意，他向罗曼诺夫喊道，结果发现罗曼诺夫击败了大楼里的所有其他警卫。随后，罗曼诺夫入侵了哈默工业公司的计算机，并将战争机器装甲的控制权交给詹姆斯·罗德斯，以便他们能够联合起来反击万科。</p>
+<p><code>Hogan soon became very uncomfortable with his role as Tony Stark aka Iron Man's bodyguard, which he was often ridiculed for. He was subsequently granted a new position as the head of security in the corporate headquarters of Stark Industries, a role which Hogan took great pride in despite causing staff complaints to rise to a shocking level due to his unrelenting insistence on following protocol. It was in this capacity that Hogan encountered Eric Savin and his boss, Aldrich Killian, when they visited Stark Industries for a meeting with Pepper Potts. Hogan checked Killian's credentials and recognized him from the Bern 2000.</code><br>
+霍根很快对自己扮演的托尼·斯塔克（TonyStark，又名铁人保镖）的角色感到非常不舒服，他经常被嘲笑。随后，他被授予斯塔克工业公司总部安全负责人的新职位，尽管由于他坚持不懈地坚持遵守协议，导致员工投诉上升到令人震惊的程度，但霍根对此感到非常自豪。正是在这种身份下，霍根与埃里克·萨文和他的老板奥尔德里希·基利安（AldrichKillian）在斯塔克工业公司（StarkIndustries）与佩珀·波茨（PepperPotts）会面时遇到了他们。霍根检查了基里安的证件，从伯尔尼2000认出了他。</p>
+<p><code>Hogan then received a call from Stark and struggled to answer the tablet, annoyed at being interrupted at work. He revealed Potts was meeting and possibly flirting with Killian, trying to explain how the latter was showing off his "big brain". The two discussed Hogan's new position and Stark mocked his lack of skill with technology. Hogan planned to follow Killian and Savin, suspicious of their intentions. As the pair said goodbye, Hogan noted that he had barely seen Stark since his friend started working with the Avengers.</code><br>
+霍根随后接到斯塔克的电话，很难接听平板电脑，因为工作被打断而感到恼火。他透露，波茨当时正在与基里安会面，并可能与之调情，试图解释基里安是如何炫耀自己的“大脑袋”的。两人讨论了霍根的新职位，斯塔克嘲笑他缺乏技术技能。霍根怀疑基里安和萨文的意图，计划跟踪他们。当两人道别时，霍根指出，自从他的朋友开始与复仇者队合作以来，他几乎没见过斯塔克。</p>
+<p><code>Later after arranging for Potts' car, Hogan took a picture of Killian and Savin's vehicle as they drove away in order to run their plates.</code><br>
+后来，在安排好波茨的车后，霍根给基里安和萨文的车拍了一张照片，当时他们正开车离开，以便洗碗。</p>
+<p><code>Immediately suspicious, Hogan investigated and later followed Eric Savin to an exchange with another man at the TCL Chinese Theatre. He decided to interfere and gather evidence upon noticing some of the man's flesh glowing in an amber hue. After purposefully bumping into the man to make him drop his package, Hogan covertly took one of the capsules the man had been given. Before he could leave, Hogan was confronted by Savin, who tried to steal back the device.</code><br>
+霍根立即怀疑，展开调查，随后跟随埃里克·萨文在TCL中国剧院与另一名男子进行交流。当他注意到该男子的一些肉呈琥珀色发光时，他决定干预并收集证据。霍根故意撞上这名男子，让他放下包裹，然后偷偷拿走了这名男子收到的一粒胶囊。在离开之前，霍根遇到了萨文，萨文试图将设备偷走。</p>
+<p><code>Hogan attempted to defend himself and punched Savin in the face. Much to his horror though, Savin's wound healed immediately with the same golden glow and he violently attacked Hogan. Their altercation was interrupted when the other man exploded, killing several people and severely injuring Hogan. He was able to point to the man's dog tags, a vital piece of evidence, before lapsing into unconsciousness; an act that gave Tony Stark a valuable clue into the cause of the explosion.</code><br>
+霍根试图自卫，一拳打在萨文的脸上。然而，让他非常恐惧的是，萨文的伤口立即愈合，并发出同样的金色光芒，他猛烈地袭击了霍根。当另一名男子发生爆炸，导致数人死亡，霍根受重伤时，他们的争吵被打断。在陷入昏迷之前，他能够指出该男子的狗标签，这是一个至关重要的证据；这一举动为托尼·斯塔克提供了爆炸原因的宝贵线索。</p>
+<p><code>Hogan was rendered comatose and admitted to the Los Angeles Mercy Hospital. Tony Stark stayed by his friend's bedside and asked the nurse to put Downton Abbey on the television, as it was Hogan's favorite show, and ensure that all the staff wore their security badges, since it would annoy Hogan to find out they were not. This incident prompted Stark to publicly threaten the Mandarin, who was responsible for the attack. Hogan ultimately woke up, days after the explosion, to Downton Abbey and was attended to by a nurse.</code><br>
+霍根昏迷不醒，住进了洛杉矶慈善医院。托尼·斯塔克守在朋友的床边，要求护士在电视上播放《唐顿庄园》，因为这是霍根最喜欢的节目，并确保所有工作人员都佩戴安全徽章，因为如果霍根发现他们没有佩戴安全徽章，他会很恼火。这一事件促使斯塔克公开威胁应对袭击负责的中国人。爆炸发生几天后，霍根最终在唐顿教堂醒来，并得到了一名护士的照顾。</p>
+<p><code>In 2016, Hogan was still employed at Stark Industries, continuing to be the Head of Security but aspiring to be promoted to asset management. After Tony Stark recruited Peter Parker to assist in the fight between his team and Steve Rogers's team, Hogan was tasked with bringing Parker to Germany. Hogan picked Parker up and brought him on the Stark private plane.</code><br>
+2016年，霍根仍受雇于斯塔克工业公司，继续担任安全主管，但渴望晋升为资产管理公司。托尼·斯塔克（TonyStark）招募彼得·帕克（PeterParker）协助他的球队与史蒂夫·罗杰斯（SteveRogers）的球队之间的比赛后，霍根（Hogan）受命将帕克带到德国。霍根把帕克接上了那架纯粹的私人飞机。</p>
+<p><code>Once in Berlin, Hogan took Parker to their hotel, neighbored with him, and introduced him to the new suit designed for him by Stark. While staying at the hotel, Hogan was billed for an expensive movie Parker had ordered, and believed the price meant it was an adult film. Hogan then drove Parker to the Leipzig-Halle Airport and picked him up afterwards. Later, Hogan had to chastise Parker for being too loud in the hotel room, as the walls were thin.</code><br>
+一到柏林，霍根就把帕克带到他们的酒店，和他住在一起，并向他介绍了斯塔克为他设计的新西装。在酒店住宿期间，霍根收到了帕克订购的一部昂贵电影的账单，他认为这部电影的价格意味着它是一部成人电影。霍根随后开车把帕克送到莱比锡哈雷机场，然后接他。后来，霍根不得不斥责帕克在酒店房间里声音太大，因为房间的墙壁很薄。</p>
+<p><code>Hogan then took Parker back to New York City in the jet plane and met up with Stark, who rode back with them to Parker's apartment complex. Hogan got Parker's suitcase out of the trunk, watched Parker leave, and drove off with Stark.</code><br>
+霍根随后乘坐喷气式飞机将帕克带回纽约市，并与斯塔克会面，斯塔克与帕克一起乘车返回帕克的公寓大楼。霍根从后备箱里拿出帕克的手提箱，看着帕克离开，然后和斯塔克一起开车离开了。</p>
+<p><code>Two months later, Hogan had been promoted to asset management as requested and was assigned to oversee the removal of all items and technology from Avengers Tower after Stark sold the building to move to the Avengers Compound in upstate New York. Hogan was also Parker's primary contact as he started his crime-fighting career, and duly relayed all of Parker's messages to Stark.</code><br>
+两个月后，霍根按照要求被提升为资产管理公司，在斯塔克将大楼出售搬到纽约州北部的复仇者大厦后，他被指派负责监督复仇者大厦所有项目和技术的拆除。霍根也是帕克在开始打击犯罪生涯时的主要联系人，并及时将帕克的所有信息转达给斯塔克。</p>
+<p><code>On moving day, Hogan oversaw the loading of all of the items due to be moved onto the cargo plane. He was contacted by Parker's friend Ned Leeds, who tried to warn him that the plane was in danger, but he brushed off the warning. After seeing it off, the plane was hijacked by Vulture and subsequently crashed on Coney Island after Spider-Man intervened.</code><br>
+在搬家当天，霍根监督将要搬上货机的所有物品的装载。帕克的朋友内德·利兹（NedLeeds）联系了他，他试图警告他飞机有危险，但他对警告置之不理。送行后，这架飞机被秃鹫劫持，随后在蜘蛛侠的干预下在科尼岛坠毁。</p>
+<p><code>Hogan accompanied the FBI to the crash site where they found Toomes webbed and restrained on the side of a car, with a note from Spider-Man reading: "Found the Flying Vulture Guy. P.S. Sorry about your plane." Hogan watched as the federal agents arrested Toomes for his failed robbery, with Hogan earning a newfound respect and admiration for Spider-Man.</code><br>
+霍根陪同联邦调查局前往坠机现场，他们发现图姆斯系着蹼，被束缚在一辆车的侧面，蜘蛛侠写了一张纸条：“找到了秃鹫飞人。P.S.对你的飞机感到抱歉。”霍根看着联邦特工逮捕了图姆斯，因为他抢劫未遂，霍根重新获得了对蜘蛛侠的尊重和钦佩。</p>
+<p><code>Days later, Hogan appeared at Parker's school to personally apologize for not listening to his warnings, and to thank him for saving his job. He then took Parker on a ride to the Avengers Compound where Tony Stark intended to announce Spider-Man to the world as the newest official member of the Avengers. However, Parker declined the invitation and left the building to wait in the car for a ride home. As he left, Hogan expressed to Stark that Parker was a "good kid".</code><br>
+几天后，霍根出现在帕克的学校，为没有听从他的警告而亲自道歉，并感谢他保住了工作。然后，他带帕克乘车前往复仇者大院，托尼·斯塔克打算在那里向全世界宣布蜘蛛侠为复仇者的最新官方成员。然而，帕克拒绝了邀请，离开了大楼，在车里等着回家。离开时，霍根向斯塔克表示帕克是个“好孩子”。</p>
+<p><code>Pepper Potts then reminded Hogan and Stark that there was a room full of press expecting an announcement; Stark asked Hogan if he was still carrying an engagement ring, and intended to give them it. However, Potts was somewhat confused by the tactic and assured the two that she would think of something better. Despite Potts' word, Hogan tossed the ring to Stark as a last-case measure. In 2018, Hogan survived the Snap.</code><br>
+佩珀·波茨随后提醒霍根和斯塔克，有一屋子的媒体都在等待宣布消息；斯塔克问霍根是否还带着订婚戒指，并打算送给他们。然而，波茨对这一策略有些困惑，并向两人保证，她会想出更好的办法。尽管有波茨的话，霍根还是把戒指扔给了斯塔克，作为最后的衡量标准。2018年，霍根幸免于难。</p>
+<p><code>In 2023, Hogan, along with Pepper Potts, Morgan Stark, James Rhodes, Steve Rogers, Bruce Banner, Clint Barton, and Thor watched Tony Stark's recording at the Stark Eco-Compound that he made in preparation for the possibility that he would not survive the mission.</code><br>
+2023年，霍根与佩珀·波茨、摩根·斯塔克、詹姆斯·罗德斯、史蒂夫·罗杰斯、布鲁斯·班纳、克林特·巴顿和托尔一起在斯塔克生态馆观看了托尼·斯塔克的录音，这是他为可能无法完成任务而制作的。</p>
+<p><code>Hogan then went outside to the lake, where the rest of the Avengers and their allies were standing. He and Rhodes comforted each other, both being very close to Stark, as they watched Potts and Morgan place Stark's Arc Reactor on the lake.</code><br>
+霍根随后来到湖边，其他复仇者和他们的盟友都站在那里。当波茨和摩根将斯塔克的电弧反应堆放置在湖面上时，他和罗兹互相安慰，两人都非常接近斯塔克。</p>
+<p><code>Afterwards, Hogan sat with Morgan by the house and asked her if she was hungry. She replied that she wanted cheeseburgers. An emotional Hogan smiled, telling her that her father liked cheeseburgers as well, and promised to get her all the cheeseburgers she wanted. Following this, Hogan was given possession of Dum-E.</code><br>
+之后，霍根和摩根坐在房子旁边，问她是否饿了。她回答说她想要奶酪汉堡。一个情绪激动的霍根微笑着告诉她，她的父亲也喜欢奶酪汉堡包，并答应给她所有她想要的奶酪汉堡包。此后，霍根获得了Dum-E的所有权。</p>
+<p><code>In 2024, Hogan went to a charity event for people displaced by the Blip in New York City to see Peter Parker. When Hogan arrived, he was greeted by Parker and May Parker. He then presented May with a large check from Pepper Potts before he began flirting with May by complimenting her about her hair and asking her about her new dress, to which she responded to commenting about his beard.</code><br>
+2024年，霍根前往纽约市一个为因突发事件而流离失所的人举办的慈善活动，看望彼得·帕克。霍根到达时，帕克和梅·帕克向他打招呼。随后，他向梅出示了佩珀·波茨（PepperPotts）寄来的一张大支票，然后开始与梅调情，称赞她的头发，问她关于她的新裙子的事，她回应了对他的胡子的评论。</p>
+<p><code>When May left, Parker asked Hogan what happened but he ignored him and told him that Nick Fury was calling him. Hogan told Parker that Fury calls superheroes for any activities. When Parker's phone started ringing, Hogan told Parker that that was Fury calling him but he reluctantly refused to speak to him but told Parker to answer the phone or else he will have to.</code><br>
+梅离开后，帕克问霍根发生了什么事，但霍根不理他，告诉他尼克·弗瑞正在给他打电话。霍根告诉帕克，《愤怒》称任何活动都是超级英雄。帕克的电话开始响起时，霍根告诉帕克，打电话给他是愤怒，但他不情愿地拒绝与他通话，但告诉帕克去接电话，否则他将不得不接。</p>
+<p><code>When Parker hung up on Fury, Hogan freaked out and strongly advised against "ghosting" Fury. Parker then told Hogan that he had to go as he noticed the crowd of people calling him backstage. He promised Hogan that he'll call Fury later on. Once Parker left, Hogan immediately received a call from Fury, whom he tried to reassure that Parker was not "ghosting" him.</code><br>
+帕克挂断了《愤怒》的电话，霍根吓了一跳，强烈建议不要让《愤怒》成为“幽灵”。帕克随后告诉霍根，他必须走了，因为他注意到后台有很多人在叫他。他答应霍根，他稍后会给《愤怒》打电话。帕克离开后，霍根立即接到了弗雷的电话，他试图向弗雷保证帕克没有“鬼影”他。</p>
+<p><code>Later, after Parker left for a school trip to Europe, Hogan and May began a momentarily relationship. One day, while the two were at a restaurant, May called Parker to ask him about the recent battle in the Grand Canal. As she did this, Happy ate May's food, to which she told him not to eat her lunch.</code><br>
+后来，帕克去欧洲学校旅行后，霍根和梅开始了短暂的关系。一天，当两人在一家餐厅用餐时，梅打电话给帕克，询问他最近在大运河发生的战斗。当她这样做的时候，Happy吃了May的食物，她告诉他不要吃她的午餐。</p>
+<p><code>May then briefly gave the call to Hogan so he could say hi to Parker, though he didn't really want to say hi to him, he did it anyway. Hogan then told a suspicious Parker that he was simply helping May and taking care of her, though Parker did not believe it.</code><br>
+梅随后短暂地给霍根打了个电话，以便他能向帕克问好，尽管他并不真的想向他问好，但他还是照做了。霍根告诉一个可疑的帕克，他只是在帮助梅并照顾她，但帕克并不相信。</p>
+<p><code>Days later, Hogan was called by Peter Parker, who told Hogan to pick him up in the Netherlands as he was stranded there. Once he arrived at Parker's location in a Stark Industries Private Jet, Parker asked if he was really Hogan, much to his confusion. Parker then demanded Hogan to prove he's himself by telling him something only the real Happy would know. Hogan then proved this by revealing that he knew about Parker renting a presumably R-rated movie while at the hotel in Germany in 2016. Parker then hugged Hogan, who asked for an explanation on what was happening with him.</code><br>
+几天后，彼得·帕克给霍根打了电话，他告诉霍根去荷兰接他，因为他被困在那里。帕克乘坐斯塔克工业公司的私人飞机抵达帕克所在地后，问他是否真的是霍根，这让他很困惑。帕克然后要求霍根告诉他一些只有真正快乐的人才会知道的事情，以此证明他是自己。霍根随后透露，他知道帕克2016年在德国酒店租了一部大概是R级的电影，以此证明了这一点。帕克随后拥抱了霍根，霍根要求他解释发生在他身上的事情。</p>
+<p><code>Upon entering the plane, Parker told him that he was nearly killed by Quentin Beck, an illusionist who was using illusions of powerful creatures to make the world think he was a new hero, and who fooled Parker into giving him E.D.I.T.H., an AI created by Tony Stark with control over hundreds of drones, as well as into revealing who of Parker's friends know about his plot. As Hogan gave first aid to Parker, the latter yelled at Hogan on how he failed to stop Beck's plan. After Parker calmed down and opened up about how he feels unable to live up to Stark's legacy, Hogan comforted Peter by telling him that not even Stark could live up to his own legacy, but revealed that picking Parker as his protégé was the only decision Stark never regretted or second-guessed. Hogan felt that Stark wouldn't have sacrificed himself if he didn't know that Parker would survive to continue his work.</code><br>
+进入飞机后，帕克告诉他，他差点被昆汀·贝克（QuentinBeck）杀死。昆汀·贝克是一位魔术师，他利用对强大生物的幻觉，让全世界都认为他是一位新英雄，并骗过帕克给了他E.D.I.T.H.，这是托尼·斯塔克（TonyStark）创建的一种人工智能，控制着数百架无人机，还向他透露了帕克的朋友中谁知道他的阴谋。当霍根对帕克进行急救时，帕克对霍根大喊大叫，说他没能阻止贝克的计划。帕克冷静下来，坦言自己无法继承斯塔克的遗产，霍根安慰彼得说，即使是斯塔克也无法继承自己的遗产，但他透露，选择帕克作为他的保护人是斯塔克唯一一个从不后悔或事后猜测的决定。霍根认为，如果斯塔克不知道帕克会活下来继续他的工作，他就不会牺牲自己。</p>
+<p><code>A motivated Parker then instructed Hogan to give him his phone so he could know where Beck's plan was going to happen, which he discovered was in London. Hogan then proudly watched as Peter created a new Spider-Man suit with Stark technology, before playing AC/DC's "Back in Black", and piloting the plane. Before fighting Beck, Hogan tried to sent Nick Fury a coded message warning him of Beck's deception, but, unbeknownst to Hogan, Fury didn't realize it was a message. Hogan then asked Parker about his battle plan, which he explained to Hogan, before asking Hogan to give Michelle Jones a Black Dahlia necklace he bought to her in case Parker was killed-in-action.</code><br>
+帕克很有动力，然后指示霍根把手机给他，这样他就可以知道贝克的计划将在哪里发生，他发现这是在伦敦。然后，霍根骄傲地看着彼得用斯塔克技术制作了一套新的蜘蛛侠套装，然后播放了AC/DC的《黑幕归来》并驾驶飞机。在与贝克战斗之前，霍根试图向尼克·弗瑞发送一条密码信息，警告他贝克的欺骗行为，但霍根不知道，弗瑞没有意识到这是一条信息。霍根随后向帕克询问了他的作战计划，并向霍根解释了他的作战计划，然后要求霍根给米歇尔·琼斯一条他买给她的黑色大丽花项链，以防帕克在战斗中被杀。</p>
+<p><code>Upon arriving in London, Hogan saw the illusion that Mysterio's drones generated and was shocked by its realism and even asked Parker if it's really fake, which he confirmed. Before jumping off the plane in his new suit, Parker told Hogan that they will have to talk about his and May's relationship later.</code><br>
+抵达伦敦后，霍根看到了神秘号无人机产生的幻觉，对其真实性感到震惊，甚至问帕克这是否真的是假的，他证实了这一点。在穿着新西装下飞机之前，帕克告诉霍根，他们以后必须谈谈他和梅的关系。</p>
+<p><code>After landing the plane, Hogan found Parker's friends, Ned Leeds, Michelle Jones, Betty Brant, and Flash Thompson, through Thompson's social media videos. He then introduced himself to them and told them to come with him. However, one of the drones destroyed their plane in order to prevent them from escaping.</code><br>
+降落飞机后，霍根通过汤普森的社交媒体视频找到了帕克的朋友奈德·利兹、米歇尔·琼斯、贝蒂·布兰特和Flash汤普森。然后他向他们作了自我介绍，并告诉他们跟他一起去。然而，其中一架无人机摧毁了他们的飞机，以阻止他们逃跑。</p>
+<p><code>Hogan then instructed the students to hide inside the vault of the Royal Crown Jewels. While entering the vault, Hogan and the kids were forced to escape from a drone that followed them. As Hogan and the kids entered the vault, he desperately tried to throw a shield at the drone, only to fail, causing him to wonder how Captain America could do it with his own shield.</code><br>
+霍根随后指示学生们藏在皇冠上的珠宝库里。进入保险库时，霍根和孩子们被迫逃离一架跟着他们的无人机。当霍根和孩子们进入保险库时，他拼命想向无人驾驶飞机扔一个盾牌，但没有成功，这让他想知道美国队长怎么能用自己的盾牌做到这一点。</p>
+<p><code>Once inside, as the drone started shooting missiles at the vault, Hogan and the kids, believing it to be their final moments, openly admitted several of their secrets. Hogan confessed that he was in love with Spider-Man's aunt, much to Jones, Leeds, Brant, and Thompson's surprise. Once the shooting ended, Hogan and the kids realized that Parker had been successful in stopping the drones and left the vault.</code><br>
+一旦进入，当无人机开始向保险库发射导弹时，霍根和孩子们认为这是他们的最后时刻，公开承认了他们的几个秘密。霍根承认他爱上了蜘蛛侠的姑姑，令琼斯、利兹、布兰特和汤普森大吃一惊。枪击结束后，霍根和孩子们意识到帕克成功阻止了无人驾驶飞机并离开了保险库。</p>
+<p><code>Back in New York City, Hogan met with May at the Parker Residence and Peter Parker demanded an explanation from them about their relationship. May described it as a fling, whereas Hogan said that he thought they had a long-term connection. Parker would leave to go on his own date while leaving Hogan and May alone.</code><br>
+回到纽约后，霍根在帕克住所会见了梅，彼得·帕克要求他们解释他们的关系。梅说这是一次放纵，而霍根说他认为他们有长期的联系。帕克会离开去参加自己的约会，而霍根和梅则独自一人。</p>
+<p><code>They would later get intimate, but citing boundaries, May quickly decided to break off the relationship, much to Hogan’s distress. As she led him out the door of the apartment, they heard a noise coming from within. Despite May telling him it was okay, Hogan came back inside and went to where the noise came from, opening a bedroom door seeing Parker and Michelle Jones, having entered through Parker’s bedroom window.</code><br>
+他们后来很亲密，但由于双方的界限，梅很快决定断绝关系，这让霍根很难过。当她领着他走出公寓门时，他们听到里面传来了声音。尽管梅告诉他没事，霍根还是回到屋里，走到了噪音的来源，打开卧室的门，看到帕克和米歇尔·琼斯从帕克的卧室窗户进来。</p>
+<p><code>Noticing that Parker was undressed, Hogan stepped back in surprise and waited until May came and saw to him. Hogan then went with them into the living room and Parker demanded them explain their relationship, before they saw on the television that NY1 was reporting on Parker's identity as Spider-Man. WLGJ helicopters then were seen hovering and they realized that the footage was live. Parker then used his Web-Shooters to close the windows, but opened one again to show May that the helicopters were outside their building.</code><br>
+霍根注意到帕克脱了衣服，惊讶地后退一步，一直等到梅来找他。霍根随后和他们一起走进客厅，帕克要求他们解释他们的关系，然后他们才在电视上看到NY1正在报道帕克作为蜘蛛侠的身份。随后有人看到WLGJ直升机在空中盘旋，他们意识到这段视频是真实的。帕克随后用他的网络射手关闭窗户，但再次打开一扇窗户，向梅表明直升机当时在大楼外。</p>
+<p><code>Hogan watched as NY1 continued stating that the United States Department of Damage Control had taken charge of the investigation and that due to the drones being made by Stark Industries, Hogan would be investigated, with Hogan commenting on the picture they chose to use for him. Hogan then left the Parker Residence to let Peter Parker and May Parker have time together.</code><br>
+Hogan看着NY1继续声明美国损害控制部已负责调查，由于无人机由Stark Industries制造，Hogan将接受调查，Hogan对他们为他选择的照片发表了评论。霍根随后离开帕克的住所，让彼得·帕克和梅·帕克有时间在一起。</p>
+<p><code>A few days later, Hogan returned to the apartment to be present for the meeting with Parker, May, and Parker's lawyer, Matt Murdock. Murdock told Parker he was able to clear him of the legal charges, cut the things weren't all the way good yet. He then told Hogan that he would be investigated due to his status in Stark Industries, and advised he seek immediate legal protection. Following this, May stated they needed a safer place to live and Hogan offered them to stay at his condominium on Long Island.</code><br>
+几天后，霍根回到公寓，与帕克、梅和帕克的律师马特·默多克会面。默多克告诉帕克，他能够解除对他的法律指控，但事情还没有完全好起来。然后，他告诉霍根，由于他在斯塔克工业公司的身份，他将接受调查，并建议他立即寻求法律保护。随后，梅表示他们需要一个更安全的地方居住，霍根提议他们住在长岛的公寓里。</p>
+<p><code>Hogan welcomed May and Parker to his condominium and asked Parker if he liked Donkey Kong, while Dum-E greeted them. After they got settled in, Hogan gave his bed to May and chose to sleep in a lounge chair in his living room.</code><br>
+霍根欢迎梅和帕克来到他的公寓，并问帕克是否喜欢金刚驴，杜姆则向他们打招呼。他们安顿下来后，霍根把床让给了梅，并选择睡在客厅的躺椅上。</p>
+<p><code>One night, Parker, who was designated to sleep on the couch, was video-calling Michelle Jones and became too loud in their conversation. Irritated, Hogan told Parker to end the call so he could get some sleep.</code><br>
+一天晚上，被指定睡在沙发上的帕克正在给米歇尔·琼斯打视频电话，在他们的谈话中声音变得太大。霍根很生气，告诉帕克结束通话，这样他就可以睡一觉了。</p>
+<p><code>That fall, Hogan saw footage from his phone of May and Peter Parker bringing in universe-displaced people consisting of Electro, Doctor Octopus, Sandman, and Norman Osborn into his condominium. While driving back through the city to his condominium, he called Parker, but was unable to reach him, so left a voicemail asking who they were and why they were there.</code><br>
+那年秋天，霍根从他的手机上看到了5月的视频，彼得·帕克把宇宙中流离失所的人带进了他的公寓，这些人包括电子人、章鱼医生、桑德曼和诺曼·奥斯本。当他开车穿过城市回到他的公寓时，他给帕克打了电话，但联系不到他，所以留下了一封语音邮件，询问他们是谁以及他们为什么在那里。</p>
+<p><code>Hogan arrived at his condominium, only to find it destroyed with smoke and fires around the area. He rolled down his passenger side window and saw Parker, who was emotional and battle weary, holding onto May’s lifeless body. Hogan became distraught at what had happened.</code><br>
+霍根来到他的公寓，却发现公寓被烟雾和大火摧毁。他摇下乘客侧的车窗，看到帕克情绪激动，疲惫不堪，紧紧抓住梅的死尸。霍根对所发生的一切感到心烦意乱。</p>
+<p><code>However, he was then forcibly taken out of his car by the United States Department of Damage Control agents on the scene. As he was being taken into custody, Hogan yelled out to Parker to run before the Damage Control's swat team began to open fire.</code><br>
+然而，他随后被美国损失控制部现场特工强行带出汽车。当霍根被拘留时，他向帕克大喊，让他在损失控制特警队开始开火之前逃跑。</p>
+<p><code>Shortly afterwards, Hogan, along with the rest of the world, had his memory of Peter Parker erased. In December, he went solemnly to May Parker’s gravesite and saw a young man there as well and asked how he knew May. He replied it was due to Spider-Man, in which Hogan said the same for him. He then recalled losing his friend a year ago, saying it felt the same losing May, although a little different. The young man reassured him that he knew things would get better. He and the young man then exchanged their goodbyes and wished each other well.</code><br>
+不久之后，霍根和全世界的人都把他对彼得·帕克的记忆抹去了。12月，他庄严地去了梅·帕克的墓地，在那里也看到了一个年轻人，问他是怎么认识梅的。他回答说这是蜘蛛侠的功劳，霍根在信中也这样对他说。然后，他回忆起一年前失去朋友的情景，说失去梅的感觉也一样，尽管有点不同。年轻人向他保证，他知道事情会好转的。然后，他和年轻人互道了别，并互致祝福。</p>
+<p><code>Hogan was Tony Stark's constant companion. He also acted as Stark's "pre-screener" when Stark was womanizing. An example of this was when he described reporter Christine Everhart as "cute." A brooding disciplinarian, Hogan initially ignored Peter Parker out of annoyance by not replying to his messages and being rude to him even when Parker was serious about Adrian Toomes' actions. He later apologized to Peter for not taking him seriously and thanked him for saving his job, explaining it was all he had.</code><br>
+霍根是托尼·斯塔克的忠实伴侣。在斯塔克玩弄女性的时候，他还扮演了斯塔克的“预筛选者”。一个例子是，他形容记者克里斯汀·埃弗哈特“可爱”霍根是一位沉思的纪律主义者，起初出于恼怒，他对彼得·帕克不屑一顾，没有回复他的信息，甚至在帕克对阿德里安·图姆斯的行为很认真的时候也对他粗鲁无礼。后来，他向彼得道歉，因为他没有认真对待他，并感谢他保住了工作，解释说这就是他所拥有的一切。</p>
+<p><code>Hogan's role of training Tony Stark in boxing during Iron Man 2 is a nod to his background as a former professional boxer in the comics, which is also how he earned his nickname because of his refusal to fight back.</code><br>
+霍根在《钢铁侠2》中训练托尼·斯塔克拳击的角色是对他在漫画中作为前职业拳击手的背景的认可，这也是他因拒绝反击而获得绰号的原因。</p>
+<p><code>Hogan's look and attire in the flashbacks shown in Iron Man 3 are an homage to the character of Vincent Vega, played by John Travolta in the movie Pulp Fiction.</code><br>
+《钢铁侠3》中闪回的霍根的容貌和着装是对电影《低俗小说》中由约翰·特拉沃尔塔扮演的文森特·维加的致敬。</p>
+<p><code>Jon Favreau personally chose the scene from Downton Abbey Hogan wakes up to in Iron Man 3.</code><br>
+乔恩·法夫罗（JonFavreau）亲自选择了《钢铁侠3》中唐顿庄园霍根醒来（DowntonAbbeyHogan wakes）的场景。</p>
+<p><code>In Spider-Man: No Way Home, Hogan is revealed to have sleep apnea and uses a CPAP machine to treat this.</code><br>
+在《蜘蛛侠：没有回家的路》中，霍根被证实患有睡眠呼吸暂停症，并使用CPAP机器进行治疗。</p>
+<p><code>In early storyboards of Iron Man 3, Happy Hogan was originally supposed to die in the explosion caused by Jack Taggart, but the idea was scrapped.</code><br>
+在《钢铁侠3》的早期故事板中，快乐霍根原本被认为死于杰克·塔加特引起的爆炸，但这个想法被放弃了。</p>
+<p><code>David Rowden and Richard Verran Townsend were stunt doubles for Jon Favreau in the role of Happy Hogan.</code><br>
+大卫·罗登（DavidRowden）和理查德·维兰·汤森（RichardVerranTownsend）是乔恩·法夫罗（JonFavreau）饰演的快乐霍根（HappyHogan）的特技替身。</p>
+<p><code>Jeff Ridgway, James Payton and Derek Sulek were stand-ins for Jon Favreau in the role of Happy Hogan.</code><br>
+杰夫·里奇韦、詹姆斯·佩顿和德里克·苏莱克是乔恩·法夫罗饰演快乐霍根的替身。</p>
+<p><code>Favreau's son Max played an Expo Kid later retconned as a young Peter Parker. This is a nod to the relationship shared between Hogan and Parker in Spider-Man: Homecoming.</code><br>
+法夫罗的儿子马克斯扮演一个世博会的孩子，后来又被改编成小彼得·帕克。这是对《蜘蛛侠：回家》中霍根和帕克共同关系的认可。</p>
+<h1><a id="font_color7a37abfont_237"></a><font color="#7a37ab">个人传记</font></h1>
+ <table>
+<thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Tony Stark's Bodyguard</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">托尼·斯塔克的保镖</font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Employed by Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克雇用</font></td>
+<td align="center"><a href="" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">I Am Iron Man: Behind the Scenes Making of Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">New Year's in Switzerland</font><br><font face="微软雅黑" color="#008000" size="2">瑞士新年</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Kidnapping of Tony Stark</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克被绑架</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_(film)" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Protecting Iron Man</font><br><font face="微软雅黑" color="#008000" size="2">保护铁人</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Boxing Training</font><br><font face="微软雅黑" color="#008000" size="2">拳击训练</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Duel of Monaco</font><br><font face="微软雅黑" color="#008000" size="2">摩纳哥决斗</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Raid of Hammer Industries</font><br><font face="微软雅黑" color="#008000" size="2">打击锤子行业</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_2" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 2</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Head of Security</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">安全负责人</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Spying on Aldrich Killian</font><br><font face="微软雅黑" color="#008000" size="2">监视奥德里奇·基利安</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Destruction of the Chinese Theatre</font><br><font face="微软雅黑" color="#008000" size="2">摧毁中国剧院</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Recovery</font><br><font face="微软雅黑" color="#008000" size="2">恢复</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man_3" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Iron Man 3</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Asset Management</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">资产管理</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Escorting Peter Parker</font><br><font face="微软雅黑" color="#008000" size="2">护送Peter Parker</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_Homecoming" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: Homecoming</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_Far_From_Home" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Spider-Man: Far From Home</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Monitoring Spider-Man</font><br><font face="微软雅黑" color="#008000" size="2">监视蜘蛛侠</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_Homecoming" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: Homecoming</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Hijacking of the Stark Cargo Plane</font><br><font face="微软雅黑" color="#008000" size="2">斯塔克货机被劫持</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_Homecoming" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: Homecoming</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Parker's Rejection</font><br><font face="微软雅黑" color="#008000" size="2">Parker的拒绝</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_Homecoming" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: Homecoming</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Endgame" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Avengers: Endgame</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Tony Stark's Funeral</font><br><font face="微软雅黑" color="#008000" size="2">托尼·斯塔克的葬礼</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Endgame" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Avengers: Endgame</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Quentin Beck's Campaign</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">昆汀·贝克的竞选</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Flirting with May Parker</font><br><font face="微软雅黑" color="#008000" size="2">与梅·帕克调情</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_Far_From_Home" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: Far From Home</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Helping at Salvation Army</font><br><font face="微软雅黑" color="#008000" size="2">救世军的帮助</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_Far_From_Home" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: Far From Home</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Advising Peter Parker</font><br><font face="微软雅黑" color="#008000" size="2">建议Peter Parker</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_Far_From_Home" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: Far From Home</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Battle of London</font><br><font face="微软雅黑" color="#008000" size="2">伦敦战役</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_Far_From_Home" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: Far From Home</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Returning to New York</font><br><font face="微软雅黑" color="#008000" size="2">返回纽约</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_Far_From_Home" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: Far From Home</font></a><br><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_No_Way_Home" target="_blank"><font face="Source Code Pro" color="#008000" size="2">Spider-Man: No Way Home</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">Legal Troubles</font><br><font face="微软雅黑" color="#008000" size="2">法律纠纷</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_No_Way_Home" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: No Way Home</font></a></td>
+</tr></tbody><thead>
+<tr>
+<th align="center"><font face="helvetica" color="slateblue" size="3">Spider-Man Multiversal Crisis</font></th>
+<th align="center"><font face="微软雅黑" color="slateblue" size="3">蜘蛛侠多功能危机</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">1.6.1	Condo Battle</font><br><font face="微软雅黑" color="#008000" size="2">1.6.1公寓战役</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_No_Way_Home" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: No Way Home</font></a></td>
+</tr><tr>
+<td align="center"><font face="Source Code Pro" color="#c7254e" size="2">1.6.2	Losing May</font><br><font face="微软雅黑" color="#008000" size="2">1.6.2失去五月</font></td>
+<td align="center"><a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man:_No_Way_Home" target="_blank"><font face="Source Code Pro" color="#c7254e" size="2">Spider-Man: No Way Home</font></a></td>
+</tr></tbody></table>
+</div>
+</body>
+
+</html>
