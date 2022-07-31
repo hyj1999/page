@@ -3,7 +3,7 @@
 from git import Repo
 
 def main(c):
-    path = r'D:\Play\GitHub\page'
+    path = r'D:\Study\Git\GitHub\hyj1999\page'
     repo = Repo(path)
     git = repo.git
     git.add('.')
