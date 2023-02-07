@@ -1,3 +1,15 @@
 git add .
 git commit -m "update"
 git push
+
+git config --global user.email "1343768408@qq.com"
+git config --global user.name "hyj1999"
+
+
+git remote -v
+git remote remove origin
+git remote add origin git@github.com:hyj1999/page
+git remote -v
+git push
+git push --set-upstream origin HEAD:main
+git push
