@@ -1,6 +1,7 @@
 git add .
 git commit -m "update"
 git push
+git pull
 
 git config --global user.email "1343768408@qq.com"
 git config --global user.name "hyj1999"
