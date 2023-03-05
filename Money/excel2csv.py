@@ -2,6 +2,7 @@
 
 import pandas as pd
 import base64
+import os
 
 def main(path = ''):
     data = pd.read_excel('money.xlsx', sheet_name=None, index_col=0)
@@ -12,6 +13,7 @@ def main(path = ''):
         f.write("[")
         f.write(", ".join(['"' + sheet_name + '"' for sheet_name in data.keys()]))
         f.write("];")
+    os.remove('money.xlsx')
 
 
 def base64_encode_string(s):
@@ -40,6 +42,7 @@ def main_base64(path = ''):
         f.write("[")
         f.write(", ".join(['"' + sheet_name + '"' for sheet_name in data.keys()]))
         f.write("];")
+    os.remove('money.xlsx')
 
 if __name__ == '__main__':
     main()
