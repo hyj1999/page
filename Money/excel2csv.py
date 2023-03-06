@@ -5,7 +5,7 @@ import base64
 import os
 
 def main(path = ''):
-    data = pd.read_excel('money.xlsx', sheet_name=None, index_col=0)
+    data = pd.read_excel(path + 'money.xlsx', sheet_name=None, index_col=0)
     for sheet in data.keys():
         data[sheet].to_csv(path + '%s.csv' % sheet, encoding='utf-8')
     with open(path + "sheet_name.txt", 'w', encoding='utf-8') as f:
@@ -13,7 +13,7 @@ def main(path = ''):
         f.write("[")
         f.write(", ".join(['"' + sheet_name + '"' for sheet_name in data.keys()]))
         f.write("];")
-    os.remove('money.xlsx')
+    os.remove(path + 'money.xlsx')
 
 
 def base64_encode_string(s):
@@ -27,7 +27,7 @@ def base64_encode_string(s):
 
 
 def main_base64(path = ''):
-    data = pd.read_excel('money.xlsx', sheet_name=None, index_col=0)
+    data = pd.read_excel(path + 'money.xlsx', sheet_name=None, index_col=0)
     for sheet in data.keys():
         data[sheet].to_csv(path + '%s.csv' % sheet, encoding='utf-8')
         with open(path + '%s.csv' % sheet, encoding='utf-8') as file:
@@ -42,7 +42,7 @@ def main_base64(path = ''):
         f.write("[")
         f.write(", ".join(['"' + sheet_name + '"' for sheet_name in data.keys()]))
         f.write("];")
-    os.remove('money.xlsx')
+    os.remove(path + 'money.xlsx')
 
 if __name__ == '__main__':
     main()
